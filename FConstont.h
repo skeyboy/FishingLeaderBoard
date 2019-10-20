@@ -118,6 +118,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define SEARCH_HOME_TAG           300  //!<首页搜索
 #define SEARCH_SEARCH_TAG         301  //!<搜索页面
 
+#define COLLECTION_MAIN_TAG           1000  //!<主页第二轮播图
+#define COLLECTION_TWO_MAIN_TAG           1001  //!<主页第三轮播图
+
+
 
 
 

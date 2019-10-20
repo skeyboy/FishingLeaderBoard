@@ -10,7 +10,8 @@
 #import "WMZBannerParam.h"
 #import "WMZBannerView.h"
 #import "LPButton.h"
-
+#import "MainCollectionViewCell.h"
+#import "MainTwoCollectionViewCell.h"
 NS_ASSUME_NONNULL_BEGIN
 typedef NS_OPTIONS(NSInteger, FPageHeadViewType) {
     FPageTypeHomeHeadView                 =1,                         //!<主页面头页面
@@ -24,8 +25,8 @@ typedef void(^ButtonCtrolClick) (UIButton *);
 {
     UIView *lineView;
     WMZBannerView *bView;
+    UICollectionView *_mainCollectionView;
     UICollectionView *_twoCollectionView;
-    UICollectionView *_thirdCollectionView;
     float topSegCtrlY;
 }
 @property(strong,nonatomic)UISegmentedControl  *segmentedCtr;

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MainCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="531" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="531" height="176"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8I4-zL-Xjg">
+                        <rect key="frame" x="0.0" y="0.0" width="531" height="176"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eQp-J3-u5a">
+                        <rect key="frame" x="0.0" y="0.0" width="531" height="176"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赛事" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl8-85-Nnk">
+                        <rect key="frame" x="10" y="101" width="31" height="20"/>
+                        <color key="backgroundColor" red="0.18855160469999999" green="0.4200729728" blue="0.96475619079999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Ant-4C-GTU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019年10月18日 08：00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbX-xh-hgE">
+                        <rect key="frame" x="10" y="131" width="521" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="3AA-iB-xuz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正钓  日常  鲤鱼  永昌源  活鱼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZG-Yd-hKb">
+                        <rect key="frame" x="10" y="151" width="521" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="uTs-XP-8VC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tZG-Yd-hKb" secondAttribute="trailing" id="4jx-ST-Drl"/>
+                <constraint firstAttribute="trailing" secondItem="bbX-xh-hgE" secondAttribute="trailing" id="5Nt-df-wrM"/>
+                <constraint firstItem="tZG-Yd-hKb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="7z1-au-TWk"/>
+                <constraint firstItem="bbX-xh-hgE" firstAttribute="leading" secondItem="tZG-Yd-hKb" secondAttribute="leading" id="GFP-4d-1YQ"/>
+                <constraint firstAttribute="bottom" secondItem="tZG-Yd-hKb" secondAttribute="bottom" constant="5" id="JNr-97-M2h"/>
+                <constraint firstItem="Kl8-85-Nnk" firstAttribute="leading" secondItem="bbX-xh-hgE" secondAttribute="leading" id="LpT-9u-fEy"/>
+                <constraint firstItem="bbX-xh-hgE" firstAttribute="top" secondItem="Kl8-85-Nnk" secondAttribute="bottom" constant="10" id="MEn-gV-Hz0"/>
+                <constraint firstItem="8I4-zL-Xjg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mbw-Nv-2VI"/>
+                <constraint firstItem="eQp-J3-u5a" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PSv-ea-or7"/>
+                <constraint firstAttribute="trailing" secondItem="8I4-zL-Xjg" secondAttribute="trailing" id="Pxl-Kx-U4D"/>
+                <constraint firstAttribute="bottom" secondItem="8I4-zL-Xjg" secondAttribute="bottom" id="Q23-af-6Jj"/>
+                <constraint firstAttribute="trailing" secondItem="eQp-J3-u5a" secondAttribute="trailing" id="fLh-j2-pQ5"/>
+                <constraint firstItem="eQp-J3-u5a" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gKd-8E-sdj"/>
+                <constraint firstItem="8I4-zL-Xjg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nZd-WK-4aZ"/>
+                <constraint firstItem="tZG-Yd-hKb" firstAttribute="top" secondItem="bbX-xh-hgE" secondAttribute="bottom" id="ucM-rr-1Z7"/>
+                <constraint firstAttribute="bottom" secondItem="eQp-J3-u5a" secondAttribute="bottom" id="xUg-cL-fI5"/>
+            </constraints>
+            <size key="customSize" width="531" height="176"/>
+            <connections>
+                <outlet property="bgImageView" destination="8I4-zL-Xjg" id="FVF-gs-WKw"/>
+                <outlet property="dateLabel" destination="bbX-xh-hgE" id="BlD-tt-Zf0"/>
+                <outlet property="firstLabel" destination="Kl8-85-Nnk" id="FKa-WH-pZK"/>
+                <outlet property="lastLabel" destination="tZG-Yd-hKb" id="t5K-9b-opK"/>
+            </connections>
+            <point key="canvasLocation" x="723.91304347826087" y="205.58035714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

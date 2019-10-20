@@ -43,10 +43,12 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="h4z-yS-TXi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="0PE-yd-1j5"/>
+                    <constraint firstItem="cE7-ZM-pWG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="1mw-7f-MjW"/>
                     <constraint firstAttribute="bottom" secondItem="h4z-yS-TXi" secondAttribute="bottom" constant="10" id="EL1-2L-S5d"/>
                     <constraint firstItem="100-kg-zIB" firstAttribute="width" secondItem="h4z-yS-TXi" secondAttribute="width" id="EaL-he-Qdb"/>
                     <constraint firstItem="cE7-ZM-pWG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PjH-MN-qhc"/>
                     <constraint firstItem="100-kg-zIB" firstAttribute="leading" secondItem="h4z-yS-TXi" secondAttribute="leading" id="dGf-Fs-8q0"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cE7-ZM-pWG" secondAttribute="bottom" constant="14.5" id="gQ5-XE-gTy"/>
                     <constraint firstItem="cE7-ZM-pWG" firstAttribute="leading" secondItem="h4z-yS-TXi" secondAttribute="trailing" constant="15" id="kkt-Mm-tGy"/>
                     <constraint firstItem="100-kg-zIB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="lfo-1T-FcB"/>
                     <constraint firstAttribute="trailing" secondItem="cE7-ZM-pWG" secondAttribute="trailing" constant="30" id="qi4-F1-vIH"/>

@@ -67,6 +67,7 @@
     self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
     [self.tableView registerNib:[UINib nibWithNibName:@"MainTableViewCell" bundle:nil] forCellReuseIdentifier:@"MainTableViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"MainOneTableViewCell" bundle:nil] forCellReuseIdentifier:@"MainOneTableViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MainNoTableViewCell" bundle:nil] forCellReuseIdentifier:@"MainNoTableViewCell"];
     int headY = 0;
     if(_headType == FPageTypeHomeHeadView)
     {
@@ -107,37 +108,35 @@
         MainOneTableViewCell *cell =[self.tableView dequeueReusableCellWithIdentifier:@"MainOneTableViewCell"  forIndexPath:indexPath];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.titleTextLabel.text = [arrTableSource objectAtIndex:(indexPath.row%2)];
-        cell.imageView1.image = [UIImage imageNamed:@"page1"];
+        [cell.imageView1 sd_setImageWithURL:[NSURL URLWithString:@"http://www.51pptmoban.com/d/file/2014/01/20/e382d9ad5fe92e73a5defa7b47981e07.jpg"] placeholderImage:nil];
         cell.timeLabel.text = @"19/19月05日 17：16";
+        return cell;
+    }else if(indexPath.row == 2)
+    {
+        MainNoTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"MainNoTableViewCell" forIndexPath:indexPath];
+        cell.titleLabel.text = @"哈哈哈哈哈或或或";
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }else if(indexPath.row == 9)
+    {
+        MainNoTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"MainNoTableViewCell" forIndexPath:indexPath];
+        cell.titleLabel.text = @"哈哈哈哈哈或或或案件噢ID渐浓此女IE荣VR按此内内此女of是你去你哦是农女 你才能从偶发内容一农村人";
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }else{
         MainTableViewCell *cell =[self.tableView dequeueReusableCellWithIdentifier:@"MainTableViewCell"  forIndexPath:indexPath];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.titleTextLabel.text = [arrTableSource objectAtIndex:(indexPath.row%2)];
         cell.imageView1.image = [UIImage imageNamed:@"page1"];
-        cell.imageView2.image = [UIImage imageNamed:@"page1"];
+        //cell.imageView2.image = [UIImage imageNamed:@"page1"];
+        [cell.imageView2 sd_setImageWithURL:[NSURL URLWithString:@"http://www.51pptmoban.com/d/file/2014/01/20/e382d9ad5fe92e73a5defa7b47981e07.jpg"] placeholderImage:nil];
         cell.imageView3.image = [UIImage imageNamed:@"page1"];
         cell.detailTimeLabel.text = @"19/19月05日 17：16";
         return cell;
     }
     
 }
-//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    NSString *text = [arrTableSource objectAtIndex:(indexPath.row%2)];
-//   CGSize size = [ToolClass sizeWithText:text font:[UIFont systemFontOfSize:15] maxSize:CGSizeMake(SCREEN_WIDTH - 165 , 500)];
-//    if(indexPath.row == 3||indexPath.row == 8)//一张图的时候
-//    {
-//        float h = size.height + 100;
-//        if(h < 110)
-//        {
-//            h = 110;
-//        }
-//        return h;
-//    }
-//    //多张图
-//    return 130  +size.height;
-//}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

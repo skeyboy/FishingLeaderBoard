@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-Uo-AKt">
-                        <rect key="frame" x="30" y="10" width="450" height="122.5"/>
+                        <rect key="frame" x="30" y="20" width="450" height="112.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -59,7 +59,7 @@
                     <constraint firstItem="e5m-7t-HaJ" firstAttribute="leading" secondItem="RIl-wi-csy" secondAttribute="trailing" constant="20" id="ZN4-YF-sLJ"/>
                     <constraint firstAttribute="trailing" secondItem="e5m-7t-HaJ" secondAttribute="trailing" constant="30" id="aSC-Av-BKe"/>
                     <constraint firstItem="c72-LS-6sp" firstAttribute="centerY" secondItem="RIl-wi-csy" secondAttribute="centerY" id="bUy-Rp-sbP"/>
-                    <constraint firstItem="SMd-Uo-AKt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fIn-nA-yTP"/>
+                    <constraint firstItem="SMd-Uo-AKt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="fIn-nA-yTP"/>
                     <constraint firstItem="e5m-7t-HaJ" firstAttribute="width" secondItem="RIl-wi-csy" secondAttribute="width" id="hed-tR-qY6"/>
                     <constraint firstItem="SMd-Uo-AKt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="lVu-bZ-Rxh"/>
                     <constraint firstAttribute="trailing" secondItem="Yy3-AJ-ReR" secondAttribute="trailing" constant="65" id="sIk-Xx-tl0"/>

@@ -33,7 +33,7 @@
     self.idLabel.textAlignment = NSTextAlignmentLeft;
     [self addSubview:self.idLabel];
     
-    self.costomLabel = [FViewCreateFactory createLabelWithName:@"个性签名：暂无签名" font:FONT_3 textColor:WHITECOLOR];
+    self.costomLabel = [FViewCreateFactory createLabelWithName:@"个性签名：暂无签名斤斤计较军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军军" font:FONT_3 textColor:WHITECOLOR];
     self.costomLabel.numberOfLines = 0;
     self.costomLabel.textAlignment = NSTextAlignmentLeft;
     [self addSubview:self.costomLabel];

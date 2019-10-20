@@ -48,6 +48,12 @@
 		8AD5E18D235B5049000717A5 /* ToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E18C235B5049000717A5 /* ToolClass.m */; };
 		8AD5E196235B5FCF000717A5 /* MainOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E194235B5FCF000717A5 /* MainOneTableViewCell.m */; };
 		8AD5E197235B5FCF000717A5 /* MainOneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AD5E195235B5FCF000717A5 /* MainOneTableViewCell.xib */; };
+		8AD5E1A0235C882A000717A5 /* MainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E19E235C882A000717A5 /* MainCollectionViewCell.m */; };
+		8AD5E1A1235C882A000717A5 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AD5E19F235C882A000717A5 /* MainCollectionViewCell.xib */; };
+		8AD5E1A5235C96BA000717A5 /* MainTwoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E1A3235C96BA000717A5 /* MainTwoCollectionViewCell.m */; };
+		8AD5E1A6235C96BA000717A5 /* MainTwoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AD5E1A4235C96BA000717A5 /* MainTwoCollectionViewCell.xib */; };
+		8AD5E1AA235C9E26000717A5 /* MainNoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E1A8235C9E26000717A5 /* MainNoTableViewCell.m */; };
+		8AD5E1AB235C9E26000717A5 /* MainNoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AD5E1A9235C9E26000717A5 /* MainNoTableViewCell.xib */; };
 		9691E689C6C1B3C3CB7A384B /* Pods_FishingLeaderBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7907D6E6275CC3ABE58427 /* Pods_FishingLeaderBoardUITests.framework */; };
 		F4DE0FCA08AE3F0086854EEC /* Pods_FishingLeaderBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDB28D40FCEF542B7335B33 /* Pods_FishingLeaderBoard.framework */; };
 /* End PBXBuildFile section */
@@ -157,6 +163,15 @@
 		8AD5E193235B5FCF000717A5 /* MainOneTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainOneTableViewCell.h; sourceTree = "<group>"; };
 		8AD5E194235B5FCF000717A5 /* MainOneTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainOneTableViewCell.m; sourceTree = "<group>"; };
 		8AD5E195235B5FCF000717A5 /* MainOneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainOneTableViewCell.xib; sourceTree = "<group>"; };
+		8AD5E19D235C882A000717A5 /* MainCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewCell.h; sourceTree = "<group>"; };
+		8AD5E19E235C882A000717A5 /* MainCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewCell.m; sourceTree = "<group>"; };
+		8AD5E19F235C882A000717A5 /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
+		8AD5E1A2235C96BA000717A5 /* MainTwoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTwoCollectionViewCell.h; sourceTree = "<group>"; };
+		8AD5E1A3235C96BA000717A5 /* MainTwoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTwoCollectionViewCell.m; sourceTree = "<group>"; };
+		8AD5E1A4235C96BA000717A5 /* MainTwoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTwoCollectionViewCell.xib; sourceTree = "<group>"; };
+		8AD5E1A7235C9E26000717A5 /* MainNoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainNoTableViewCell.h; sourceTree = "<group>"; };
+		8AD5E1A8235C9E26000717A5 /* MainNoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainNoTableViewCell.m; sourceTree = "<group>"; };
+		8AD5E1A9235C9E26000717A5 /* MainNoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainNoTableViewCell.xib; sourceTree = "<group>"; };
 		D9372E6D16426CE265158666 /* Pods-FishingLeaderBoardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingLeaderBoardUITests.release.xcconfig"; path = "Target Support Files/Pods-FishingLeaderBoardUITests/Pods-FishingLeaderBoardUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DCB99E3C5F5695CD821702BC /* Pods-FishingLeaderBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingLeaderBoard.release.xcconfig"; path = "Target Support Files/Pods-FishingLeaderBoard/Pods-FishingLeaderBoard.release.xcconfig"; sourceTree = "<group>"; };
 		E96A76ADE3432D5118CA8EC6 /* Pods-FishingLeaderBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingLeaderBoard.debug.xcconfig"; path = "Target Support Files/Pods-FishingLeaderBoard/Pods-FishingLeaderBoard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -464,6 +479,15 @@
 				8AD5E193235B5FCF000717A5 /* MainOneTableViewCell.h */,
 				8AD5E194235B5FCF000717A5 /* MainOneTableViewCell.m */,
 				8AD5E195235B5FCF000717A5 /* MainOneTableViewCell.xib */,
+				8AD5E19D235C882A000717A5 /* MainCollectionViewCell.h */,
+				8AD5E19E235C882A000717A5 /* MainCollectionViewCell.m */,
+				8AD5E19F235C882A000717A5 /* MainCollectionViewCell.xib */,
+				8AD5E1A2235C96BA000717A5 /* MainTwoCollectionViewCell.h */,
+				8AD5E1A3235C96BA000717A5 /* MainTwoCollectionViewCell.m */,
+				8AD5E1A4235C96BA000717A5 /* MainTwoCollectionViewCell.xib */,
+				8AD5E1A7235C9E26000717A5 /* MainNoTableViewCell.h */,
+				8AD5E1A8235C9E26000717A5 /* MainNoTableViewCell.m */,
+				8AD5E1A9235C9E26000717A5 /* MainNoTableViewCell.xib */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -623,7 +647,10 @@
 				8AD5E184235B0C21000717A5 /* MyTableViewCell.xib in Resources */,
 				8A365966235609E000A51BEF /* Assets.xcassets in Resources */,
 				8A365964235609E000A51BEF /* Main.storyboard in Resources */,
+				8AD5E1AB235C9E26000717A5 /* MainNoTableViewCell.xib in Resources */,
+				8AD5E1A6235C96BA000717A5 /* MainTwoCollectionViewCell.xib in Resources */,
 				8AD5E189235B3E21000717A5 /* MainTableViewCell.xib in Resources */,
+				8AD5E1A1235C882A000717A5 /* MainCollectionViewCell.xib in Resources */,
 				8AD5E197235B5FCF000717A5 /* MainOneTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -749,9 +776,11 @@
 				8AD5E1762359F73A000717A5 /* FImagePageViewCellCollectionViewCell.m in Sources */,
 				8AD5E115235706FF000717A5 /* UIColor+Additional.m in Sources */,
 				8AD5E1652359BF3A000717A5 /* SearchViewController.m in Sources */,
+				8AD5E1A0235C882A000717A5 /* MainCollectionViewCell.m in Sources */,
 				8AD5E1302358292C000717A5 /* LoginCostomTextField.m in Sources */,
 				8AD5E1292357F005000717A5 /* LoginViewController.m in Sources */,
 				8AD5E1222357EEB0000717A5 /* YHSegmentView.m in Sources */,
+				8AD5E1A5235C96BA000717A5 /* MainTwoCollectionViewCell.m in Sources */,
 				8AD5E1732359E7DF000717A5 /* WMZBannerControl.m in Sources */,
 				8AD5E16223598BE1000717A5 /* LPButton.m in Sources */,
 				8AD5E112235702E8000717A5 /* FViewCreateFactory.m in Sources */,
@@ -764,6 +793,7 @@
 				8A365A222356ED9D00A51BEF /* FViewController.m in Sources */,
 				8AD5E196235B5FCF000717A5 /* MainOneTableViewCell.m in Sources */,
 				8A36596C235609E000A51BEF /* main.m in Sources */,
+				8AD5E1AA235C9E26000717A5 /* MainNoTableViewCell.m in Sources */,
 				8AD5E183235B0C21000717A5 /* MyTableViewCell.m in Sources */,
 				8A365A0B2356AC9200A51BEF /* AppDelegate.m in Sources */,
 				8AD5E17F235AF33B000717A5 /* TwoLabel.m in Sources */,

@@ -116,7 +116,7 @@
     UILabel *label = [FViewCreateFactory createLabelWithFrame:CGRectMake(10, 120+120-10, SCREEN_WIDTH-20, 30) name:@"热门赛事/活动推荐" font:[UIFont systemFontOfSize:15] textColor:BLACKCOLOR textAlignment:NSTextAlignmentLeft];
     [self addSubview:label];
     [self TwoPageView];
-    label = [FViewCreateFactory createLabelWithFrame:CGRectMake(10, CGRectGetMaxY(_twoCollectionView.frame)+15, SCREEN_WIDTH-20, 30) name:@"热门钓点" font:[UIFont systemFontOfSize:15] textColor:BLACKCOLOR textAlignment:NSTextAlignmentLeft];
+    label = [FViewCreateFactory createLabelWithFrame:CGRectMake(10, CGRectGetMaxY(_mainCollectionView.frame)+15, SCREEN_WIDTH-20, 30) name:@"热门钓点" font:[UIFont systemFontOfSize:15] textColor:BLACKCOLOR textAlignment:NSTextAlignmentLeft];
     [self addSubview:label];
     [self ThirdPageView];
 }
@@ -155,6 +155,7 @@
 }
 //第一轮播图
 - (void)OnePageView{
+
     WMZBannerParam *param =
     BannerParam()
     //自定义视图必传
@@ -162,10 +163,11 @@
     .wMyCellSet(^UICollectionViewCell *(NSIndexPath *indexPath, UICollectionView *collectionView, id model, UIImageView *bgImageView,NSArray*dataArr) {
         //自定义视图
         FImagePageViewCellCollectionViewCell *cell = (FImagePageViewCellCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([FImagePageViewCellCollectionViewCell class]) forIndexPath:indexPath];
-        //[cell.icon sd_setImageWithURL:[NSURL URLWithString:model[@"icon"]] placeholderImage:nil];
-        cell.leftText.text = @"自定义";
-        cell.icon.image = [UIImage imageNamed:@"page1"];
-        
+        if(indexPath.row ==0)
+        {
+        [cell.icon sd_setImageWithURL:[NSURL URLWithString:@"http://www.51pptmoban.com/d/file/2014/01/20/e382d9ad5fe92e73a5defa7b47981e07.jpg"] placeholderImage:[UIImage imageNamed:@"page1"]];
+        }else{cell.icon.image = [UIImage imageNamed:@"page1"];}
+
         return cell;
     })
     .wEventClickSet(^(id anyID, NSInteger index) {
@@ -208,18 +210,19 @@
     //设置UICollectionView的间距
     layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     
-     _twoCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,120 +150 , SCREEN_WIDTH, 80) collectionViewLayout:layout];
+     _mainCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,120 +150 , SCREEN_WIDTH, 80) collectionViewLayout:layout];
     
     //遵循CollectionView的代理方法
-    _twoCollectionView.delegate = self;
-    _twoCollectionView.dataSource = self;
-    _twoCollectionView.showsHorizontalScrollIndicator = NO;
+    _mainCollectionView.delegate = self;
+    _mainCollectionView.dataSource = self;
+    _mainCollectionView.showsHorizontalScrollIndicator = NO;
     
-    _twoCollectionView.backgroundColor = [UIColor clearColor];
+    _mainCollectionView.backgroundColor = [UIColor clearColor];
     //注册cell
-    [_twoCollectionView registerClass:[FImagePageViewCellCollectionViewCell class] forCellWithReuseIdentifier:@"FImagePageViewCellCollectionViewCell"];
-    
-    [self addSubview:_twoCollectionView];
+//    [_twoCollectionView registerClass:[FImagePageViewCellCollectionViewCell class] forCellWithReuseIdentifier:@"FImagePageViewCellCollectionViewCell"];
+    [_mainCollectionView registerNib:[UINib nibWithNibName:@"MainCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"MainCollectionViewCell"];
+    _mainCollectionView.tag = COLLECTION_MAIN_TAG;
+    [self addSubview:_mainCollectionView];
     
 }
 -(void)ThirdPageView{
@@ -237,19 +240,19 @@
     //设置UICollectionView的间距
     layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     
-    _thirdCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,120 +150 +120 , SCREEN_WIDTH, 80) collectionViewLayout:layout];
+    _twoCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,120 +150 +120 , SCREEN_WIDTH, 80) collectionViewLayout:layout];
     
     //遵循CollectionView的代理方法
-    _thirdCollectionView.delegate = self;
-    _thirdCollectionView.dataSource = self;
-    _thirdCollectionView.showsHorizontalScrollIndicator = NO;
+    _twoCollectionView.delegate = self;
+    _twoCollectionView.dataSource = self;
+    _twoCollectionView.showsHorizontalScrollIndicator = NO;
     
-    _thirdCollectionView.backgroundColor = [UIColor clearColor];
+    _twoCollectionView.backgroundColor = [UIColor clearColor];
     //注册cell
-    [_thirdCollectionView registerClass:[FImagePageViewCellCollectionViewCell class] forCellWithReuseIdentifier:@"FImagePageViewCellCollectionViewCell"];
-    
-    [self addSubview:_thirdCollectionView];
-    topSegCtrlY = CGRectGetMaxY(_thirdCollectionView.frame);
+    _twoCollectionView.tag = COLLECTION_TWO_MAIN_TAG;
+    [_twoCollectionView registerNib:[UINib nibWithNibName:@"MainTwoCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"MainTwoCollectionViewCell"];
+    [self addSubview:_twoCollectionView];
+    topSegCtrlY = CGRectGetMaxY(_twoCollectionView.frame);
 }
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
@@ -263,13 +266,23 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    FImagePageViewCellCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FImagePageViewCellCollectionViewCell" forIndexPath:indexPath];
-    
-    //实现cell的展示效果
-    cell.contentView.backgroundColor = [UIColor magentaColor];
-    
-    return cell;
+    NSInteger tag = collectionView.tag;
+    if(tag == COLLECTION_MAIN_TAG)
+    {
+        MainCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MainCollectionViewCell" forIndexPath:indexPath];
+        
+        //实现cell的展示效果
+        cell.bgImageView.image = [UIImage imageNamed:@"page1"];
+        cell.firstLabel.text = @"赛事";
+        cell.dateLabel.text = @"2019年10月18 08:00";
+        cell.lastLabel.text = @"活鱼  武昌鱼  鲶鱼  土鳖  高大";
+        return cell;
+    }else{
+        MainTwoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MainTwoCollectionViewCell" forIndexPath:indexPath];
+        cell.centerLabel.text = @"活鱼  武昌鱼  鲶鱼  土鳖  高大";
+        [cell.bgImageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.51pptmoban.com/d/file/2014/01/20/e382d9ad5fe92e73a5defa7b47981e07.jpg"] placeholderImage:nil];
+        return cell;
+    }
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {

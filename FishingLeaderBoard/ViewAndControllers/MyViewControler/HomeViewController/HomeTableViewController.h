@@ -12,6 +12,7 @@
 #import "SearchViewController.h"
 #import "MainTableViewCell.h"
 #import "MainOneTableViewCell.h"
+#import "MainNoTableViewCell.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HomeTableViewController : FViewController

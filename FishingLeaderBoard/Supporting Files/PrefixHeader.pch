@@ -19,5 +19,6 @@
 #import "FViewCreateFactory.h"
 #import "UIColor+Additional.h"
 #import "Masonry.h"
+#import "SDWebImage.h"
 
 #endif /* PrefixHeader_pch */

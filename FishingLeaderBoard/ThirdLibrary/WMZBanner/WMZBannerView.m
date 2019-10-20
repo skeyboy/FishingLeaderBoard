@@ -303,11 +303,11 @@
     self = [super initWithFrame:frame];
     if (self){
         self.icon = [UIImageView new];
-        self.icon.layer.masksToBounds = YES;
+//        self.icon.layer.masksToBounds = YES;
         [self.contentView addSubview:self.icon];
         self.icon.frame = self.contentView.bounds;
-        self.contentView.layer.masksToBounds = YES;
-        self.contentView.layer.cornerRadius = 5;
+//        self.contentView.layer.masksToBounds = YES;
+//        self.contentView.layer.cornerRadius = 0;
     }
     return self;
 }
