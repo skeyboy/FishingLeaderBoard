@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GRStarsView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DiaoChangSearchTableViewCell : UITableViewCell
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *rightLabel;
 @property (weak, nonatomic) IBOutlet UILabel *centerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *leftLabel;
-
+@property (strong,nonatomic)GRStarsView *starsView;
 @end
 
 NS_ASSUME_NONNULL_END

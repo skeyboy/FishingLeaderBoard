@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CostomButton : UIButton
 
+@property(strong,nonatomic)NSIndexPath *indexPath;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -25,7 +25,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="531" height="176"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赛事" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl8-85-Nnk" customClass="BgColorLabel" customModule="FishingLeaderBoard" customModuleProvider="target">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赛事" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl8-85-Nnk" customClass="ColorLabel">
                         <rect key="frame" x="10" y="101" width="31" height="20"/>
                         <color key="backgroundColor" red="0.18855160469999999" green="0.4200729728" blue="0.96475619079999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <accessibility key="accessibilityConfiguration" label="BgColorLabel"/>

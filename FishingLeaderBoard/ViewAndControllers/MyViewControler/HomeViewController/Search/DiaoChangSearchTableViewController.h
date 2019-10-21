@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "DiaoChangSearchTableViewCell.h"
+#import "GRStarsView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DiaoChangSearchTableViewController : UITableViewController
-
+@property(nonatomic,strong)GRStarsView*starsView;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,5 +1,5 @@
 //
-//  BgColorLabel.h
+//  CostomLabel.h
 //  FishingLeaderBoard
 //
 //  Created by yue on 2019/10/21.
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BgColorLabel : UILabel
--(void)setBgText:(NSString*)bgText;
+@interface ColorLabel : UILabel
+
 @end
 
 NS_ASSUME_NONNULL_END

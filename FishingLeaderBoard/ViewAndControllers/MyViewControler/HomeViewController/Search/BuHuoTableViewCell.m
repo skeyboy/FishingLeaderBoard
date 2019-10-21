@@ -13,6 +13,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.button1.layer.borderColor = WHITEGRAY.CGColor;
+    self.button2.layer.borderColor = WHITEGRAY.CGColor;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

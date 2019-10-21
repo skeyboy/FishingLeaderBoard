@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6202B678B2A2B6BF76CF2CD1 /* Pods_FishingLeaderBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8E8522460D3AB52BDD643F /* Pods_FishingLeaderBoardTests.framework */; };
-		8A3488B3235D2CB900AED1B7 /* BgColorLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488B2235D2CB900AED1B7 /* BgColorLabel.m */; };
 		8A3488B6235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488B5235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m */; };
 		8A3488BB235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3488B9235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib */; };
 		8A3488BE235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488BD235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m */; };
@@ -20,6 +19,7 @@
 		8A3488D1235D605200AED1B7 /* BuHuoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3488CF235D605200AED1B7 /* BuHuoTableViewCell.xib */; };
 		8A3488D4235D639F00AED1B7 /* UserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488D3235D639F00AED1B7 /* UserTableViewController.m */; };
 		8A3488DA235D800300AED1B7 /* CostomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488D9235D800300AED1B7 /* CostomButton.m */; };
+		8A3488DD235DE21100AED1B7 /* ColorLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488DC235DE21100AED1B7 /* ColorLabel.m */; };
 		8A365964235609E000A51BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A365962235609E000A51BEF /* Main.storyboard */; };
 		8A365966235609E000A51BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A365965235609E000A51BEF /* Assets.xcassets */; };
 		8A365969235609E000A51BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A365967235609E000A51BEF /* LaunchScreen.storyboard */; };
@@ -93,8 +93,6 @@
 		4C8E8522460D3AB52BDD643F /* Pods_FishingLeaderBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7907D6E6275CC3ABE58427 /* Pods_FishingLeaderBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDB28D40FCEF542B7335B33 /* Pods_FishingLeaderBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A3488B1235D2CB900AED1B7 /* BgColorLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BgColorLabel.h; sourceTree = "<group>"; };
-		8A3488B2235D2CB900AED1B7 /* BgColorLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BgColorLabel.m; sourceTree = "<group>"; };
 		8A3488B4235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangSearchTableViewController.h; sourceTree = "<group>"; };
 		8A3488B5235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangSearchTableViewController.m; sourceTree = "<group>"; };
 		8A3488B9235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaoChangSearchTableViewCell.xib; sourceTree = "<group>"; };
@@ -114,6 +112,8 @@
 		8A3488D3235D639F00AED1B7 /* UserTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserTableViewController.m; sourceTree = "<group>"; };
 		8A3488D8235D800300AED1B7 /* CostomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CostomButton.h; sourceTree = "<group>"; };
 		8A3488D9235D800300AED1B7 /* CostomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CostomButton.m; sourceTree = "<group>"; };
+		8A3488DB235DE21100AED1B7 /* ColorLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorLabel.h; sourceTree = "<group>"; };
+		8A3488DC235DE21100AED1B7 /* ColorLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorLabel.m; sourceTree = "<group>"; };
 		8A365959235609E000A51BEF /* FishingLeaderBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingLeaderBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A365963235609E000A51BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A365965235609E000A51BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -451,12 +451,12 @@
 		8A365A1F2356ED3700A51BEF /* commonView */ = {
 			isa = PBXGroup;
 			children = (
+				8A3488DB235DE21100AED1B7 /* ColorLabel.h */,
+				8A3488DC235DE21100AED1B7 /* ColorLabel.m */,
 				8A365A292356F02800A51BEF /* FNavigationView.h */,
 				8A365A2A2356F02800A51BEF /* FNavigationView.m */,
 				8AD5E110235702E8000717A5 /* FViewCreateFactory.h */,
 				8AD5E111235702E8000717A5 /* FViewCreateFactory.m */,
-				8A3488B1235D2CB900AED1B7 /* BgColorLabel.h */,
-				8A3488B2235D2CB900AED1B7 /* BgColorLabel.m */,
 			);
 			path = commonView;
 			sourceTree = "<group>";
@@ -833,7 +833,6 @@
 				8AD5E1722359E7DF000717A5 /* WMZBannerView.m in Sources */,
 				8AD5E18D235B5049000717A5 /* ToolClass.m in Sources */,
 				8AD5E13E235872AF000717A5 /* UIImage+LZScaleToSize.m in Sources */,
-				8A3488B3235D2CB900AED1B7 /* BgColorLabel.m in Sources */,
 				8A3488C7235D602000AED1B7 /* BuHuoTableViewController.m in Sources */,
 				8AD5E140235872AF000717A5 /* LZCustomTabbar.m in Sources */,
 				8AD5E13F235872AF000717A5 /* FTabBarVC.m in Sources */,
@@ -854,6 +853,7 @@
 				8AD5E1732359E7DF000717A5 /* WMZBannerControl.m in Sources */,
 				8AD5E16223598BE1000717A5 /* LPButton.m in Sources */,
 				8AD5E112235702E8000717A5 /* FViewCreateFactory.m in Sources */,
+				8A3488DD235DE21100AED1B7 /* ColorLabel.m in Sources */,
 				8AD5E1262357EFE5000717A5 /* LoginAndRegisterViewController.m in Sources */,
 				8A3488CB235D603B00AED1B7 /* SaiShiTableViewCell.m in Sources */,
 				8AD5E14B2358B5FB000717A5 /* MyViewController.m in Sources */,

@@ -26,8 +26,6 @@
     self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
 }
 
-#pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -40,6 +38,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     DiaoChangSearchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DiaoChangSearchTableViewCell" forIndexPath:indexPath];
     cell.leftImageView.image = [UIImage imageNamed:@"page1"];
+    cell.rightLabel.text = @"赛事";
     return cell;
 }
 
