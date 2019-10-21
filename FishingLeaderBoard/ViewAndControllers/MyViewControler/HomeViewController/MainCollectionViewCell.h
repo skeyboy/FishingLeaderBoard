@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "BgColorLabel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MainCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
-@property (weak, nonatomic) IBOutlet UILabel *firstLabel;
+@property (weak, nonatomic) IBOutlet BgColorLabel *firstLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *lastLabel;

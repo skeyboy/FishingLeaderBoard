@@ -77,6 +77,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 //颜色设置
 #define WHITECOLOR [UIColor whiteColor]
+#define WHITEGRAY  UIColorFromRGB(0xf0f0f0)
 #define CLEARCOLOR [UIColor clearColor]
 #define BLACKCOLOR [UIColor blackColor]
 //背景色 白灰色

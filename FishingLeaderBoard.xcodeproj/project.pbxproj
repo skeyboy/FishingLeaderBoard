@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		6202B678B2A2B6BF76CF2CD1 /* Pods_FishingLeaderBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8E8522460D3AB52BDD643F /* Pods_FishingLeaderBoardTests.framework */; };
+		8A3488B3235D2CB900AED1B7 /* BgColorLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488B2235D2CB900AED1B7 /* BgColorLabel.m */; };
+		8A3488B6235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488B5235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m */; };
+		8A3488BB235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3488B9235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib */; };
+		8A3488BE235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488BD235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m */; };
+		8A3488C1235D5FC800AED1B7 /* SaiShiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488C0235D5FC800AED1B7 /* SaiShiTableViewController.m */; };
+		8A3488C7235D602000AED1B7 /* BuHuoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488C6235D602000AED1B7 /* BuHuoTableViewController.m */; };
+		8A3488CB235D603B00AED1B7 /* SaiShiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488C9235D603B00AED1B7 /* SaiShiTableViewCell.m */; };
+		8A3488CC235D603B00AED1B7 /* SaiShiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3488CA235D603B00AED1B7 /* SaiShiTableViewCell.xib */; };
+		8A3488D0235D605200AED1B7 /* BuHuoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488CE235D605200AED1B7 /* BuHuoTableViewCell.m */; };
+		8A3488D1235D605200AED1B7 /* BuHuoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3488CF235D605200AED1B7 /* BuHuoTableViewCell.xib */; };
+		8A3488D4235D639F00AED1B7 /* UserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488D3235D639F00AED1B7 /* UserTableViewController.m */; };
+		8A3488DA235D800300AED1B7 /* CostomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488D9235D800300AED1B7 /* CostomButton.m */; };
 		8A365964235609E000A51BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A365962235609E000A51BEF /* Main.storyboard */; };
 		8A365966235609E000A51BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A365965235609E000A51BEF /* Assets.xcassets */; };
 		8A365969235609E000A51BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A365967235609E000A51BEF /* LaunchScreen.storyboard */; };
@@ -81,6 +93,27 @@
 		4C8E8522460D3AB52BDD643F /* Pods_FishingLeaderBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7907D6E6275CC3ABE58427 /* Pods_FishingLeaderBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDB28D40FCEF542B7335B33 /* Pods_FishingLeaderBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3488B1235D2CB900AED1B7 /* BgColorLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BgColorLabel.h; sourceTree = "<group>"; };
+		8A3488B2235D2CB900AED1B7 /* BgColorLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BgColorLabel.m; sourceTree = "<group>"; };
+		8A3488B4235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangSearchTableViewController.h; sourceTree = "<group>"; };
+		8A3488B5235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangSearchTableViewController.m; sourceTree = "<group>"; };
+		8A3488B9235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaoChangSearchTableViewCell.xib; sourceTree = "<group>"; };
+		8A3488BC235D59D200AED1B7 /* DiaoChangSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaoChangSearchTableViewCell.h; sourceTree = "<group>"; };
+		8A3488BD235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaoChangSearchTableViewCell.m; sourceTree = "<group>"; };
+		8A3488BF235D5FC800AED1B7 /* SaiShiTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaiShiTableViewController.h; sourceTree = "<group>"; };
+		8A3488C0235D5FC800AED1B7 /* SaiShiTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaiShiTableViewController.m; sourceTree = "<group>"; };
+		8A3488C5235D602000AED1B7 /* BuHuoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuHuoTableViewController.h; sourceTree = "<group>"; };
+		8A3488C6235D602000AED1B7 /* BuHuoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuHuoTableViewController.m; sourceTree = "<group>"; };
+		8A3488C8235D603B00AED1B7 /* SaiShiTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaiShiTableViewCell.h; sourceTree = "<group>"; };
+		8A3488C9235D603B00AED1B7 /* SaiShiTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaiShiTableViewCell.m; sourceTree = "<group>"; };
+		8A3488CA235D603B00AED1B7 /* SaiShiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaiShiTableViewCell.xib; sourceTree = "<group>"; };
+		8A3488CD235D605200AED1B7 /* BuHuoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuHuoTableViewCell.h; sourceTree = "<group>"; };
+		8A3488CE235D605200AED1B7 /* BuHuoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuHuoTableViewCell.m; sourceTree = "<group>"; };
+		8A3488CF235D605200AED1B7 /* BuHuoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuHuoTableViewCell.xib; sourceTree = "<group>"; };
+		8A3488D2235D639F00AED1B7 /* UserTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserTableViewController.h; sourceTree = "<group>"; };
+		8A3488D3235D639F00AED1B7 /* UserTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserTableViewController.m; sourceTree = "<group>"; };
+		8A3488D8235D800300AED1B7 /* CostomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CostomButton.h; sourceTree = "<group>"; };
+		8A3488D9235D800300AED1B7 /* CostomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CostomButton.m; sourceTree = "<group>"; };
 		8A365959235609E000A51BEF /* FishingLeaderBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingLeaderBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A365963235609E000A51BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A365965235609E000A51BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -217,6 +250,34 @@
 				D9372E6D16426CE265158666 /* Pods-FishingLeaderBoardUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A3488B0235D2C3400AED1B7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8AD5E1632359BF3A000717A5 /* SearchViewController.h */,
+				8AD5E1642359BF3A000717A5 /* SearchViewController.m */,
+				8A3488B4235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.h */,
+				8A3488B5235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m */,
+				8A3488BC235D59D200AED1B7 /* DiaoChangSearchTableViewCell.h */,
+				8A3488BD235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m */,
+				8A3488B9235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib */,
+				8A3488BF235D5FC800AED1B7 /* SaiShiTableViewController.h */,
+				8A3488C0235D5FC800AED1B7 /* SaiShiTableViewController.m */,
+				8A3488C5235D602000AED1B7 /* BuHuoTableViewController.h */,
+				8A3488C6235D602000AED1B7 /* BuHuoTableViewController.m */,
+				8A3488C8235D603B00AED1B7 /* SaiShiTableViewCell.h */,
+				8A3488C9235D603B00AED1B7 /* SaiShiTableViewCell.m */,
+				8A3488CA235D603B00AED1B7 /* SaiShiTableViewCell.xib */,
+				8A3488CD235D605200AED1B7 /* BuHuoTableViewCell.h */,
+				8A3488CE235D605200AED1B7 /* BuHuoTableViewCell.m */,
+				8A3488CF235D605200AED1B7 /* BuHuoTableViewCell.xib */,
+				8A3488D2235D639F00AED1B7 /* UserTableViewController.h */,
+				8A3488D3235D639F00AED1B7 /* UserTableViewController.m */,
+				8A3488D8235D800300AED1B7 /* CostomButton.h */,
+				8A3488D9235D800300AED1B7 /* CostomButton.m */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		8A365950235609E000A51BEF = {
@@ -394,6 +455,8 @@
 				8A365A2A2356F02800A51BEF /* FNavigationView.m */,
 				8AD5E110235702E8000717A5 /* FViewCreateFactory.h */,
 				8AD5E111235702E8000717A5 /* FViewCreateFactory.m */,
+				8A3488B1235D2CB900AED1B7 /* BgColorLabel.h */,
+				8A3488B2235D2CB900AED1B7 /* BgColorLabel.m */,
 			);
 			path = commonView;
 			sourceTree = "<group>";
@@ -465,12 +528,11 @@
 		8AD5E14C2359433A000717A5 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8A3488B0235D2C3400AED1B7 /* Search */,
 				8AD5E15023594A4B000717A5 /* HomeTableViewController.h */,
 				8AD5E15123594A4B000717A5 /* HomeTableViewController.m */,
 				8AD5E156235958BA000717A5 /* HomeHeadTableView.h */,
 				8AD5E157235958BA000717A5 /* HomeHeadTableView.m */,
-				8AD5E1632359BF3A000717A5 /* SearchViewController.h */,
-				8AD5E1642359BF3A000717A5 /* SearchViewController.m */,
 				8AD5E1742359F73A000717A5 /* FImagePageViewCellCollectionViewCell.h */,
 				8AD5E1752359F73A000717A5 /* FImagePageViewCellCollectionViewCell.m */,
 				8AD5E185235B3E21000717A5 /* MainTableViewCell.h */,
@@ -644,7 +706,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A365969235609E000A51BEF /* LaunchScreen.storyboard in Resources */,
+				8A3488D1235D605200AED1B7 /* BuHuoTableViewCell.xib in Resources */,
+				8A3488CC235D603B00AED1B7 /* SaiShiTableViewCell.xib in Resources */,
 				8AD5E184235B0C21000717A5 /* MyTableViewCell.xib in Resources */,
+				8A3488BB235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib in Resources */,
 				8A365966235609E000A51BEF /* Assets.xcassets in Resources */,
 				8A365964235609E000A51BEF /* Main.storyboard in Resources */,
 				8AD5E1AB235C9E26000717A5 /* MainNoTableViewCell.xib in Resources */,
@@ -762,11 +827,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3488B6235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m in Sources */,
 				8AD5E13D235872AF000717A5 /* UIView + LZExtension.m in Sources */,
 				8AD5E17C235ACFF7000717A5 /* MyHeadView.m in Sources */,
 				8AD5E1722359E7DF000717A5 /* WMZBannerView.m in Sources */,
 				8AD5E18D235B5049000717A5 /* ToolClass.m in Sources */,
 				8AD5E13E235872AF000717A5 /* UIImage+LZScaleToSize.m in Sources */,
+				8A3488B3235D2CB900AED1B7 /* BgColorLabel.m in Sources */,
+				8A3488C7235D602000AED1B7 /* BuHuoTableViewController.m in Sources */,
 				8AD5E140235872AF000717A5 /* LZCustomTabbar.m in Sources */,
 				8AD5E13F235872AF000717A5 /* FTabBarVC.m in Sources */,
 				8AD5E158235958BA000717A5 /* HomeHeadTableView.m in Sources */,
@@ -775,19 +843,24 @@
 				8A365A252356EE8B00A51BEF /* FNavigationController.m in Sources */,
 				8AD5E1762359F73A000717A5 /* FImagePageViewCellCollectionViewCell.m in Sources */,
 				8AD5E115235706FF000717A5 /* UIColor+Additional.m in Sources */,
+				8A3488D4235D639F00AED1B7 /* UserTableViewController.m in Sources */,
 				8AD5E1652359BF3A000717A5 /* SearchViewController.m in Sources */,
 				8AD5E1A0235C882A000717A5 /* MainCollectionViewCell.m in Sources */,
 				8AD5E1302358292C000717A5 /* LoginCostomTextField.m in Sources */,
 				8AD5E1292357F005000717A5 /* LoginViewController.m in Sources */,
 				8AD5E1222357EEB0000717A5 /* YHSegmentView.m in Sources */,
+				8A3488BE235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m in Sources */,
 				8AD5E1A5235C96BA000717A5 /* MainTwoCollectionViewCell.m in Sources */,
 				8AD5E1732359E7DF000717A5 /* WMZBannerControl.m in Sources */,
 				8AD5E16223598BE1000717A5 /* LPButton.m in Sources */,
 				8AD5E112235702E8000717A5 /* FViewCreateFactory.m in Sources */,
 				8AD5E1262357EFE5000717A5 /* LoginAndRegisterViewController.m in Sources */,
+				8A3488CB235D603B00AED1B7 /* SaiShiTableViewCell.m in Sources */,
 				8AD5E14B2358B5FB000717A5 /* MyViewController.m in Sources */,
 				8AD5E12C2357F01B000717A5 /* RegisterViewController.m in Sources */,
 				8AD5E15223594A4B000717A5 /* HomeTableViewController.m in Sources */,
+				8A3488D0235D605200AED1B7 /* BuHuoTableViewCell.m in Sources */,
+				8A3488C1235D5FC800AED1B7 /* SaiShiTableViewController.m in Sources */,
 				8AD5E1702359E7DF000717A5 /* WMZBannerFlowLayout.m in Sources */,
 				8AD5E188235B3E21000717A5 /* MainTableViewCell.m in Sources */,
 				8A365A222356ED9D00A51BEF /* FViewController.m in Sources */,
@@ -796,6 +869,7 @@
 				8AD5E1AA235C9E26000717A5 /* MainNoTableViewCell.m in Sources */,
 				8AD5E183235B0C21000717A5 /* MyTableViewCell.m in Sources */,
 				8A365A0B2356AC9200A51BEF /* AppDelegate.m in Sources */,
+				8A3488DA235D800300AED1B7 /* CostomButton.m in Sources */,
 				8AD5E17F235AF33B000717A5 /* TwoLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,10 @@
 //
 
 #import "FViewController.h"
-
+#import "DiaoChangSearchTableViewController.h"
+#import "SaiShiTableViewController.h"
+#import "BuHuoTableViewController.h"
+#import "UserTableViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SearchViewController : FViewController

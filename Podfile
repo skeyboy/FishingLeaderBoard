@@ -14,6 +14,7 @@ target 'FishingLeaderBoard' do
    pod 'AFNetworking'
    pod 'MJExtension'
    pod 'MJRefresh','3.1.15'
+   pod 'GRStarsView'
 
 
   target 'FishingLeaderBoardTests' do

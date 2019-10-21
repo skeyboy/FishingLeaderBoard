@@ -273,6 +273,7 @@
         
         //实现cell的展示效果
         cell.bgImageView.image = [UIImage imageNamed:@"page1"];
+//        [cell.firstLabel setBgText:@"赛事"];
         cell.firstLabel.text = @"赛事";
         cell.dateLabel.text = @"2019年10月18 08:00";
         cell.lastLabel.text = @"活鱼  武昌鱼  鲶鱼  土鳖  高大";
