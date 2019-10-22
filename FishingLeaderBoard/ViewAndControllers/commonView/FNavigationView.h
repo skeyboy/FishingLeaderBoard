@@ -153,6 +153,7 @@ typedef void(^SearchClick) (UISearchBar *);
 
 - (void)setNavBarViewCenterSearchTag:(int)tag;
 
+- (void)setNavBarViewLeftSearchTag:(int)tag;
 - (void)setNavBarViewRightBtnWithName:(NSString *)nameStr
                                target:(id)target
                                action:(SEL)action;

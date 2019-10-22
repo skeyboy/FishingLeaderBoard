@@ -10,10 +10,6 @@
 #import "LoginCostomTextField.h"
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_OPTIONS(NSInteger, FPageType) {
-    FPageTypeRegist                 =1,                         //!<注册页面
-    FPageTypeForgetPassword         =2                          //!<忘记密码页面
-};
 
 @interface RegisterViewController : FViewController
 

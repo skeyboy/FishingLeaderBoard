@@ -254,6 +254,35 @@ NS_ASSUME_NONNULL_BEGIN
     [btnRight addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:btnRight];
 }
+-(void)setNavBarViewLeftSearchTag:(int)tag
+{
+    _searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(10, Height_StatusBar + 8, SCREEN_WIDTH - 45 - 10, 30)];
+    _searchBar.backgroundColor = NAVBGCOLOR;
+    _searchBar.tintColor = WHITECOLOR;
+    _searchBar.barTintColor = WHITECOLOR;
+    _searchBar.delegate = self;
+    _searchBar.tag = tag;
+    _searchBar.placeholder = @"搜索钓场关键词";
+    UITextField *textfield = [_searchBar valueForKey:@"_searchField"];
+    [textfield setValue:[UIFont systemFontOfSize:12.0] forKeyPath:@"_placeholderLabel.font"];
+    [textfield setValue:[UIColor colorWithWhite:1 alpha:0.6] forKeyPath:@"_placeholderLabel.textColor"];
+    UITextField *searchField = [_searchBar valueForKey:@"_searchField"];
+    textfield.font = [UIFont systemFontOfSize:12];
+    searchField.textColor = WHITECOLOR;
+    for (UIView *subview in _searchBar.subviews) {
+        for(UIView* grandSonView in subview.subviews){
+            if ([grandSonView isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
+                grandSonView.alpha = 0.0f;
+            }else if([grandSonView isKindOfClass:NSClassFromString(@"UISearchBarTextField")] ){
+                NSLog(@"Keep textfiedld bkg color");
+                grandSonView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.3];
+            }else{
+                grandSonView.alpha = 0.0f;
+            }
+        }
+    }
+    [self addSubview:_searchBar];
+}
 
 -(void)setNavBarViewCenterSearchTag:(int)tag
 {

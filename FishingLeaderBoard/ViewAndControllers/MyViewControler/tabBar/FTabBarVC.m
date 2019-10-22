@@ -11,6 +11,7 @@
 #import "LoginAndRegisterViewController.h"
 #import "HomeTableViewController.h"
 #import "MyViewController.h"
+#import "BuHuoTableViewController.h"
 @interface FTabBarVC ()
 
 @end
@@ -43,8 +44,8 @@
     UINavigationController * NC1 = [self addChildVc:vc1 title:@"钓场" image:kImg_TabHome selectedImage:kImg_TabHome_select];
     
     //第3个控制器
-    UIViewController * vc3 = [[UIViewController alloc] init];
-    vc3.view.backgroundColor = [UIColor blueColor];
+    BuHuoTableViewController * vc3 = [[BuHuoTableViewController alloc] init];
+    vc3.pageType = FPageTypeDiaoChangView;
     UINavigationController * NC3 = [self addChildVc:vc3 title:@"品牌" image:kImg_TabPinPai selectedImage:kImg_TabPinPai_select];
     
     //第4个控制器

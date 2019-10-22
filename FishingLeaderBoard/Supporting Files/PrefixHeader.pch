@@ -17,6 +17,7 @@
 #import "FConstont.h"
 #import "ToolClass.h"
 #import "FViewCreateFactory.h"
+#import "FViewController.h"
 #import "UIColor+Additional.h"
 #import "Masonry.h"
 #import "SDWebImage.h"

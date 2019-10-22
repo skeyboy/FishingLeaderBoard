@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "BuHuoTableViewCell.h"
+#import "DiaoChangHeadView.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BuHuoTableViewController : UITableViewController
+@interface BuHuoTableViewController : FViewController
+
+@property(assign,nonatomic)FPageType pageType;
+@property(strong,nonatomic)UITableView *tableView;
 
 @end
 

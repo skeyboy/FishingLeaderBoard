@@ -16,13 +16,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initPageView];
     
+    if(self.pageType == FPageTypeBuHuoView)
+    {
+       
+    }else if(self.pageType == FPageTypeDiaoChangView)
+    {
+        [self setNavViewWithTitle:@"" isShowBack:NO];
+        [hkNavigationView setNavBarViewLeftSearchTag:SEARCH_DIAOCHANG_TAG];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+        [hkNavigationView setNavBarViewRightBtnWithTitle:@"未知" normalImage:@"msg" highlightedImage:@"msg" target:self action:@selector(btnRightClick:)];
+        hkNavigationView.searchClick = ^(UISearchBar * search) {
+            
+        };
+        DiaoChangHeadView *headView = [[[NSBundle mainBundle]loadNibNamed:@"DiaoChangHeadView" owner:self options:nil]firstObject];
+        self.tableView.tableHeaderView = headView;
+    }
+    
+}
+-(void)initPageView
+{
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(hkNavigationView.frame) - CGRectGetHeight(self.tabBarController.tabBar.frame)) style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
     [self.tableView registerNib:[UINib nibWithNibName:@"BuHuoTableViewCell" bundle:nil] forCellReuseIdentifier:@"BuHuoTableViewCell"];
     self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
     self.tableView.separatorColor = CLEARCOLOR;
     self.tableView.showsVerticalScrollIndicator = NO;
 }
-
+-(void)btnRightClick:(UIButton *)btn
+{
+    
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

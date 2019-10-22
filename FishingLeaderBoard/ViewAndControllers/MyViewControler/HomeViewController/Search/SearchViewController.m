@@ -43,6 +43,7 @@
     SaiShiTableViewController *huoDongVc = [[SaiShiTableViewController alloc]init];
     UserTableViewController *userVC = [[UserTableViewController alloc]init];
     BuHuoTableViewController *buHuoVc = [[BuHuoTableViewController alloc]init];
+    buHuoVc.pageType = FPageTypeBuHuoView;
     [mutArr addObjectsFromArray:@[diaoChangVc,saiShiVc,huoDongVc,userVC,buHuoVc]];
     YHSegmentView *segmentView = [[YHSegmentView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame)-1, self.view.bounds.size.width, [UIScreen mainScreen].bounds.size.height - CGRectGetMaxY(hkNavigationView.frame)) ViewControllersArr:[mutArr copy] TitleArr:titleArr TitleNormalSize:14 TitleSelectedSize:14 SegmentStyle:YHSegementStyleIndicate ParentViewController:self ReturnIndexBlock:^(NSInteger index) {
         NSLog(@"点击了%ld模块",(long)index);
