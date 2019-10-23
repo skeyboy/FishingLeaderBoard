@@ -14,6 +14,14 @@
     [super setText:text];
     if ([text isEqualToString:@"赛事"]) {
         self.backgroundColor = [UIColor redColor];
+    }else if ([text isEqualToString:@"报名中"])
+    {
+        self.backgroundColor = [UIColor greenColor];
+    }else if ([text isEqualToString:@"活动"])
+    {
+        self.backgroundColor = [UIColor orangeColor];
+    }else{
+        
     }
 }
 

@@ -8,7 +8,7 @@
 
 #import "BuHuoTableViewController.h"
 
-@interface BuHuoTableViewController ()
+@interface BuHuoTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
@@ -16,28 +16,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initPageView];
     
     if(self.pageType == FPageTypeBuHuoView)
     {
-       
+        self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(hkNavigationView.frame) - CGRectGetHeight(self.tabBarController.tabBar.frame)) style:UITableViewStylePlain];
     }else if(self.pageType == FPageTypeDiaoChangView)
     {
         [self setNavViewWithTitle:@"" isShowBack:NO];
         [hkNavigationView setNavBarViewLeftSearchTag:SEARCH_DIAOCHANG_TAG];
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-        [hkNavigationView setNavBarViewRightBtnWithTitle:@"未知" normalImage:@"msg" highlightedImage:@"msg" target:self action:@selector(btnRightClick:)];
+        [hkNavigationView setNavBarViewRightBtnWithTitle:@"未知" normalImage:@"location" highlightedImage:@"location" target:self action:@selector(btnRightClick:)];
         hkNavigationView.searchClick = ^(UISearchBar * search) {
             
         };
+        self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(hkNavigationView.frame) - CGRectGetHeight(self.tabBarController.tabBar.frame)) style:UITableViewStylePlain];
         DiaoChangHeadView *headView = [[[NSBundle mainBundle]loadNibNamed:@"DiaoChangHeadView" owner:self options:nil]firstObject];
         self.tableView.tableHeaderView = headView;
     }
-    
+    [self initPageView];
+
 }
 -(void)initPageView
 {
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(hkNavigationView.frame) - CGRectGetHeight(self.tabBarController.tabBar.frame)) style:UITableViewStylePlain];
+   
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];

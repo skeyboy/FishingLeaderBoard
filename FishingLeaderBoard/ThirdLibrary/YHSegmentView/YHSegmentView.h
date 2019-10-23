@@ -37,7 +37,6 @@ typedef void(^yh_indexBlock)(NSInteger index);
 //@property (nonatomic, assign) CGFloat yh_titleNormalFont;
 ///** 默认选中下标 */
 //@property (nonatomic, assign) CGFloat yh_titleSelectedFont;
-
 /**
  通过给定frame，控住器数组，标题数组，segmentView风格,返回segmentView;
 

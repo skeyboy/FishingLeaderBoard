@@ -22,6 +22,11 @@
 		8A3488DD235DE21100AED1B7 /* ColorLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488DC235DE21100AED1B7 /* ColorLabel.m */; };
 		8A3488EA235E87A900AED1B7 /* DiaoChangHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488E9235E87A900AED1B7 /* DiaoChangHeadView.m */; };
 		8A3488F0235E89A300AED1B7 /* DiaoChangHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3488EF235E89A300AED1B7 /* DiaoChangHeadView.xib */; };
+		8A3488F7235EADBF00AED1B7 /* SaiShiAndHuoDongTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488F6235EADBF00AED1B7 /* SaiShiAndHuoDongTableViewController.m */; };
+		8A3488FA235EAFDF00AED1B7 /* SaiShiListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488F9235EAFDF00AED1B7 /* SaiShiListTableViewController.m */; };
+		8A348900235F35D300AED1B7 /* STSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488FE235F35D300AED1B7 /* STSegmentView.m */; };
+		8A348904235FFD8300AED1B7 /* SaiShiListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A348902235FFD8300AED1B7 /* SaiShiListTableViewCell.m */; };
+		8A348905235FFD8300AED1B7 /* SaiShiListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A348903235FFD8300AED1B7 /* SaiShiListTableViewCell.xib */; };
 		8A365964235609E000A51BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A365962235609E000A51BEF /* Main.storyboard */; };
 		8A365966235609E000A51BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A365965235609E000A51BEF /* Assets.xcassets */; };
 		8A365969235609E000A51BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A365967235609E000A51BEF /* LaunchScreen.storyboard */; };
@@ -119,6 +124,15 @@
 		8A3488E8235E87A900AED1B7 /* DiaoChangHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangHeadView.h; sourceTree = "<group>"; };
 		8A3488E9235E87A900AED1B7 /* DiaoChangHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangHeadView.m; sourceTree = "<group>"; };
 		8A3488EF235E89A300AED1B7 /* DiaoChangHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaoChangHeadView.xib; sourceTree = "<group>"; };
+		8A3488F5235EADBF00AED1B7 /* SaiShiAndHuoDongTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaiShiAndHuoDongTableViewController.h; sourceTree = "<group>"; };
+		8A3488F6235EADBF00AED1B7 /* SaiShiAndHuoDongTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaiShiAndHuoDongTableViewController.m; sourceTree = "<group>"; };
+		8A3488F8235EAFDF00AED1B7 /* SaiShiListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaiShiListTableViewController.h; sourceTree = "<group>"; };
+		8A3488F9235EAFDF00AED1B7 /* SaiShiListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaiShiListTableViewController.m; sourceTree = "<group>"; };
+		8A3488FE235F35D300AED1B7 /* STSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSegmentView.m; sourceTree = "<group>"; };
+		8A3488FF235F35D300AED1B7 /* STSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSegmentView.h; sourceTree = "<group>"; };
+		8A348901235FFD8300AED1B7 /* SaiShiListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaiShiListTableViewCell.h; sourceTree = "<group>"; };
+		8A348902235FFD8300AED1B7 /* SaiShiListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaiShiListTableViewCell.m; sourceTree = "<group>"; };
+		8A348903235FFD8300AED1B7 /* SaiShiListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaiShiListTableViewCell.xib; sourceTree = "<group>"; };
 		8A365959235609E000A51BEF /* FishingLeaderBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingLeaderBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A365963235609E000A51BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A365965235609E000A51BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -295,6 +309,29 @@
 			path = DiaoChang;
 			sourceTree = "<group>";
 		};
+		8A3488F4235EAD3A00AED1B7 /* CenterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8A3488F5235EADBF00AED1B7 /* SaiShiAndHuoDongTableViewController.h */,
+				8A3488F6235EADBF00AED1B7 /* SaiShiAndHuoDongTableViewController.m */,
+				8A3488F8235EAFDF00AED1B7 /* SaiShiListTableViewController.h */,
+				8A3488F9235EAFDF00AED1B7 /* SaiShiListTableViewController.m */,
+				8A348901235FFD8300AED1B7 /* SaiShiListTableViewCell.h */,
+				8A348902235FFD8300AED1B7 /* SaiShiListTableViewCell.m */,
+				8A348903235FFD8300AED1B7 /* SaiShiListTableViewCell.xib */,
+			);
+			path = CenterViewController;
+			sourceTree = "<group>";
+		};
+		8A3488FD235F35D300AED1B7 /* STSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				8A3488FE235F35D300AED1B7 /* STSegmentView.m */,
+				8A3488FF235F35D300AED1B7 /* STSegmentView.h */,
+			);
+			path = STSegmentView;
+			sourceTree = "<group>";
+		};
 		8A365950235609E000A51BEF = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +429,7 @@
 		8A365A0F2356AF2C00A51BEF /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				8A3488FD235F35D300AED1B7 /* STSegmentView */,
 				8AD5E1662359E7DF000717A5 /* WMZBanner */,
 				8AD5E15F23598BE1000717A5 /* LPButton */,
 				8AD5E133235872AF000717A5 /* LZTabbarVC */,
@@ -444,6 +482,7 @@
 		8A365A182356E55900A51BEF /* MyViewControler */ = {
 			isa = PBXGroup;
 			children = (
+				8A3488F4235EAD3A00AED1B7 /* CenterViewController */,
 				8AD5E14C2359433A000717A5 /* HomeViewController */,
 				8AD5E1422358B350000717A5 /* MyViewControllers */,
 				8AD5E14123587546000717A5 /* tabBar */,
@@ -723,6 +762,7 @@
 			files = (
 				8A365969235609E000A51BEF /* LaunchScreen.storyboard in Resources */,
 				8A3488D1235D605200AED1B7 /* BuHuoTableViewCell.xib in Resources */,
+				8A348905235FFD8300AED1B7 /* SaiShiListTableViewCell.xib in Resources */,
 				8A3488CC235D603B00AED1B7 /* SaiShiTableViewCell.xib in Resources */,
 				8AD5E184235B0C21000717A5 /* MyTableViewCell.xib in Resources */,
 				8A3488BB235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib in Resources */,
@@ -861,7 +901,9 @@
 				8AD5E115235706FF000717A5 /* UIColor+Additional.m in Sources */,
 				8A3488D4235D639F00AED1B7 /* UserTableViewController.m in Sources */,
 				8AD5E1652359BF3A000717A5 /* SearchViewController.m in Sources */,
+				8A3488F7235EADBF00AED1B7 /* SaiShiAndHuoDongTableViewController.m in Sources */,
 				8AD5E1A0235C882A000717A5 /* MainCollectionViewCell.m in Sources */,
+				8A3488FA235EAFDF00AED1B7 /* SaiShiListTableViewController.m in Sources */,
 				8AD5E1302358292C000717A5 /* LoginCostomTextField.m in Sources */,
 				8A3488EA235E87A900AED1B7 /* DiaoChangHeadView.m in Sources */,
 				8AD5E1292357F005000717A5 /* LoginViewController.m in Sources */,
@@ -873,6 +915,8 @@
 				8AD5E112235702E8000717A5 /* FViewCreateFactory.m in Sources */,
 				8A3488DD235DE21100AED1B7 /* ColorLabel.m in Sources */,
 				8AD5E1262357EFE5000717A5 /* LoginAndRegisterViewController.m in Sources */,
+				8A348900235F35D300AED1B7 /* STSegmentView.m in Sources */,
+				8A348904235FFD8300AED1B7 /* SaiShiListTableViewCell.m in Sources */,
 				8A3488CB235D603B00AED1B7 /* SaiShiTableViewCell.m in Sources */,
 				8AD5E14B2358B5FB000717A5 /* MyViewController.m in Sources */,
 				8AD5E12C2357F01B000717A5 /* RegisterViewController.m in Sources */,

@@ -15,6 +15,8 @@ target 'FishingLeaderBoard' do
    pod 'MJExtension'
    pod 'MJRefresh','3.1.15'
    pod 'GRStarsView',:path=>'~/Documents/Github/GRStarsView'
+   pod 'STSegmentView', :path => '../'
+
 
 
   target 'FishingLeaderBoardTests' do

@@ -16,6 +16,7 @@
 
 #import "FConstont.h"
 #import "ToolClass.h"
+#import "ColorLabel.h"
 #import "FViewCreateFactory.h"
 #import "FViewController.h"
 #import "UIColor+Additional.h"

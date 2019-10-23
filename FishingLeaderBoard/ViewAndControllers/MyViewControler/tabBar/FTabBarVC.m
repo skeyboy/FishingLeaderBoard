@@ -12,6 +12,7 @@
 #import "HomeTableViewController.h"
 #import "MyViewController.h"
 #import "BuHuoTableViewController.h"
+#import "SaiShiAndHuoDongTableViewController.h"
 @interface FTabBarVC ()
 
 @end
@@ -41,23 +42,24 @@
     //第一个控制器
     LoginAndRegisterViewController * vc1 = [[LoginAndRegisterViewController alloc] init];
     vc1.view.backgroundColor = [UIColor redColor];
-    UINavigationController * NC1 = [self addChildVc:vc1 title:@"钓场" image:kImg_TabHome selectedImage:kImg_TabHome_select];
+    UINavigationController * NC1 = [self addChildVc:vc1 title:@"品牌" image:kImg_TabHome selectedImage:kImg_TabHome_select];
     
     //第3个控制器
     BuHuoTableViewController * vc3 = [[BuHuoTableViewController alloc] init];
     vc3.pageType = FPageTypeDiaoChangView;
-    UINavigationController * NC3 = [self addChildVc:vc3 title:@"品牌" image:kImg_TabPinPai selectedImage:kImg_TabPinPai_select];
+    UINavigationController * NC3 = [self addChildVc:vc3 title:@"钓场" image:kImg_TabPinPai selectedImage:kImg_TabPinPai_select];
     
     //第4个控制器
     MyViewController* vc4 = [[MyViewController alloc] init];
     UINavigationController * NC4 = [self addChildVc:vc4 title:@"我的" image:kImg_TabMe selectedImage:kImg_TabMe_select];
     
     //第5个控制器
-    UIViewController * vc5 = [[UIViewController alloc] init];
-    vc5.view.backgroundColor = [UIColor whiteColor];
+    SaiShiAndHuoDongTableViewController * vc5 = [[SaiShiAndHuoDongTableViewController alloc] init];
+    vc5.view.backgroundColor = NAVBGCOLOR;
     vc5.title = @"中间";
     UINavigationController * NC5 = [[UINavigationController alloc] initWithRootViewController:vc5];
-     self.viewControllers = @[NCHome,NC1,NC3,NC4,NC5];
+    NC5.navigationBar.hidden = YES;
+     self.viewControllers = @[NCHome,NC3,NC1,NC4,NC5];
 }
 #pragma mark - 添加子控制器  设置图片
 /**

@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ToolClass : NSObject
 //计算字体长度
 + (CGSize)sizeWithText:(NSString *)text font:(UIFont *)font maxSize:(CGSize)maxSize;
+// 根据颜色生成UIImage
++ (UIImage*)imageWithColor:(UIColor*)color;
 @end
 
 NS_ASSUME_NONNULL_END
