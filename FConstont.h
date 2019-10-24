@@ -84,7 +84,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define WhiteGray_color 0xf0f0f0
 
 #define BLACKGRAY UIColorFromRGB(0x333333)
-
+#define SEPAEATOR_COLOR             @"e9e9e9"
 #define NAVBGCOLOR [UIColor blueColor]
 #define LOGINBGCOLOR    [UIColor colorFromHexRGB:@"fbfbfb"]//登录页面背景灰
 

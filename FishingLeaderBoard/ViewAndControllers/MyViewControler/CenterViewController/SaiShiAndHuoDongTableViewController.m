@@ -19,6 +19,7 @@
 }
 -(void)initPageView
 {
+    
 
     self.view.backgroundColor = NAVBGCOLOR;
     _segmentView1 = [[STSegmentView alloc]initWithFrame:CGRectMake(0, Height_StatusBar+10, self.view.bounds.size.width, 30)];
@@ -45,8 +46,17 @@
     segmentView.yh_segmentTintColor = [UIColor groupTableViewBackgroundColor];
     segmentView.yh_bgColor =NAVBGCOLOR;
     [self.view addSubview:segmentView];
+    MenuView *menvView = [[MenuView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-80, SCREEN_HEIGHT-Height_TabBar-150-20, 50, 150) name:@[@"发布",@"活动",@"赛事"] color:@[[UIColor blueColor],WHITEGRAY,WHITEGRAY]];
+    [self.view addSubview:menvView];
+    [self.view bringSubviewToFront:menvView];
+    menvView.menuClick = ^(int index) {
+        NSLog(@"%d",index);
+    };
+    
 }
 - (void)buttonClick:(NSInteger)index {
     NSLog(@"%ld",index);
 }
+
+
 @end

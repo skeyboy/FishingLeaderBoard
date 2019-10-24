@@ -27,6 +27,7 @@
 		8A348900235F35D300AED1B7 /* STSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488FE235F35D300AED1B7 /* STSegmentView.m */; };
 		8A348904235FFD8300AED1B7 /* SaiShiListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A348902235FFD8300AED1B7 /* SaiShiListTableViewCell.m */; };
 		8A348905235FFD8300AED1B7 /* SaiShiListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A348903235FFD8300AED1B7 /* SaiShiListTableViewCell.xib */; };
+		8A3489082360900B00AED1B7 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3489072360900B00AED1B7 /* MenuView.m */; };
 		8A365964235609E000A51BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A365962235609E000A51BEF /* Main.storyboard */; };
 		8A365966235609E000A51BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A365965235609E000A51BEF /* Assets.xcassets */; };
 		8A365969235609E000A51BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A365967235609E000A51BEF /* LaunchScreen.storyboard */; };
@@ -133,6 +134,8 @@
 		8A348901235FFD8300AED1B7 /* SaiShiListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaiShiListTableViewCell.h; sourceTree = "<group>"; };
 		8A348902235FFD8300AED1B7 /* SaiShiListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaiShiListTableViewCell.m; sourceTree = "<group>"; };
 		8A348903235FFD8300AED1B7 /* SaiShiListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaiShiListTableViewCell.xib; sourceTree = "<group>"; };
+		8A3489062360900B00AED1B7 /* MenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		8A3489072360900B00AED1B7 /* MenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
 		8A365959235609E000A51BEF /* FishingLeaderBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingLeaderBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A365963235609E000A51BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A365965235609E000A51BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -511,6 +514,8 @@
 				8A365A2A2356F02800A51BEF /* FNavigationView.m */,
 				8AD5E110235702E8000717A5 /* FViewCreateFactory.h */,
 				8AD5E111235702E8000717A5 /* FViewCreateFactory.m */,
+				8A3489062360900B00AED1B7 /* MenuView.h */,
+				8A3489072360900B00AED1B7 /* MenuView.m */,
 			);
 			path = commonView;
 			sourceTree = "<group>";
@@ -923,6 +928,7 @@
 				8AD5E15223594A4B000717A5 /* HomeTableViewController.m in Sources */,
 				8A3488D0235D605200AED1B7 /* BuHuoTableViewCell.m in Sources */,
 				8A3488C1235D5FC800AED1B7 /* SaiShiTableViewController.m in Sources */,
+				8A3489082360900B00AED1B7 /* MenuView.m in Sources */,
 				8AD5E1702359E7DF000717A5 /* WMZBannerFlowLayout.m in Sources */,
 				8AD5E188235B3E21000717A5 /* MainTableViewCell.m in Sources */,
 				8A365A222356ED9D00A51BEF /* FViewController.m in Sources */,

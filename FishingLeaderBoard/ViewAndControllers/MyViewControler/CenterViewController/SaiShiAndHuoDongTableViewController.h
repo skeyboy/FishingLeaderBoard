@@ -10,6 +10,7 @@
 #import "SaiShiListTableViewController.h"
 #import "YHSegmentView.h"
 #import "STSegmentView.h"
+#import "MenuView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SaiShiAndHuoDongTableViewController : FViewController
