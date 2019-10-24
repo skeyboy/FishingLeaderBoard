@@ -27,14 +27,15 @@
 - (void)initUI
 {
    
-    LZCustomTabbar * tabbar = [[LZCustomTabbar alloc] init];
+    self.tabbar = [[LZCustomTabbar alloc] init];
     //中间自定义tabBar点击事件
     __weak __typeof(self) weakSelf = self;
-    tabbar.btnClickBlock = ^(UIButton *btn) {
+    
+    _tabbar.btnClickBlock = ^(UIButton *btn) {
         __typeof(&*weakSelf) strongSelf = weakSelf;
         strongSelf.selectedIndex = 4;
     };
-    [self setValue:tabbar forKeyPath:@"tabBar"];
+    [self setValue:_tabbar forKeyPath:@"tabBar"];
     
     HomeTableViewController *homeVc =[[HomeTableViewController alloc]init];
     homeVc.headType = FPageTypeHomeHeadView;

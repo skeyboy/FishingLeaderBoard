@@ -28,6 +28,10 @@
 		8A348904235FFD8300AED1B7 /* SaiShiListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A348902235FFD8300AED1B7 /* SaiShiListTableViewCell.m */; };
 		8A348905235FFD8300AED1B7 /* SaiShiListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A348903235FFD8300AED1B7 /* SaiShiListTableViewCell.xib */; };
 		8A3489082360900B00AED1B7 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3489072360900B00AED1B7 /* MenuView.m */; };
+		8A34890B23614EAB00AED1B7 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A34890A23614EAB00AED1B7 /* UserInfoViewController.m */; };
+		8A34890E23615E5A00AED1B7 /* GreenLineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A34890D23615E5A00AED1B7 /* GreenLineTextField.m */; };
+		8A34891023615E7000AED1B7 /* GreenLineTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A34890F23615E7000AED1B7 /* GreenLineTextField.xib */; };
+		8A348913236182A600AED1B7 /* FImagePageViewCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A348912236182A600AED1B7 /* FImagePageViewCellCollectionViewCell.m */; };
 		8A365964235609E000A51BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A365962235609E000A51BEF /* Main.storyboard */; };
 		8A365966235609E000A51BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A365965235609E000A51BEF /* Assets.xcassets */; };
 		8A365969235609E000A51BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A365967235609E000A51BEF /* LaunchScreen.storyboard */; };
@@ -58,7 +62,6 @@
 		8AD5E1712359E7DF000717A5 /* WMZBannerParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E1692359E7DF000717A5 /* WMZBannerParam.m */; };
 		8AD5E1722359E7DF000717A5 /* WMZBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E16A2359E7DF000717A5 /* WMZBannerView.m */; };
 		8AD5E1732359E7DF000717A5 /* WMZBannerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E16B2359E7DF000717A5 /* WMZBannerControl.m */; };
-		8AD5E1762359F73A000717A5 /* FImagePageViewCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E1752359F73A000717A5 /* FImagePageViewCellCollectionViewCell.m */; };
 		8AD5E17C235ACFF7000717A5 /* MyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E17B235ACFF7000717A5 /* MyHeadView.m */; };
 		8AD5E17F235AF33B000717A5 /* TwoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E17E235AF33B000717A5 /* TwoLabel.m */; };
 		8AD5E183235B0C21000717A5 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E181235B0C21000717A5 /* MyTableViewCell.m */; };
@@ -136,6 +139,13 @@
 		8A348903235FFD8300AED1B7 /* SaiShiListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaiShiListTableViewCell.xib; sourceTree = "<group>"; };
 		8A3489062360900B00AED1B7 /* MenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		8A3489072360900B00AED1B7 /* MenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		8A34890923614EAB00AED1B7 /* UserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		8A34890A23614EAB00AED1B7 /* UserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		8A34890C23615E5A00AED1B7 /* GreenLineTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreenLineTextField.h; sourceTree = "<group>"; };
+		8A34890D23615E5A00AED1B7 /* GreenLineTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenLineTextField.m; sourceTree = "<group>"; };
+		8A34890F23615E7000AED1B7 /* GreenLineTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreenLineTextField.xib; sourceTree = "<group>"; };
+		8A348911236182A600AED1B7 /* FImagePageViewCellCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FImagePageViewCellCollectionViewCell.h; path = FishingLeaderBoard/ViewAndControllers/MyViewControler/HomeViewController/FImagePageViewCellCollectionViewCell.h; sourceTree = SOURCE_ROOT; };
+		8A348912236182A600AED1B7 /* FImagePageViewCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FImagePageViewCellCollectionViewCell.m; path = FishingLeaderBoard/ViewAndControllers/MyViewControler/HomeViewController/FImagePageViewCellCollectionViewCell.m; sourceTree = SOURCE_ROOT; };
 		8A365959235609E000A51BEF /* FishingLeaderBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingLeaderBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A365963235609E000A51BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A365965235609E000A51BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -201,8 +211,6 @@
 		8AD5E16D2359E7DF000717A5 /* WMZBannerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZBannerConfig.h; sourceTree = "<group>"; };
 		8AD5E16E2359E7DF000717A5 /* WMZBannerParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZBannerParam.h; sourceTree = "<group>"; };
 		8AD5E16F2359E7DF000717A5 /* WMZBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMZBannerView.h; sourceTree = "<group>"; };
-		8AD5E1742359F73A000717A5 /* FImagePageViewCellCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FImagePageViewCellCollectionViewCell.h; sourceTree = "<group>"; };
-		8AD5E1752359F73A000717A5 /* FImagePageViewCellCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FImagePageViewCellCollectionViewCell.m; sourceTree = "<group>"; };
 		8AD5E17A235ACFF7000717A5 /* MyHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyHeadView.h; sourceTree = "<group>"; };
 		8AD5E17B235ACFF7000717A5 /* MyHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyHeadView.m; sourceTree = "<group>"; };
 		8AD5E17D235AF33B000717A5 /* TwoLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoLabel.h; sourceTree = "<group>"; };
@@ -516,6 +524,9 @@
 				8AD5E111235702E8000717A5 /* FViewCreateFactory.m */,
 				8A3489062360900B00AED1B7 /* MenuView.h */,
 				8A3489072360900B00AED1B7 /* MenuView.m */,
+				8A34890C23615E5A00AED1B7 /* GreenLineTextField.h */,
+				8A34890D23615E5A00AED1B7 /* GreenLineTextField.m */,
+				8A34890F23615E7000AED1B7 /* GreenLineTextField.xib */,
 			);
 			path = commonView;
 			sourceTree = "<group>";
@@ -580,6 +591,8 @@
 				8AD5E180235B0C21000717A5 /* MyTableViewCell.h */,
 				8AD5E181235B0C21000717A5 /* MyTableViewCell.m */,
 				8AD5E182235B0C21000717A5 /* MyTableViewCell.xib */,
+				8A34890923614EAB00AED1B7 /* UserInfoViewController.h */,
+				8A34890A23614EAB00AED1B7 /* UserInfoViewController.m */,
 			);
 			path = MyViewControllers;
 			sourceTree = "<group>";
@@ -589,12 +602,12 @@
 			children = (
 				8A3488E4235DED6E00AED1B7 /* DiaoChang */,
 				8A3488B0235D2C3400AED1B7 /* Search */,
+				8A348911236182A600AED1B7 /* FImagePageViewCellCollectionViewCell.h */,
+				8A348912236182A600AED1B7 /* FImagePageViewCellCollectionViewCell.m */,
 				8AD5E15023594A4B000717A5 /* HomeTableViewController.h */,
 				8AD5E15123594A4B000717A5 /* HomeTableViewController.m */,
 				8AD5E156235958BA000717A5 /* HomeHeadTableView.h */,
 				8AD5E157235958BA000717A5 /* HomeHeadTableView.m */,
-				8AD5E1742359F73A000717A5 /* FImagePageViewCellCollectionViewCell.h */,
-				8AD5E1752359F73A000717A5 /* FImagePageViewCellCollectionViewCell.m */,
 				8AD5E185235B3E21000717A5 /* MainTableViewCell.h */,
 				8AD5E186235B3E21000717A5 /* MainTableViewCell.m */,
 				8AD5E187235B3E21000717A5 /* MainTableViewCell.xib */,
@@ -769,6 +782,7 @@
 				8A3488D1235D605200AED1B7 /* BuHuoTableViewCell.xib in Resources */,
 				8A348905235FFD8300AED1B7 /* SaiShiListTableViewCell.xib in Resources */,
 				8A3488CC235D603B00AED1B7 /* SaiShiTableViewCell.xib in Resources */,
+				8A34891023615E7000AED1B7 /* GreenLineTextField.xib in Resources */,
 				8AD5E184235B0C21000717A5 /* MyTableViewCell.xib in Resources */,
 				8A3488BB235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib in Resources */,
 				8A365966235609E000A51BEF /* Assets.xcassets in Resources */,
@@ -898,17 +912,19 @@
 				8A3488C7235D602000AED1B7 /* BuHuoTableViewController.m in Sources */,
 				8AD5E140235872AF000717A5 /* LZCustomTabbar.m in Sources */,
 				8AD5E13F235872AF000717A5 /* FTabBarVC.m in Sources */,
+				8A348913236182A600AED1B7 /* FImagePageViewCellCollectionViewCell.m in Sources */,
 				8AD5E158235958BA000717A5 /* HomeHeadTableView.m in Sources */,
 				8A365A2B2356F02800A51BEF /* FNavigationView.m in Sources */,
 				8AD5E1712359E7DF000717A5 /* WMZBannerParam.m in Sources */,
 				8A365A252356EE8B00A51BEF /* FNavigationController.m in Sources */,
-				8AD5E1762359F73A000717A5 /* FImagePageViewCellCollectionViewCell.m in Sources */,
 				8AD5E115235706FF000717A5 /* UIColor+Additional.m in Sources */,
 				8A3488D4235D639F00AED1B7 /* UserTableViewController.m in Sources */,
 				8AD5E1652359BF3A000717A5 /* SearchViewController.m in Sources */,
 				8A3488F7235EADBF00AED1B7 /* SaiShiAndHuoDongTableViewController.m in Sources */,
 				8AD5E1A0235C882A000717A5 /* MainCollectionViewCell.m in Sources */,
 				8A3488FA235EAFDF00AED1B7 /* SaiShiListTableViewController.m in Sources */,
+				8A34890B23614EAB00AED1B7 /* UserInfoViewController.m in Sources */,
+				8A34890E23615E5A00AED1B7 /* GreenLineTextField.m in Sources */,
 				8AD5E1302358292C000717A5 /* LoginCostomTextField.m in Sources */,
 				8A3488EA235E87A900AED1B7 /* DiaoChangHeadView.m in Sources */,
 				8AD5E1292357F005000717A5 /* LoginViewController.m in Sources */,

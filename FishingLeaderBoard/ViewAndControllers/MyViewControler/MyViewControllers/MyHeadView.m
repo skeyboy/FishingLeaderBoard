@@ -7,14 +7,21 @@
 //
 
 #import "MyHeadView.h"
+@interface MyHeadView()
+{
+    FViewController *vcCtr;
+}
 
+
+@end
 @implementation MyHeadView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame vc:(FViewController *)vc
 {
     self = [super initWithFrame:frame];
     if(self)
     {
+        vcCtr = vc;
         [self initView];
     }
     return self;
@@ -24,7 +31,8 @@
     self.backgroundColor = WHITECOLOR;
     self.topView = [FViewCreateFactory createViewWithBgColor:NAVBGCOLOR];
     [self addSubview:_topView];
-    
+    UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapUserInfo)];
+    [self.topView addGestureRecognizer:tap];
     self.userNameLabel = [FViewCreateFactory createLabelWithName:@"用户-再无用户名" font:FONT_2 textColor:WHITECOLOR];
     self.userNameLabel.textAlignment = NSTextAlignmentLeft;
     [self addSubview:self.userNameLabel];
@@ -44,7 +52,7 @@
     [self.iconButton.imageView setContentMode:UIViewContentModeCenter];
     [self addSubview:self.iconButton];
     
-    self.rightButton = [FViewCreateFactory createCustomButtonWithName:@"" delegate:self selector:@selector(btnClick:) tag:0];
+    self.rightButton = [FViewCreateFactory createCustomButtonWithName:@"" delegate:self selector:@selector(tapUserInfo) tag:0];
     [self.rightButton setImage:[UIImage imageNamed:@"rightInto_w"] forState:UIControlStateNormal];
     [self addSubview:self.rightButton];
     
@@ -119,8 +127,9 @@
    
     
 }
--(void)btnClick:(UIButton *)btn
+-(void)tapUserInfo
 {
-    
+    UserInfoViewController *vc = [[UserInfoViewController alloc]init];
+    [vcCtr.navigationController pushViewController:vc animated:NO];
 }
 @end

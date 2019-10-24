@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "LPButton.h"
 #import "TwoLabel.h"
+#import "UserInfoViewController.h"
+#import "AppDelegate.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MyHeadView : UIView
 
+-(instancetype)initWithFrame:(CGRect)frame vc:(FViewController *)vc;
 @property(nonatomic,strong)UIView * topView;
 @property(nonatomic,strong)UIButton *iconButton;
 @property(nonatomic,strong)UIButton *rightButton;
@@ -24,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)TwoLabel *guanZhuLabel;
 
 @property(nonatomic,strong)UILabel *qianDaoLabel;
+
 
 @end
 

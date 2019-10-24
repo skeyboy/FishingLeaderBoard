@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "LoginAndRegisterViewController.h"
-#import "FTabBarVC.h"
 @interface AppDelegate ()
 
 @end
@@ -19,8 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-    FTabBarVC *tbc = [[FTabBarVC alloc] init];
-    self.window.rootViewController = tbc;
+    self.tbc = [[FTabBarVC alloc] init];
+    [self.tbc setSelectedIndex:4];
+    self.window.rootViewController = self.tbc;
     return YES;
 }
 

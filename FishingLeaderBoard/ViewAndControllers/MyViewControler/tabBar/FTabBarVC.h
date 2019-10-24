@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class LZCustomTabbar;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FTabBarVC : UITabBarController
-
+@property(nonatomic,strong)LZCustomTabbar * tabbar ;
 @end
 
 NS_ASSUME_NONNULL_END

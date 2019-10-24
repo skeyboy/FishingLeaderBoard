@@ -23,8 +23,10 @@
 
 -(void)initPageView
 {
-    _myHeadView = [[MyHeadView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, Height_StatusBar +110 + 80 )];
+    _myHeadView = [[MyHeadView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, Height_StatusBar +110 + 80 )vc:self];
     [self.view addSubview:_myHeadView];
+    
+    
     UILabel *headLabel  = [ FViewCreateFactory createLabelWithFrame:CGRectMake(20, 0, SCREEN_WIDTH-20*2, 40) name:@"个人中心" font:FONT_1 textColor:BLACKCOLOR];
     headLabel.textAlignment = NSTextAlignmentLeft;
     UIView *view = [FViewCreateFactory createViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40) bgColor:WHITECOLOR];
@@ -38,6 +40,8 @@
     
     [self.userTableView registerNib:[UINib nibWithNibName:@"MyTableViewCell" bundle:nil] forCellReuseIdentifier:@"MyTableViewCell"];
 }
+
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 1;

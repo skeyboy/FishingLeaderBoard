@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FTabBarVC.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) FTabBarVC *tbc;
 @end
 
