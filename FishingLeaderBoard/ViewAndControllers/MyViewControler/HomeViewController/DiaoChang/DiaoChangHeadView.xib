@@ -33,52 +33,54 @@
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rl7-UO-fqv">
                     <rect key="frame" x="10" y="227" width="292" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="f2t-Ty-kuQ"/>
                     </constraints>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message_event" translatesAutoresizingMaskIntoConstraints="NO" id="GP8-VZ-ptY">
-                    <rect key="frame" x="20" y="247" width="60" height="60"/>
+                    <rect key="frame" x="20" y="247" width="50" height="60"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="8JY-cd-ldo"/>
-                        <constraint firstAttribute="width" constant="60" id="VmG-ox-QaY"/>
+                        <constraint firstAttribute="width" constant="50" id="VmG-ox-QaY"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发现钓场" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtf-8f-e2j">
-                    <rect key="frame" x="90" y="247" width="62" height="40"/>
+                    <rect key="frame" x="75" y="247" width="62" height="40"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好钓场 钓好鱼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJN-P5-Gh3">
-                    <rect key="frame" x="90" y="267" width="77" height="40"/>
+                    <rect key="frame" x="75" y="267" width="77" height="40"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MB8-PA-Rr0">
                     <rect key="frame" x="312" y="227" width="292" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="cUE-EI-gZT"/>
                     </constraints>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message_event" translatesAutoresizingMaskIntoConstraints="NO" id="7QN-EX-C94">
-                    <rect key="frame" x="322" y="247" width="60" height="60"/>
+                    <rect key="frame" x="322" y="247" width="50" height="60"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="60" id="Qcc-Vz-wqy"/>
+                        <constraint firstAttribute="width" constant="50" id="Qcc-Vz-wqy"/>
                         <constraint firstAttribute="height" constant="60" id="Ypl-QT-WmM"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="钓鱼活动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHn-ez-hPm">
-                    <rect key="frame" x="392" y="247" width="62" height="40"/>
+                    <rect key="frame" x="377" y="247" width="62" height="40"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="又好玩 又有趣" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFi-c4-d13">
-                    <rect key="frame" x="392" y="267" width="77" height="40"/>
+                    <rect key="frame" x="377" y="267" width="77" height="40"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -116,9 +118,9 @@
                 <constraint firstItem="ccN-Pb-xo1" firstAttribute="top" secondItem="JrC-IF-mLz" secondAttribute="bottom" constant="10" id="J8z-3i-NGM"/>
                 <constraint firstItem="JrC-IF-mLz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PW8-Ww-e7b"/>
                 <constraint firstItem="nJN-P5-Gh3" firstAttribute="bottom" secondItem="GP8-VZ-ptY" secondAttribute="bottom" id="QwV-Hc-LCb"/>
-                <constraint firstItem="Mtf-8f-e2j" firstAttribute="leading" secondItem="GP8-VZ-ptY" secondAttribute="trailing" constant="10" id="Tyb-es-EqD"/>
+                <constraint firstItem="Mtf-8f-e2j" firstAttribute="leading" secondItem="GP8-VZ-ptY" secondAttribute="trailing" constant="5" id="Tyb-es-EqD"/>
                 <constraint firstItem="MB8-PA-Rr0" firstAttribute="top" secondItem="ccN-Pb-xo1" secondAttribute="bottom" constant="10" id="Ue3-YG-xr0"/>
-                <constraint firstItem="fHn-ez-hPm" firstAttribute="leading" secondItem="7QN-EX-C94" secondAttribute="trailing" constant="10" id="Wmn-7M-u07"/>
+                <constraint firstItem="fHn-ez-hPm" firstAttribute="leading" secondItem="7QN-EX-C94" secondAttribute="trailing" constant="5" id="Wmn-7M-u07"/>
                 <constraint firstItem="rl7-UO-fqv" firstAttribute="width" secondItem="MB8-PA-Rr0" secondAttribute="width" id="Z4u-5n-G5l"/>
                 <constraint firstItem="SvO-kJ-Gcn" firstAttribute="top" secondItem="rl7-UO-fqv" secondAttribute="bottom" constant="5" id="ZFV-wD-Exw"/>
                 <constraint firstItem="MB8-PA-Rr0" firstAttribute="leading" secondItem="rl7-UO-fqv" secondAttribute="trailing" constant="10" id="a4e-IO-687"/>

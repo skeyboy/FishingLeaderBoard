@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginAndRegisterViewController.h"
+#import "IQKeyboardManager.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,23 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+ 
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    //默认为YES，关闭为NO
+    manager.enable = YES;
+    //键盘弹出时，点击背景，键盘收回
+    manager.shouldResignOnTouchOutside = YES;
+    //如果YES，那么使用textField的tintColor属性为IQToolbar，否则颜色为黑色。默认是否定的。
+    manager.shouldToolbarUsesTextFieldTintColor = YES;
+    //如果YES，则在IQToolbar上添加textField的占位符文本。默认是肯定的。
+    manager.shouldShowToolbarPlaceholder = YES;
+    //设置IQToolbar按钮的文字
+    manager.toolbarDoneBarButtonItemText = @"完成";
+    //隐藏键盘上面的toolBar,默认是开启的
+    manager.enableAutoToolbar = YES;
+    
+    
+    
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     self.tbc = [[FTabBarVC alloc] init];
     [self.tbc setSelectedIndex:4];
