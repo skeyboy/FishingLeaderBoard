@@ -7,7 +7,7 @@
 //
 
 #import "RegisterViewController.h"
-
+#import "IQKeyboardManager.h"
 @interface RegisterViewController ()
 
 @property(strong,nonatomic)    UIButton *verfiButton;
@@ -26,7 +26,14 @@
     }
     [self initView];
 }
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [IQKeyboardManager sharedManager].enable = YES;
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [IQKeyboardManager sharedManager].enable = NO;
+}
 -(void)initView
 {
     float phoneHight = 20;

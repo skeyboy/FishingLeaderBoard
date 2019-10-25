@@ -40,7 +40,6 @@
 {
     self.bottomLine.backgroundColor = [UIColor greenColor];
     self.bottomLine.frame = CGRectMake(10.f, CGRectGetMidY(self.bottomLine.frame)-1.5, CGRectGetWidth(self.bottomLine.frame), 2);
-    self.editingViewBlock(textField);
     return YES;
 }
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField
@@ -53,7 +52,6 @@
 {
     self.bottomLine.backgroundColor = [UIColor greenColor];
     self.bottomLine.frame = CGRectMake(10.f, CGRectGetMidY(self.bottomLine.frame)-1, CGRectGetWidth(self.bottomLine.frame), 2);
-    self.editingViewBlock(textView);
     return YES;
 }
 -(BOOL)textViewShouldEndEditing:(UITextView *)textView

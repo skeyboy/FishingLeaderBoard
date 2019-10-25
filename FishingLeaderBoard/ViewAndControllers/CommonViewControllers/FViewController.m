@@ -148,11 +148,30 @@
                                                        target:self
                                                        action:@selector(btnClickBack)];
     }
-    
     [self.view addSubview:hkNavigationView];
     hkNavigationView.backgroundColor = NAVBGCOLOR;
 }
-
+/**
+ *  设置导航栏视图
+ *
+ *  @param title      导航栏标题
+ *  @param isShowBack 是否显示返回按钮
+ */
+- (void)setNavViewWithTitle:(NSString *)title
+                 isShowBack:(BOOL)isShowBack inView:(UIView *)superView
+{
+    hkNavigationView = [[FNavigationView alloc] initWithFrame:(CGRect){0, 0, SCREEN_WIDTH, Height_NavBar}];
+    [hkNavigationView setNavBarViewTitle:title];
+    if (isShowBack)
+    {
+        [hkNavigationView setNavBarViewLeftBtnWithNormalImage:@"nav_back_nor"
+                                             highlightedImage:@"nav_back_nor"
+                                                       target:self
+                                                       action:@selector(btnClickBack)];
+    }
+    [superView addSubview:hkNavigationView];
+    hkNavigationView.backgroundColor = NAVBGCOLOR;
+}
 - (void)btnClickBack
 {
     NSString *vcName = NSStringFromClass([self.navigationController.topViewController class]);

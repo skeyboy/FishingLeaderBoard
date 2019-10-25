@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-
+#import "IQKeyboardManager.h"
 @interface LoginViewController ()
 
 @end
@@ -20,7 +20,14 @@
     [self initView];
     
 }
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [IQKeyboardManager sharedManager].enable = YES;
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [IQKeyboardManager sharedManager].enable = NO;
+}
 - (void)initView
 {
     self.view.backgroundColor = WHITECOLOR;

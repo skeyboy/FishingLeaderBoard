@@ -31,7 +31,7 @@
     manager.toolbarDoneBarButtonItemText = @"完成";
     //隐藏键盘上面的toolBar,默认是开启的
     manager.enableAutoToolbar = YES;
-    
+    manager.enable = NO;
     
     
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;

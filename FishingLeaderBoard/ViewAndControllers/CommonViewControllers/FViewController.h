@@ -70,6 +70,15 @@ typedef void(^BaseViewClickBlock) (NSInteger tag);  //基类按钮单击回调bl
 - (void)setNavViewWithTitle:(NSString *)title
                  isShowBack:(BOOL)isShowBack;
 
+/**
+ *  设置导航栏视图
+ *
+ *  @param title      导航栏标题
+ *  @param isShowBack 是否显示返回按钮
+ */
+- (void)setNavViewWithTitle:(NSString *)title
+                 isShowBack:(BOOL)isShowBack inView:(UIView *)superView;
+
 ///**
 // *  设置导航栏视图及模态返回
 // *

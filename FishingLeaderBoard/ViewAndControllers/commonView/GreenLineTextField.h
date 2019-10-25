@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef void(^EditingViewBlock) (UIView *);
 
 @interface GreenLineTextField : UIView<UITextFieldDelegate,UITextViewDelegate>
 
@@ -25,7 +24,6 @@ typedef void(^EditingViewBlock) (UIView *);
 @property (weak, nonatomic) IBOutlet UIButton *rightButton;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 
-@property (copy,nonatomic)EditingViewBlock editingViewBlock;
 
 @end
 

@@ -22,7 +22,6 @@
         self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(hkNavigationView.frame) - CGRectGetHeight(self.tabBarController.tabBar.frame)) style:UITableViewStylePlain];
     }else if(self.pageType == FPageTypeDiaoChangView)
     {
-        [IQKeyboardManager sharedManager].enable = NO;
         [self setNavViewWithTitle:@"" isShowBack:NO];
         [hkNavigationView setNavBarViewLeftSearchTag:SEARCH_DIAOCHANG_TAG];
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
@@ -117,5 +116,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end
