@@ -10,7 +10,7 @@
 #import "GreenLineTextField.h"
 #import "AppDelegate.h"
 #import "FTabBarVC.h"
-
+#import "SelectPhotosViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UserInfoViewController : FViewController

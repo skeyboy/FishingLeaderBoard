@@ -18,7 +18,6 @@
     GreenLineTextField *birthdayGreenTF;
     GreenLineTextField *qianMingGreenTF;
 }
-@property (strong,nonatomic)UIView *editingView;
 
 @end
 
@@ -30,6 +29,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [IQKeyboardManager sharedManager].enable = YES;
+    AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
+    de.tbc.tabBar.hidden =YES;
 }
 -(void)viewWillDisappear:(BOOL)animated
 {
@@ -43,29 +44,15 @@
     self.view.backgroundColor = WHITECOLOR;
     [self setNavViewWithTitle:@"信息编辑" isShowBack:YES];
     hkNavigationView.backgroundColor = NAVBGCOLOR;
-    AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
-    de.tbc.tabBar.hidden =YES;
+    
     [self initPageView];
 }
 -(void)initPageView
 {
-//    bgScrollView = [[UIScrollView alloc]init];
-//    [self.view addSubview:bgScrollView];
-//    bgScrollView.backgroundColor = WHITECOLOR;
-//    [self setNavViewWithTitle:@"信息编辑" isShowBack:YES inView:bgScrollView];
-//    hkNavigationView.backgroundColor = NAVBGCOLOR;
-//
-//    UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap)];
-//    [bgScrollView addGestureRecognizer:tap];
     __weak __typeof(self) weakSelf = self;
-//    [bgScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self->hkNavigationView.mas_bottom);
-//        make.bottom.equalTo(weakSelf.view.mas_bottom).mas_offset(-20);
-//        make.left.equalTo(weakSelf.view.mas_left);
-//        make.right.equalTo(weakSelf.view.mas_right);
-//    }];
     _userHeadImageView = [FViewCreateFactory createImageViewWithImageName:@"avatar_none"];
-    _userHeadImageView.contentMode = UIViewContentModeCenter;
+    _userHeadImageView.contentMode = UIViewContentModeScaleToFill;
+    _userHeadImageView.clipsToBounds = YES;
     [self.view addSubview:_userHeadImageView];
     [_userHeadImageView mas_makeConstraints:^(MASConstraintMaker *make) {
     make.top.equalTo(self->hkNavigationView.mas_bottom).mas_offset(20);
@@ -73,11 +60,14 @@
         make.width.equalTo(@60);
         make.height.equalTo(@60);
     }];
+    UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(selectPicture)];
+    [_userHeadImageView addGestureRecognizer:tap];
     _userHeadImageView.layer.cornerRadius=30;
     _userHeadImageView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    
+    tap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(selectPicture)];
     UIImageView *photo = [FViewCreateFactory createImageViewWithImageName:@"camera"];
     [self.view addSubview:photo];
+    [photo addGestureRecognizer:tap];
     [photo mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self->_userHeadImageView.mas_bottom).offset(-22.5);
         make.left.equalTo(self->_userHeadImageView.mas_right).offset(-22.5);
@@ -187,9 +177,25 @@
     [self.view endEditing:YES];
 }
 
--(void)tap
+-(void)selectPicture
 {
-    [self.view endEditing:YES];
+    __weak __typeof(self) weakSelf = self;
+    [SelectPhotosViewController checkPhotoLibraryAuthorization:^(BOOL isPermission) {
+        NSLog(@"%d",isPermission);
+        if (isPermission) {
+        SelectPhotosViewController *vc=[[SelectPhotosViewController alloc]init];
+        vc.selectPhoto = ^(UIImage * image) {
+            if(image)
+            {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    self->_userHeadImageView.image =image;
+                });
+            }
+        };
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+        }
+    }];
+    NSLog(@"%s",__func__);
 }
 
 
