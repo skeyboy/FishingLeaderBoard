@@ -6,9 +6,9 @@
 //  Copyright © 2019 yue. All rights reserved.
 //
 
-#import "DiaoChangHeadView.h"
+#import "DiaoChangDetailHeadView.h"
 
-@implementation DiaoChangHeadView
+@implementation DiaoChangDetailHeadView
 
 /*
 // Only override drawRect: if you perform custom drawing.

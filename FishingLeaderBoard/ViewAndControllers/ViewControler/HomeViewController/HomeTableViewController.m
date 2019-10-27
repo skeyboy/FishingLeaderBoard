@@ -7,7 +7,7 @@
 //
 
 #import "HomeTableViewController.h"
-
+#import "DiaoChangDetailViewController.h"
 @interface HomeTableViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSArray *arrTableSource;
@@ -177,9 +177,12 @@
     switch (tag) {
         case BUTTON_FISHCLASS_HOME_TAG:
             {
-                HomeTableViewController *fishingClassVc = [[HomeTableViewController alloc]init];
-                fishingClassVc.headType = FPageTypeFishingClassHeadView;
-                [self.navigationController pushViewController:fishingClassVc animated:YES];
+//                HomeTableViewController *fishingClassVc = [[HomeTableViewController alloc]init];
+//                fishingClassVc.headType = FPageTypeFishingClassHeadView;
+//                [self.navigationController pushViewController:fishingClassVc animated:YES];
+                
+                DiaoChangDetailViewController *diaoChangDetailVc = [[DiaoChangDetailViewController alloc]init];
+                [self.navigationController pushViewController:diaoChangDetailVc animated:YES];
             }
             break;
             

@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor greenColor];
+    [self setNavViewWithTitle:@"钓技课堂" isShowBack:YES];
+    hkNavigationView.backgroundColor = NAVBGCOLOR;
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self initPageView];
 }
 
@@ -33,6 +36,7 @@
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.bounces = NO;
     __weak __typeof(self) weakSelf = self;
+    
 
     
 }
