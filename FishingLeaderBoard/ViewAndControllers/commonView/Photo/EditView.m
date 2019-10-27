@@ -135,6 +135,9 @@ typedef NS_ENUM(NSInteger, PanType){
 - (void)bindGestureRecognizer{
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePan:)];
     [self addGestureRecognizer:pan];
+    UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(handlePinch:)];
+    [self addGestureRecognizer:pinch];
+
 }
 
 - (void)handlePan:(UIPanGestureRecognizer *)recognizer{
@@ -179,6 +182,74 @@ typedef NS_ENUM(NSInteger, PanType){
         [self setTouchRects];
         _panType = PanNone;
     }
+}
+- (void)handlePinch:(UIPinchGestureRecognizer *)recognizer{
+    CGRect currentImageFrame = _imageView.frame;
+    CGRect nextImageFrame = currentImageFrame;
+    CGFloat scale = recognizer.scale;
+    CGFloat nextWidth = scale * CGRectGetWidth(currentImageFrame);
+    CGFloat nextHeight = scale * CGRectGetHeight(currentImageFrame);
+    if(nextWidth > CGRectGetWidth(_imageViewOriginFrame) * 3){
+        nextWidth = CGRectGetWidth(_imageViewOriginFrame) * 3;
+    }
+    if(nextHeight > CGRectGetHeight(_imageViewOriginFrame) * 3){
+        nextHeight = CGRectGetHeight(_imageViewOriginFrame) * 3;
+    }
+    if(nextWidth < CGRectGetWidth(_imageViewOriginFrame) * 1){
+        nextWidth = CGRectGetWidth(_imageViewOriginFrame) * 1;
+    }
+    if(nextHeight < CGRectGetHeight(_imageViewOriginFrame) * 1){
+        nextHeight = CGRectGetHeight(_imageViewOriginFrame) * 1;
+    }
+    
+    nextImageFrame.size.width = nextWidth;
+    nextImageFrame.size.height = nextHeight;
+    nextImageFrame.origin.x -= (CGRectGetWidth(nextImageFrame) - CGRectGetWidth(currentImageFrame)) / 2;
+    nextImageFrame.origin.y -= (CGRectGetHeight(nextImageFrame) - CGRectGetHeight(currentImageFrame)) / 2;
+    
+    CGRect cropViewFrame = _cropView.frame;
+    if(scale < 1 && !CGRectContainsRect(nextImageFrame, cropViewFrame)){
+        if(CGRectGetWidth(nextImageFrame) <= CGRectGetWidth(cropViewFrame) || CGRectGetHeight(nextImageFrame) <= CGRectGetHeight(cropViewFrame)){
+            if(CGRectGetWidth(nextImageFrame) <= CGRectGetWidth(cropViewFrame)){
+                cropViewFrame.size.width = CGRectGetWidth(nextImageFrame);
+                cropViewFrame.origin.x = CGRectGetMinX(nextImageFrame);
+                if(CGRectGetMinY(nextImageFrame) > CGRectGetMinY(cropViewFrame)){
+                    nextImageFrame.origin.y = CGRectGetMinY(currentImageFrame);
+                }
+                if(CGRectGetMaxY(nextImageFrame) < CGRectGetMaxY(cropViewFrame)){
+                    nextImageFrame.origin.y = CGRectGetMaxY(cropViewFrame) - CGRectGetHeight(nextImageFrame);
+                }
+            }
+            if(CGRectGetHeight(nextImageFrame) <= CGRectGetHeight(cropViewFrame)){
+                cropViewFrame.size.height = CGRectGetHeight(nextImageFrame);
+                cropViewFrame.origin.y = CGRectGetMinY(nextImageFrame);
+                if(CGRectGetMinX(nextImageFrame) > CGRectGetMinX(cropViewFrame)){
+                    nextImageFrame.origin.x = CGRectGetMinX(currentImageFrame);
+                }
+                if(CGRectGetMaxX(nextImageFrame) < CGRectGetMaxX(cropViewFrame)){
+                    nextImageFrame.origin.x = CGRectGetMaxX(cropViewFrame) - CGRectGetWidth(nextImageFrame);
+                }
+            }
+            _cropView.frame = cropViewFrame;
+            [self layoutCoverViews];
+            [self layoutDecoraterViews];
+        }else{
+            if(CGRectGetMinX(nextImageFrame) > CGRectGetMinX(cropViewFrame)){
+                nextImageFrame.origin.x = CGRectGetMinX(currentImageFrame);
+            }
+            if(CGRectGetMinY(nextImageFrame) > CGRectGetMinY(cropViewFrame)){
+                nextImageFrame.origin.y = CGRectGetMinY(currentImageFrame);
+            }
+            if(CGRectGetMaxX(nextImageFrame) < CGRectGetMaxX(cropViewFrame)){
+                nextImageFrame.origin.x = CGRectGetMaxX(cropViewFrame) - CGRectGetWidth(nextImageFrame);
+            }
+            if(CGRectGetMaxY(nextImageFrame) < CGRectGetMaxY(cropViewFrame)){
+                nextImageFrame.origin.y = CGRectGetMaxY(cropViewFrame) - CGRectGetHeight(nextImageFrame);
+            }
+        }
+    }
+    _imageView.frame = nextImageFrame;
+    recognizer.scale = 1.0;
 }
 
 @end

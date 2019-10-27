@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PhotoHeadView.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EditView : UIView

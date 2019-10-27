@@ -38,6 +38,10 @@
 		8A3489202362DB5900AED1B7 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A34891F2362DB5900AED1B7 /* PhotosUI.framework */; };
 		8A34892A23632A8100AED1B7 /* PhotoHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A34892923632A8100AED1B7 /* PhotoHeadView.m */; };
 		8A34892F23633CFC00AED1B7 /* EditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A34892E23633CFC00AED1B7 /* EditView.m */; };
+		8A34893B236589C100AED1B7 /* DiaoChangDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A34893A236589C100AED1B7 /* DiaoChangDetailViewController.m */; };
+		8A3489412365A73800AED1B7 /* DiaoChangHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3489402365A73800AED1B7 /* DiaoChangHeadView.m */; };
+		8A3489452365A9C600AED1B7 /* DiaoChangDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3489432365A9C600AED1B7 /* DiaoChangDetailTableViewCell.m */; };
+		8A3489462365A9C600AED1B7 /* DiaoChangDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3489442365A9C600AED1B7 /* DiaoChangDetailTableViewCell.xib */; };
 		8A365964235609E000A51BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A365962235609E000A51BEF /* Main.storyboard */; };
 		8A365966235609E000A51BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A365965235609E000A51BEF /* Assets.xcassets */; };
 		8A365969235609E000A51BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A365967235609E000A51BEF /* LaunchScreen.storyboard */; };
@@ -162,6 +166,13 @@
 		8A34892923632A8100AED1B7 /* PhotoHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoHeadView.m; sourceTree = "<group>"; };
 		8A34892D23633CFC00AED1B7 /* EditView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditView.h; sourceTree = "<group>"; };
 		8A34892E23633CFC00AED1B7 /* EditView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditView.m; sourceTree = "<group>"; };
+		8A348939236589C100AED1B7 /* DiaoChangDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangDetailViewController.h; sourceTree = "<group>"; };
+		8A34893A236589C100AED1B7 /* DiaoChangDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangDetailViewController.m; sourceTree = "<group>"; };
+		8A34893F2365A73800AED1B7 /* DiaoChangHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangHeadView.h; sourceTree = "<group>"; };
+		8A3489402365A73800AED1B7 /* DiaoChangHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangHeadView.m; sourceTree = "<group>"; };
+		8A3489422365A9C600AED1B7 /* DiaoChangDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangDetailTableViewCell.h; sourceTree = "<group>"; };
+		8A3489432365A9C600AED1B7 /* DiaoChangDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangDetailTableViewCell.m; sourceTree = "<group>"; };
+		8A3489442365A9C600AED1B7 /* DiaoChangDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaoChangDetailTableViewCell.xib; sourceTree = "<group>"; };
 		8A365959235609E000A51BEF /* FishingLeaderBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingLeaderBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A365963235609E000A51BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A365965235609E000A51BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -376,6 +387,27 @@
 			path = Photo;
 			sourceTree = "<group>";
 		};
+		8A34893023648A3100AED1B7 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		8A348938236588F700AED1B7 /* DiaoChangDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8A348939236589C100AED1B7 /* DiaoChangDetailViewController.h */,
+				8A34893A236589C100AED1B7 /* DiaoChangDetailViewController.m */,
+				8A34893F2365A73800AED1B7 /* DiaoChangHeadView.h */,
+				8A3489402365A73800AED1B7 /* DiaoChangHeadView.m */,
+				8A3489422365A9C600AED1B7 /* DiaoChangDetailTableViewCell.h */,
+				8A3489432365A9C600AED1B7 /* DiaoChangDetailTableViewCell.m */,
+				8A3489442365A9C600AED1B7 /* DiaoChangDetailTableViewCell.xib */,
+			);
+			path = DiaoChangDetail;
+			sourceTree = "<group>";
+		};
 		8A365950235609E000A51BEF = {
 			isa = PBXGroup;
 			children = (
@@ -449,7 +481,7 @@
 				8AD5E18A235B5022000717A5 /* ToolClass */,
 				8A365A1F2356ED3700A51BEF /* commonView */,
 				8A365A1E2356ED0300A51BEF /* CommonViewControllers */,
-				8A365A182356E55900A51BEF /* MyViewControler */,
+				8A365A182356E55900A51BEF /* ViewControler */,
 			);
 			path = ViewAndControllers;
 			sourceTree = "<group>";
@@ -523,7 +555,7 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8A365A182356E55900A51BEF /* MyViewControler */ = {
+		8A365A182356E55900A51BEF /* ViewControler */ = {
 			isa = PBXGroup;
 			children = (
 				8A3488F4235EAD3A00AED1B7 /* CenterViewController */,
@@ -532,7 +564,7 @@
 				8AD5E14123587546000717A5 /* tabBar */,
 				8AD5E1232357EF7E000717A5 /* LoginAndRegisterViewController */,
 			);
-			path = MyViewControler;
+			path = ViewControler;
 			sourceTree = "<group>";
 		};
 		8A365A1E2356ED0300A51BEF /* CommonViewControllers */ = {
@@ -634,6 +666,8 @@
 		8AD5E14C2359433A000717A5 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8A348938236588F700AED1B7 /* DiaoChangDetail */,
+				8A34893023648A3100AED1B7 /* Scan */,
 				8A3488E4235DED6E00AED1B7 /* DiaoChang */,
 				8A3488B0235D2C3400AED1B7 /* Search */,
 				8A348911236182A600AED1B7 /* FImagePageViewCellCollectionViewCell.h */,
@@ -824,6 +858,7 @@
 				8A365966235609E000A51BEF /* Assets.xcassets in Resources */,
 				8A365964235609E000A51BEF /* Main.storyboard in Resources */,
 				8AD5E1AB235C9E26000717A5 /* MainNoTableViewCell.xib in Resources */,
+				8A3489462365A9C600AED1B7 /* DiaoChangDetailTableViewCell.xib in Resources */,
 				8AD5E1A6235C96BA000717A5 /* MainTwoCollectionViewCell.xib in Resources */,
 				8AD5E189235B3E21000717A5 /* MainTableViewCell.xib in Resources */,
 				8AD5E1A1235C882A000717A5 /* MainCollectionViewCell.xib in Resources */,
@@ -962,7 +997,9 @@
 				8AD5E1A0235C882A000717A5 /* MainCollectionViewCell.m in Sources */,
 				8A3488FA235EAFDF00AED1B7 /* SaiShiListTableViewController.m in Sources */,
 				8A34890B23614EAB00AED1B7 /* UserInfoViewController.m in Sources */,
+				8A34893B236589C100AED1B7 /* DiaoChangDetailViewController.m in Sources */,
 				8A34890E23615E5A00AED1B7 /* GreenLineTextField.m in Sources */,
+				8A3489412365A73800AED1B7 /* DiaoChangHeadView.m in Sources */,
 				8AD5E1302358292C000717A5 /* LoginCostomTextField.m in Sources */,
 				8A3488EA235E87A900AED1B7 /* DiaoChangHeadView.m in Sources */,
 				8AD5E1292357F005000717A5 /* LoginViewController.m in Sources */,
@@ -978,6 +1015,7 @@
 				8A348904235FFD8300AED1B7 /* SaiShiListTableViewCell.m in Sources */,
 				8A3488CB235D603B00AED1B7 /* SaiShiTableViewCell.m in Sources */,
 				8AD5E14B2358B5FB000717A5 /* MyViewController.m in Sources */,
+				8A3489452365A9C600AED1B7 /* DiaoChangDetailTableViewCell.m in Sources */,
 				8AD5E12C2357F01B000717A5 /* RegisterViewController.m in Sources */,
 				8AD5E15223594A4B000717A5 /* HomeTableViewController.m in Sources */,
 				8A3488D0235D605200AED1B7 /* BuHuoTableViewCell.m in Sources */,
