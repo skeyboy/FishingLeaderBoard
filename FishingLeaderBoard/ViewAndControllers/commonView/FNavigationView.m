@@ -263,10 +263,21 @@ NS_ASSUME_NONNULL_BEGIN
     _searchBar.delegate = self;
     _searchBar.tag = tag;
     _searchBar.placeholder = @"搜索钓场关键词";
-    UITextField *textfield = [_searchBar valueForKey:@"_searchField"];
-    [textfield setValue:[UIFont systemFontOfSize:12.0] forKeyPath:@"_placeholderLabel.font"];
-    [textfield setValue:[UIColor colorWithWhite:1 alpha:0.6] forKeyPath:@"_placeholderLabel.textColor"];
-    UITextField *searchField = [_searchBar valueForKey:@"_searchField"];
+    UITextField *textfield = nil;
+    if (@available(iOS 13,*)) {
+        textfield =  _searchBar.searchTextField;
+    } else {
+        [_searchBar valueForKey:@"_searchField"];
+        [textfield setValue:[UIFont systemFontOfSize:12.0] forKeyPath:@"_placeholderLabel.font"];
+           [textfield setValue:[UIColor colorWithWhite:1 alpha:0.6] forKeyPath:@"_placeholderLabel.textColor"];
+    }
+   
+    UITextField *searchField = nil;
+    if (@available(iOS 13,*)) {
+        searchField =  _searchBar.searchTextField;
+    } else {
+        [_searchBar valueForKey:@"_searchField"];
+    }
     textfield.font = [UIFont systemFontOfSize:12];
     searchField.textColor = WHITECOLOR;
     for (UIView *subview in _searchBar.subviews) {
@@ -283,7 +294,11 @@ NS_ASSUME_NONNULL_BEGIN
     }
     [self addSubview:_searchBar];
 }
-
+-(UITextField *)searBarTextField{
+   id provider = [_searchBar valueForKey:@"_visualProvider"] ;
+    UITextField * textField = [provider valueForKey:@"_searchField"];
+    return textField;
+}
 -(void)setNavBarViewCenterSearchTag:(int)tag
 {
     _searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(45, Height_StatusBar + 8, SCREEN_WIDTH - 45 * 2, 30)];
@@ -293,10 +308,21 @@ NS_ASSUME_NONNULL_BEGIN
     _searchBar.delegate = self;
     _searchBar.tag = tag;
     _searchBar.placeholder = @"请输入您感兴趣的关键字";
-    UITextField *textfield = [_searchBar valueForKey:@"_searchField"];
-    [textfield setValue:[UIFont systemFontOfSize:12.0] forKeyPath:@"_placeholderLabel.font"];
-    [textfield setValue:[UIColor colorWithWhite:1 alpha:0.6] forKeyPath:@"_placeholderLabel.textColor"];
-    UITextField *searchField = [_searchBar valueForKey:@"_searchField"];
+    UITextField *textfield = nil;
+    if (@available(iOS 13,*)) {
+        textfield =  _searchBar.searchTextField;
+    } else {
+        [_searchBar valueForKey:@"_searchField"];
+        [textfield setValue:[UIFont systemFontOfSize:12.0] forKeyPath:@"_placeholderLabel.font"];
+        [textfield setValue:[UIColor colorWithWhite:1 alpha:0.6] forKeyPath:@"_placeholderLabel.textColor"];
+    }
+    
+    UITextField *searchField = nil;
+    if (@available(iOS 13,*)) {
+        searchField =  _searchBar.searchTextField;
+    } else {
+        [_searchBar valueForKey:@"_searchField"];
+    }
     textfield.font = [UIFont systemFontOfSize:12];
     searchField.textColor = WHITECOLOR;
     for (UIView *subview in _searchBar.subviews) {
