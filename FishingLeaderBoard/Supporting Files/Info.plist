@@ -4,10 +4,12 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>钓鱼排行榜</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.kayak.sports.fishing</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -20,6 +22,17 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>APP需要您的同意，才能访问相机，开启扫码功能</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>APP需要您的同意，才能在使用应用期间访问您的位置，获取您所在地的天气以及附近的钓鱼场</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>APP需要您的同意，才能访问相册，通过相册上传头像、上传钓场及活动图片或是渔获图片</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -43,18 +56,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string>APP需要您的同意，才能访问相机，开启扫码功能</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>APP需要您的同意，才能访问相册，通过相册上传头像、上传钓场及活动图片或是渔获图片</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>APP需要您的同意，才能在使用应用期间访问您的位置，获取您所在地的天气以及附近的钓鱼场</string>
-	<key>CFBundleDisplayName</key>
-	<string>钓鱼排行榜</string>
 </dict>
 </plist>
