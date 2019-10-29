@@ -15,9 +15,9 @@ target 'FishingLeaderBoard' do
    pod 'MJExtension'
    pod 'MJRefresh','3.1.15'
    pod 'GRStarsView',:path=>'~/Documents/Github/GRStarsView'
-   pod 'STSegmentView', :path => '../'
-
-
+   pod 'LBXScan'
+   pod 'WechatOpenSDK'
+   pod 'IQKeyboardManager',:path=>'~/Documents/Github/IQKeyboardManager'
 
   target 'FishingLeaderBoardTests' do
     inherit! :search_paths

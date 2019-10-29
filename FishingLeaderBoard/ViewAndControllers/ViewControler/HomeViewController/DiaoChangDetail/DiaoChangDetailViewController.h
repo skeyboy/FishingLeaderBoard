@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DiaoChangHeadView.h"
 #import "DiaoChangDetailTableViewCell.h"
+#import "DCDBriefTableViewCell.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DiaoChangDetailViewController : FViewController
