@@ -8,6 +8,7 @@
 
 #import "HomeTableViewController.h"
 #import "DiaoChangDetailViewController.h"
+#import "FindDiaoChangViewController.h"
 @interface HomeTableViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSArray *arrTableSource;
@@ -31,14 +32,12 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self setNavViewWithTitle:@"钓技课堂" isShowBack:YES];
     hkNavigationView.backgroundColor = NAVBGCOLOR;
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 -(void)setNavHome
 {
     self.view.backgroundColor = [UIColor whiteColor];
     [self setNavViewWithTitle:@"" isShowBack:NO];
     hkNavigationView.backgroundColor = NAVBGCOLOR;
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [hkNavigationView setNavBarViewLeftBtnWithTitle:@"扫一扫" normalImage:@"saoyisao" highlightedImage:@"saoyisao" target:self action:@selector(btnLeftClick:)];
     [hkNavigationView setNavBarViewRightBtnWithTitle:@"消息" normalImage:@"msg" highlightedImage:@"msg" target:self action:@selector(btnRightClick:)];
     
@@ -184,6 +183,12 @@
                 DiaoChangDetailViewController *diaoChangDetailVc = [[DiaoChangDetailViewController alloc]init];
                 [self.navigationController pushViewController:diaoChangDetailVc animated:YES];
             }
+            break;
+            case BUTTON_FAXIANYUCHANG_HOME_TAG:
+        {
+            FindDiaoChangViewController*vc =[[FindDiaoChangViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
             
         default:

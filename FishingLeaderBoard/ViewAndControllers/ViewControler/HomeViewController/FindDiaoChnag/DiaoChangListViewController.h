@@ -1,8 +1,8 @@
 //
-//  CostomButton.h
+//  DiaoChangListViewController.h
 //  FishingLeaderBoard
 //
-//  Created by yue on 2019/10/21.
+//  Created by yue on 2019/10/29.
 //  Copyright © 2019 yue. All rights reserved.
 //
 
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CostomButton : UIButton
-
-@property(strong,nonatomic)NSIndexPath *indexPath;
+@interface DiaoChangListViewController : UIViewController
 
 @end
 

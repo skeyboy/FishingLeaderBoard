@@ -18,7 +18,6 @@
 		8A3488D0235D605200AED1B7 /* BuHuoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488CE235D605200AED1B7 /* BuHuoTableViewCell.m */; };
 		8A3488D1235D605200AED1B7 /* BuHuoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3488CF235D605200AED1B7 /* BuHuoTableViewCell.xib */; };
 		8A3488D4235D639F00AED1B7 /* UserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488D3235D639F00AED1B7 /* UserTableViewController.m */; };
-		8A3488DA235D800300AED1B7 /* CostomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488D9235D800300AED1B7 /* CostomButton.m */; };
 		8A3488DD235DE21100AED1B7 /* ColorLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488DC235DE21100AED1B7 /* ColorLabel.m */; };
 		8A3488EA235E87A900AED1B7 /* DiaoChangHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488E9235E87A900AED1B7 /* DiaoChangHeadView.m */; };
 		8A3488F0235E89A300AED1B7 /* DiaoChangHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3488EF235E89A300AED1B7 /* DiaoChangHeadView.xib */; };
@@ -64,6 +63,9 @@
 		8A500D7F2367F13F0064704F /* FSSegmentTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D7A2367F13F0064704F /* FSSegmentTitleView.m */; };
 		8A500D802367F13F0064704F /* FSPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D7D2367F13F0064704F /* FSPageContentView.m */; };
 		8A500D842367F5AF0064704F /* DiaoChangDetailHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A500D832367F5AF0064704F /* DiaoChangDetailHeadView.xib */; };
+		8A500D87236844310064704F /* ReleaseFishGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D86236844310064704F /* ReleaseFishGetViewController.m */; };
+		8A500D8B23686D540064704F /* FindDiaoChangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D8A23686D540064704F /* FindDiaoChangViewController.m */; };
+		8A500D8E23686E8B0064704F /* DiaoChangListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D8D23686E8B0064704F /* DiaoChangListViewController.m */; };
 		8AD5E112235702E8000717A5 /* FViewCreateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E111235702E8000717A5 /* FViewCreateFactory.m */; };
 		8AD5E115235706FF000717A5 /* UIColor+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E114235706FF000717A5 /* UIColor+Additional.m */; };
 		8AD5E1222357EEB0000717A5 /* YHSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E1202357EEB0000717A5 /* YHSegmentView.m */; };
@@ -143,8 +145,6 @@
 		8A3488CF235D605200AED1B7 /* BuHuoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuHuoTableViewCell.xib; sourceTree = "<group>"; };
 		8A3488D2235D639F00AED1B7 /* UserTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserTableViewController.h; sourceTree = "<group>"; };
 		8A3488D3235D639F00AED1B7 /* UserTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserTableViewController.m; sourceTree = "<group>"; };
-		8A3488D8235D800300AED1B7 /* CostomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CostomButton.h; sourceTree = "<group>"; };
-		8A3488D9235D800300AED1B7 /* CostomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CostomButton.m; sourceTree = "<group>"; };
 		8A3488DB235DE21100AED1B7 /* ColorLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorLabel.h; sourceTree = "<group>"; };
 		8A3488DC235DE21100AED1B7 /* ColorLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorLabel.m; sourceTree = "<group>"; };
 		8A3488E8235E87A900AED1B7 /* DiaoChangHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangHeadView.h; sourceTree = "<group>"; };
@@ -227,6 +227,12 @@
 		8A500D7D2367F13F0064704F /* FSPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPageContentView.m; sourceTree = "<group>"; };
 		8A500D7E2367F13F0064704F /* FSSegmentTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSegmentTitleView.h; sourceTree = "<group>"; };
 		8A500D832367F5AF0064704F /* DiaoChangDetailHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaoChangDetailHeadView.xib; sourceTree = "<group>"; };
+		8A500D85236844310064704F /* ReleaseFishGetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReleaseFishGetViewController.h; sourceTree = "<group>"; };
+		8A500D86236844310064704F /* ReleaseFishGetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReleaseFishGetViewController.m; sourceTree = "<group>"; };
+		8A500D8923686D540064704F /* FindDiaoChangViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindDiaoChangViewController.h; sourceTree = "<group>"; };
+		8A500D8A23686D540064704F /* FindDiaoChangViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindDiaoChangViewController.m; sourceTree = "<group>"; };
+		8A500D8C23686E8B0064704F /* DiaoChangListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangListViewController.h; sourceTree = "<group>"; };
+		8A500D8D23686E8B0064704F /* DiaoChangListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangListViewController.m; sourceTree = "<group>"; };
 		8AD5E110235702E8000717A5 /* FViewCreateFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FViewCreateFactory.h; sourceTree = "<group>"; };
 		8AD5E111235702E8000717A5 /* FViewCreateFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FViewCreateFactory.m; sourceTree = "<group>"; };
 		8AD5E113235706FF000717A5 /* UIColor+Additional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additional.h"; sourceTree = "<group>"; };
@@ -367,8 +373,6 @@
 				8A3488CF235D605200AED1B7 /* BuHuoTableViewCell.xib */,
 				8A3488D2235D639F00AED1B7 /* UserTableViewController.h */,
 				8A3488D3235D639F00AED1B7 /* UserTableViewController.m */,
-				8A3488D8235D800300AED1B7 /* CostomButton.h */,
-				8A3488D9235D800300AED1B7 /* CostomButton.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -433,6 +437,8 @@
 				8A500D5823672D8B0064704F /* DCDBriefTableViewCell.h */,
 				8A500D5923672D8B0064704F /* DCDBriefTableViewCell.m */,
 				8A500D5A23672D8B0064704F /* DCDBriefTableViewCell.xib */,
+				8A500D85236844310064704F /* ReleaseFishGetViewController.h */,
+				8A500D86236844310064704F /* ReleaseFishGetViewController.m */,
 			);
 			path = DiaoChangDetail;
 			sourceTree = "<group>";
@@ -622,6 +628,8 @@
 				8AD5E111235702E8000717A5 /* FViewCreateFactory.m */,
 				8A3489062360900B00AED1B7 /* MenuView.h */,
 				8A3489072360900B00AED1B7 /* MenuView.m */,
+				8AD5E17D235AF33B000717A5 /* TwoLabel.h */,
+				8AD5E17E235AF33B000717A5 /* TwoLabel.m */,
 				8A34890C23615E5A00AED1B7 /* GreenLineTextField.h */,
 				8A34890D23615E5A00AED1B7 /* GreenLineTextField.m */,
 				8A34890F23615E7000AED1B7 /* GreenLineTextField.xib */,
@@ -673,6 +681,17 @@
 				8A500D7E2367F13F0064704F /* FSSegmentTitleView.h */,
 			);
 			path = FSScrollContentViewLib;
+			sourceTree = "<group>";
+		};
+		8A500D8823686D0C0064704F /* FindDiaoChnag */ = {
+			isa = PBXGroup;
+			children = (
+				8A500D8923686D540064704F /* FindDiaoChangViewController.h */,
+				8A500D8A23686D540064704F /* FindDiaoChangViewController.m */,
+				8A500D8C23686E8B0064704F /* DiaoChangListViewController.h */,
+				8A500D8D23686E8B0064704F /* DiaoChangListViewController.m */,
+			);
+			path = FindDiaoChnag;
 			sourceTree = "<group>";
 		};
 		8AD5E11E2357EEB0000717A5 /* YHSegmentView */ = {
@@ -730,8 +749,6 @@
 				8AD5E14A2358B5FB000717A5 /* MyViewController.m */,
 				8AD5E17A235ACFF7000717A5 /* MyHeadView.h */,
 				8AD5E17B235ACFF7000717A5 /* MyHeadView.m */,
-				8AD5E17D235AF33B000717A5 /* TwoLabel.h */,
-				8AD5E17E235AF33B000717A5 /* TwoLabel.m */,
 				8AD5E180235B0C21000717A5 /* MyTableViewCell.h */,
 				8AD5E181235B0C21000717A5 /* MyTableViewCell.m */,
 				8AD5E182235B0C21000717A5 /* MyTableViewCell.xib */,
@@ -744,6 +761,7 @@
 		8AD5E14C2359433A000717A5 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8A500D8823686D0C0064704F /* FindDiaoChnag */,
 				8A348938236588F700AED1B7 /* DiaoChangDetail */,
 				8A34893023648A3100AED1B7 /* Scan */,
 				8A3488E4235DED6E00AED1B7 /* DiaoChang */,
@@ -1059,6 +1077,7 @@
 				8A34892A23632A8100AED1B7 /* PhotoHeadView.m in Sources */,
 				8AD5E13D235872AF000717A5 /* UIView + LZExtension.m in Sources */,
 				8AD5E17C235ACFF7000717A5 /* MyHeadView.m in Sources */,
+				8A500D8B23686D540064704F /* FindDiaoChangViewController.m in Sources */,
 				8AD5E1722359E7DF000717A5 /* WMZBannerView.m in Sources */,
 				8A500D6423672F810064704F /* YuQrViewController.m in Sources */,
 				8AD5E18D235B5049000717A5 /* ToolClass.m in Sources */,
@@ -1075,11 +1094,13 @@
 				8A365A252356EE8B00A51BEF /* FNavigationController.m in Sources */,
 				8AD5E115235706FF000717A5 /* UIColor+Additional.m in Sources */,
 				8A3488D4235D639F00AED1B7 /* UserTableViewController.m in Sources */,
+				8A500D8E23686E8B0064704F /* DiaoChangListViewController.m in Sources */,
 				8AD5E1652359BF3A000717A5 /* SearchViewController.m in Sources */,
 				8A3488F7235EADBF00AED1B7 /* SaiShiAndHuoDongTableViewController.m in Sources */,
 				8AD5E1A0235C882A000717A5 /* MainCollectionViewCell.m in Sources */,
 				8A3488FA235EAFDF00AED1B7 /* SaiShiListTableViewController.m in Sources */,
 				8A34890B23614EAB00AED1B7 /* UserInfoViewController.m in Sources */,
+				8A500D87236844310064704F /* ReleaseFishGetViewController.m in Sources */,
 				8A34893B236589C100AED1B7 /* DiaoChangDetailViewController.m in Sources */,
 				8A34890E23615E5A00AED1B7 /* GreenLineTextField.m in Sources */,
 				8A3489412365A73800AED1B7 /* DiaoChangDetailHeadView.m in Sources */,
@@ -1117,7 +1138,6 @@
 				8A34891C2362D47800AED1B7 /* SelectPhotosViewController.m in Sources */,
 				8AD5E183235B0C21000717A5 /* MyTableViewCell.m in Sources */,
 				8A365A0B2356AC9200A51BEF /* AppDelegate.m in Sources */,
-				8A3488DA235D800300AED1B7 /* CostomButton.m in Sources */,
 				8A34892F23633CFC00AED1B7 /* EditView.m in Sources */,
 				8A500D5B23672D8B0064704F /* DCDBriefTableViewCell.m in Sources */,
 				8AD5E17F235AF33B000717A5 /* TwoLabel.m in Sources */,

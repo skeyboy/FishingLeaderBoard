@@ -27,7 +27,7 @@
     NSMutableArray *labelArr = [[NSMutableArray alloc]initWithCapacity:0];
     int row = (int)_arr.count/5+((_arr.count%5==0)?0:1);
     NSLog(@"%s,%@",__func__, labelArr);
-    [self.bgFishTypeView mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [self.bgFishTypeView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.fishTypeLabel.mas_bottom).offset(5);
         make.bottom.equalTo(self.titleNoteLabel.mas_top).offset(5);
         make.left.equalTo(self.fishTypeLabel.mas_left);
@@ -45,8 +45,6 @@
         [labelArr addObject:label];
         label.frame =CGRectMake(40*colu+10*colu, 10+40*row, 40, 21);
     }
-    
-   
     
 }
 -(void)addCharView{
@@ -134,6 +132,7 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)sendFishGet:(id)sender {
+- (IBAction)sendFishGet:(UIButton*)btn {
+    self.btnClick(btn);
 }
 @end
