@@ -644,12 +644,12 @@
 		8A500D6623674AF60064704F /* WX */ = {
 			isa = PBXGroup;
 			children = (
-				8A500D6723674AF60064704F /* YuShareViewController.m */,
 				8A500D6823674AF60064704F /* YuWeChatShareManager.h */,
+				8A500D6C23674AF60064704F /* YuWeChatShareManager.m */,
+				8A500D6723674AF60064704F /* YuShareViewController.m */,
 				8A500D6923674AF60064704F /* YuShareViewController.h */,
 				8A500D6A23674AF60064704F /* wx_pyq.png */,
 				8A500D6B23674AF60064704F /* YuShareViewController.xib */,
-				8A500D6C23674AF60064704F /* YuWeChatShareManager.m */,
 			);
 			path = WX;
 			sourceTree = "<group>";
@@ -829,6 +829,7 @@
 				8A365956235609E000A51BEF /* Frameworks */,
 				8A365957235609E000A51BEF /* Resources */,
 				7C9EF7507B21E0A5D84FC477 /* [CP] Embed Pods Frameworks */,
+				C5A6EA35F61A5B371730FA22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1046,6 +1047,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5A6EA35F61A5B371730FA22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FishingLeaderBoard/Pods-FishingLeaderBoard-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FishingLeaderBoard/Pods-FishingLeaderBoard-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FishingLeaderBoard/Pods-FishingLeaderBoard-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -18,7 +18,8 @@ target 'FishingLeaderBoard' do
    pod 'LBXScan'
    pod 'WechatOpenSDK'
    pod 'IQKeyboardManager',:path=>'~/Documents/Github/IQKeyboardManager'
-
+   pod 'AlipaySDK-iOS'
+   pod “BaiduMapKit”
   target 'FishingLeaderBoardTests' do
     inherit! :search_paths
     # Pods for testing

@@ -8,6 +8,7 @@
 
 #import "HomeTableViewController.h"
 #import "DiaoChangDetailViewController.h"
+#import "YuQrViewController.h"
 @interface HomeTableViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSArray *arrTableSource;
@@ -51,6 +52,13 @@
 }
 -(void)btnLeftClick:(UIButton *)btn
 {
+//    TODO
+    YuQrViewController *qrScanVC  =[[YuQrViewController alloc] init];
+    qrScanVC.modalPresentationStyle = UIModalPresentationFullScreen;
+    
+    [self presentViewController:qrScanVC animated:YES completion:^{
+        
+    }];
     
 }
 -(void)btnRightClick:(UIButton *)btn
