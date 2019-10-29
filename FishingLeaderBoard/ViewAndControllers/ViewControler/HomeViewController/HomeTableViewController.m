@@ -8,6 +8,7 @@
 
 #import "HomeTableViewController.h"
 #import "DiaoChangDetailViewController.h"
+#import "YuQrViewController.h"
 #import "FindDiaoChangViewController.h"
 @interface HomeTableViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -50,6 +51,13 @@
 }
 -(void)btnLeftClick:(UIButton *)btn
 {
+//    TODO
+    YuQrViewController *qrScanVC  =[[YuQrViewController alloc] init];
+    qrScanVC.modalPresentationStyle = UIModalPresentationFullScreen;
+    
+    [self presentViewController:qrScanVC animated:YES completion:^{
+        
+    }];
     
 }
 -(void)btnRightClick:(UIButton *)btn

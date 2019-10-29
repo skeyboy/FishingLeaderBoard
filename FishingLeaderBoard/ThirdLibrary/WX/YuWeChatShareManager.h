@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "WXApi.h"
+
+@class YuWeChatShareManager;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YuWeChatShareManager : NSObject
@@ -33,3 +37,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 NS_ASSUME_NONNULL_END
+@interface YuWeChatShareManager (WxLogin)
+-(void)loginFromVC:(UIViewController *_Nullable) holderController;
+
+//内部调用不要手动调用
+-(void)resoveWXLoginResponse:(BaseResp *) resp;
+@end
