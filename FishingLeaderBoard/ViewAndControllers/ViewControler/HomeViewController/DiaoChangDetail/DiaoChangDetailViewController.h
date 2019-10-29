@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DiaoChangHeadView.h"
+#import "DiaoChangDetailHeadView.h"
 #import "DiaoChangDetailTableViewCell.h"
 #import "DCDBriefTableViewCell.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DiaoChangDetailViewController : FViewController
 
-@property(strong,nonatomic)DiaoChangHeadView *headView;
+@property(strong,nonatomic)DiaoChangDetailHeadView *headView;
 @property(strong,nonatomic)UITableView *tableView;
 
 @end

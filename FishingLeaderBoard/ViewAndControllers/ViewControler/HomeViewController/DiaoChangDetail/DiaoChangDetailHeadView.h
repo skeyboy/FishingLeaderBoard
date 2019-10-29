@@ -7,18 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void(^SegmentCtrolClick) (UISegmentedControl *);
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DiaoChangDetailHeadView : UIView
 {
-    UIView *lineView;
-    float topSegCtrlY;
+   
 }
-@property(strong,nonatomic)UISegmentedControl  *segmentedCtr;
 
-@property (nonatomic, copy) SegmentCtrolClick    segmentCtrlClick;
-//@property (nonatomic, copy) ButtonCtrolClick     btnCtrlClick;
 
 @end
 

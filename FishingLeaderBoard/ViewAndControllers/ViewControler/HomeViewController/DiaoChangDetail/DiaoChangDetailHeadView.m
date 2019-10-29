@@ -7,27 +7,29 @@
 //
 
 #import "DiaoChangDetailHeadView.h"
-#import "CBSegmentView.h"
+#import "FSSegmentTitleView.h"
+@interface DiaoChangDetailHeadView()<FSSegmentTitleViewDelegate>
 
+@end
 @implementation DiaoChangDetailHeadView
-
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if(self)
     {
-        self.backgroundColor = LOGINBGCOLOR;
-        NSArray *array = @[@""];
-        CBSegmentView *sliderSegmentView = [[CBSegmentView alloc]initWithFrame:CGRectMake(0, 150, frame.size.width, 40)];
-        [self addSubview:sliderSegmentView];
-        [sliderSegmentView setTitleArray:array withStyle:CBSegmentStyleSlider];
-        sliderSegmentView.titleChooseReturn = ^(NSInteger x) {
-            NSLog(@"点击了第%ld个按钮",x+1);
-        };
-        
+        FSSegmentTitleView *titleView = [[FSSegmentTitleView alloc]initWithFrame:CGRectMake(0, 100, CGRectGetWidth(frame), 50) delegate:nil indicatorType:1];
+        titleView.titlesArr = @[@"活动/赛事",@"简介",@"渔获"];
+        [self addSubview:titleView];
+        titleView.titleSelectColor=BLACKCOLOR;
+        titleView.indicatorColor =BLACKCOLOR;
+        titleView.backgroundColor = WHITECOLOR;
     }
     return self;
 }
-
+-(void)FSSegmentTitleView:(FSSegmentTitleView *)titleView startIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex
+{
+    
+}
 @end
+

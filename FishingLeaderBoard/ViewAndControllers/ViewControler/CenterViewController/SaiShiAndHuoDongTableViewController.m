@@ -28,6 +28,8 @@
     _segmentView1.topLabelTextColor = WHITECOLOR;
     _segmentView1.bottomLabelTextColor = WHITECOLOR;
     _segmentView1.selectedBackgroundColor = [UIColor colorWithWhite:1 alpha:0.3];
+    [_segmentView1 setSliderHeight:1];
+    _segmentView1.SliderColor = [UIColor redColor];
     _segmentView1.labelFont = [UIFont boldSystemFontOfSize:15];
     _segmentView1.selectedBgViewCornerRadius = 3;
     [self.view addSubview:_segmentView1];

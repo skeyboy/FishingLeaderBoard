@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TwoLabel : UIView
+@interface TwoLabel : UILabel
 @property(nonatomic,strong)UILabel *topLabel;
 @property(nonatomic,strong)UILabel *bottomLabel;
 @end

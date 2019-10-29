@@ -28,12 +28,16 @@
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(hkNavigationView.frame) - CGRectGetHeight(self.tabBarController.tabBar.frame)) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+//    self.headView =[[DiaoChangDetailHeadView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
+//    self.tableView.tableHeaderView = self.headView;
+    self.headView = [[[NSBundle mainBundle]loadNibNamed:@"DiaoChangDetailHeadView" owner:self options:nil]firstObject];
+    self.tableView.tableHeaderView =_headView;
+    
     [self.view addSubview:self.tableView];
     self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
     [self.tableView registerNib:[UINib nibWithNibName:@"DiaoChangDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"DiaoChangDetailTableViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"DCDBriefTableViewCell" bundle:nil] forCellReuseIdentifier:@"DCDBriefTableViewCell"];
-    self.headView =[[DiaoChangHeadView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame)+100, SCREEN_WIDTH, 200)];
-    self.tableView.tableHeaderView = self.headView;
+    
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.bounces = NO;
     __weak __typeof(self) weakSelf = self;

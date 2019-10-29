@@ -52,6 +52,11 @@
  @param index 下标
  */
 - (void)setButtonSelected:(NSInteger)index;
-
+/**
+ 设置滑块高度
+ 
+ @param sliderHeight 滑块高度
+ */
+- (void)setSliderHeight:(CGFloat)sliderHeight;
 
 @end
