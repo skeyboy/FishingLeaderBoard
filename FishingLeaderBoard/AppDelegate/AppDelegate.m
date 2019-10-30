@@ -11,8 +11,8 @@
 #import "IQKeyboardManager.h"
 #import "YuWeChatShareManager.h"
 #import <AlipaySDK/AlipaySDK.h>
-
-@interface AppDelegate ()
+#import <BMKLocationKit/BMKLocationComponent.h>
+@interface AppDelegate ()<BMKLocationAuthDelegate>
 
 @end
 
@@ -20,28 +20,34 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[YuWeChatShareManager manager] registWX];
-    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
-    //默认为YES，关闭为NO
-    manager.enable = YES;
-    //键盘弹出时，点击背景，键盘收回
-    manager.shouldResignOnTouchOutside = YES;
-    //如果YES，那么使用textField的tintColor属性为IQToolbar，否则颜色为黑色。默认是否定的。
-    manager.shouldToolbarUsesTextFieldTintColor = YES;
-    //如果YES，则在IQToolbar上添加textField的占位符文本。默认是肯定的。
-    manager.shouldShowToolbarPlaceholder = YES;
-    //设置IQToolbar按钮的文字
-    manager.toolbarDoneBarButtonItemText = @"完成";
-    //隐藏键盘上面的toolBar,默认是开启的
-    manager.enableAutoToolbar = YES;
-    manager.enable = NO;
-    
+    [self config];
+   
     
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     self.tbc = [[FTabBarVC alloc] init];
     [self.tbc setSelectedIndex:4];
     self.window.rootViewController = self.tbc;
     return YES;
+}
+-(void)config{
+    [self configBaiduMap];
+
+    [[YuWeChatShareManager manager] registWX];
+       IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+       //默认为YES，关闭为NO
+       manager.enable = YES;
+       //键盘弹出时，点击背景，键盘收回
+       manager.shouldResignOnTouchOutside = YES;
+       //如果YES，那么使用textField的tintColor属性为IQToolbar，否则颜色为黑色。默认是否定的。
+       manager.shouldToolbarUsesTextFieldTintColor = YES;
+       //如果YES，则在IQToolbar上添加textField的占位符文本。默认是肯定的。
+       manager.shouldShowToolbarPlaceholder = YES;
+       //设置IQToolbar按钮的文字
+       manager.toolbarDoneBarButtonItemText = @"完成";
+       //隐藏键盘上面的toolBar,默认是开启的
+       manager.enableAutoToolbar = YES;
+       manager.enable = NO;
+       
 }
 #pragma 微信支付回调(下面两个兼容iOS版本)
 -(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
@@ -110,4 +116,23 @@
 }
 
 
+@end
+
+@implementation AppDelegate (BaiduMapLocation)
+
+#pragma mark 百度地图设置
+- (void)configBaiduMap {
+//    TODO 补全百度地图apikey
+    NSString *ak = @"xxxx";
+    BMKMapManager *mapManager = [[BMKMapManager alloc] init];
+    self.mapManager = mapManager;
+    BOOL ret = [mapManager start:ak generalDelegate:nil];
+    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:ak authDelegate:self];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+}
+-(void)onCheckPermissionState:(BMKLocationAuthErrorCode)iError{
+    
+}
 @end

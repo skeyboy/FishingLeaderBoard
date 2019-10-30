@@ -8,6 +8,7 @@ target 'FishingLeaderBoard' do
   # Pods for FishingLeaderBoard
 
    platform:ios, '8.0'
+   pod 'YYKit'
    pod 'SDWebImage', '~> 5.0'
    pod 'Masonry'
    pod 'MBProgressHUD'
