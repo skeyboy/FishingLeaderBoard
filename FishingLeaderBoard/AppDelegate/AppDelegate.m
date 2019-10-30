@@ -123,7 +123,7 @@
 #pragma mark 百度地图设置
 - (void)configBaiduMap {
 //    TODO 补全百度地图apikey
-    NSString *ak = @"xxxx";
+    NSString *ak = @"W1Btv2pd45POt10CC1P86Xhj";
     BMKMapManager *mapManager = [[BMKMapManager alloc] init];
     self.mapManager = mapManager;
     BOOL ret = [mapManager start:ak generalDelegate:nil];

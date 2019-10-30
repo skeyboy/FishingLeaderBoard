@@ -7,7 +7,7 @@
 //
 
 #import "ApiFetch.h"
-#import "YYModel.h"
+#import <YYKit/YYKit.h>
 #import "AFNetworking.h"
 #import "AppManager.h"
 #import "AppModel.h"
@@ -38,7 +38,7 @@
     NSString * url = [NSString stringWithFormat:@"%@:%d%@",HOST,PORT,api];
     
     [manager POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        AppModel *modelValue =   [AppModel yy_modelWithJSON:responseObject];
+        AppModel *modelValue =   [AppModel modelWithJSON:responseObject];
         if (success) {
             success(modelValue,responseObject);
         }
@@ -62,7 +62,7 @@
       parameters:queries
         progress:nil
          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        AppModel *modelValue =   [AppModel yy_modelWithJSON:responseObject];
+        AppModel *modelValue =   [AppModel modelWithJSON:responseObject];
         if (success) {
             success(modelValue,responseObject);
         }

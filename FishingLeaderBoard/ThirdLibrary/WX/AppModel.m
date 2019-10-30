@@ -7,11 +7,11 @@
 //
 
 #import "AppModel.h"
-#import "YYModel.h"
+#import <YYKit/YYKit.h>
 
 @implementation AppModel
 -(id)dataFor:(Class)modelClass{
-    id modelValue =   [modelClass yy_modelWithJSON:self.data];
+    id modelValue =   [modelClass modelWithJSON:self.data];
     return modelValue;
 }
 + (NSDictionary *)modelCustomPropertyMapper {

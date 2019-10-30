@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53059A532369882000E38C68 /* wechat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53059A522369882000E38C68 /* wechat.jpg */; };
 		53EAE4C42368935F00862DA8 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EAE4C32368935F00862DA8 /* AppManager.m */; };
 		53EAE4C72368949900862DA8 /* ApiFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EAE4C62368949900862DA8 /* ApiFetch.m */; };
 		53EAE4CA23691EA800862DA8 /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EAE4C923691EA800862DA8 /* AppModel.m */; };
@@ -130,6 +131,7 @@
 		02BF1BF83C73713E95788D93 /* Pods-FishingLeaderBoardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingLeaderBoardTests.release.xcconfig"; path = "Target Support Files/Pods-FishingLeaderBoardTests/Pods-FishingLeaderBoardTests.release.xcconfig"; sourceTree = "<group>"; };
 		36B33BA1BD75CE815CD1D8CE /* Pods-FishingLeaderBoardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingLeaderBoardTests.debug.xcconfig"; path = "Target Support Files/Pods-FishingLeaderBoardTests/Pods-FishingLeaderBoardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C8E8522460D3AB52BDD643F /* Pods_FishingLeaderBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53059A522369882000E38C68 /* wechat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wechat.jpg; sourceTree = "<group>"; };
 		53EAE4C22368935F00862DA8 /* AppManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppManager.h; path = FishingLeaderBoard/ThirdLibrary/WX/AppManager.h; sourceTree = SOURCE_ROOT; };
 		53EAE4C32368935F00862DA8 /* AppManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppManager.m; path = FishingLeaderBoard/ThirdLibrary/WX/AppManager.m; sourceTree = SOURCE_ROOT; };
 		53EAE4C52368949900862DA8 /* ApiFetch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ApiFetch.h; path = FishingLeaderBoard/ThirdLibrary/WX/ApiFetch.h; sourceTree = SOURCE_ROOT; };
@@ -672,6 +674,7 @@
 				8A500D6723674AF60064704F /* YuShareViewController.m */,
 				8A500D6923674AF60064704F /* YuShareViewController.h */,
 				8A500D6A23674AF60064704F /* wx_pyq.png */,
+				53059A522369882000E38C68 /* wechat.jpg */,
 				8A500D6B23674AF60064704F /* YuShareViewController.xib */,
 				53F0D73C2368874400A9D21C /* YuPosterShareViewController.h */,
 				53F0D73D2368874400A9D21C /* YuPosterShareViewController.m */,
@@ -958,6 +961,7 @@
 				8A3488CC235D603B00AED1B7 /* SaiShiTableViewCell.xib in Resources */,
 				8A34891023615E7000AED1B7 /* GreenLineTextField.xib in Resources */,
 				8AD5E184235B0C21000717A5 /* MyTableViewCell.xib in Resources */,
+				53059A532369882000E38C68 /* wechat.jpg in Resources */,
 				8A3488BB235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib in Resources */,
 				8A365966235609E000A51BEF /* Assets.xcassets in Resources */,
 				8A500D6E23674AF60064704F /* wx_pyq.png in Resources */,
