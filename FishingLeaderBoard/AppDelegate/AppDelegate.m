@@ -10,32 +10,20 @@
 #import "LoginAndRegisterViewController.h"
 #import "IQKeyboardManager.h"
 #import "YuWeChatShareManager.h"
-//#import <AlipaySDK/AlipaySDK.h>
-
+#import <AlipaySDK/AlipaySDK.h>
+#import <BMKLocationKit/BMKLocationComponent.h>
 @interface AppDelegate ()
-
+@end
+@interface AppDelegate ()<BMKLocationAuthDelegate>
+ 
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[YuWeChatShareManager manager] registWX];
-    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
-    //默认为YES，关闭为NO
-    manager.enable = YES;
-    //键盘弹出时，点击背景，键盘收回
-    manager.shouldResignOnTouchOutside = YES;
-    //如果YES，那么使用textField的tintColor属性为IQToolbar，否则颜色为黑色。默认是否定的。
-    manager.shouldToolbarUsesTextFieldTintColor = YES;
-    //如果YES，则在IQToolbar上添加textField的占位符文本。默认是肯定的。
-    manager.shouldShowToolbarPlaceholder = YES;
-    //设置IQToolbar按钮的文字
-    manager.toolbarDoneBarButtonItemText = @"完成";
-    //隐藏键盘上面的toolBar,默认是开启的
-    manager.enableAutoToolbar = YES;
-    manager.enable = NO;
-    
+    [self config];
+   
     
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     self.tbc = [[FTabBarVC alloc] init];
@@ -43,44 +31,63 @@
     self.window.rootViewController = self.tbc;
     return YES;
 }
-//#pragma 微信支付回调(下面两个兼容iOS版本)
-//-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-//    return  [[YuWeChatShareManager manager] application:application handleOpenURL:url];
-//}
-//
-//-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-//
-//    if ([url.host isEqualToString:@"safepay"]) {
-//        //跳转支付宝钱包进行支付，处理支付结果
-//        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-//            NSLog(@"result = %@",resultDic);
-//        }];
-//    }
-//    return YES;
-//
-//
-////微信的
-//    return   [[YuWeChatShareManager manager] application:app
-//                                                 openURL:url
-//                                                 options:options];
-//}
-//
-//#pragma 支付宝
-//
-//- (BOOL)application:(UIApplication *)application
-//            openURL:(NSURL *)url
-//  sourceApplication:(NSString *)sourceApplication
-//         annotation:(id)annotation {
-//
-//    if ([url.host isEqualToString:@"safepay"]) {
-//        //跳转支付宝钱包进行支付，处理支付结果
-//        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-//            NSLog(@"result = %@",resultDic);
-//        }];
-//    }
-//    return YES;
-//}
+ //#pragma 微信支付回调(下面两个兼容iOS版本)
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return  [[YuWeChatShareManager manager] application:application handleOpenURL:url];
+}
 
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+
+    if ([url.host isEqualToString:@"safepay"]) {
+        //跳转支付宝钱包进行支付，处理支付结果
+        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+            NSLog(@"result = %@",resultDic);
+        }];
+    }
+    return YES;
+
+
+//微信的
+    return   [[YuWeChatShareManager manager] application:app
+                                                 openURL:url
+                                                 options:options];
+}
+
+#pragma 支付宝
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+
+    if ([url.host isEqualToString:@"safepay"]) {
+        //跳转支付宝钱包进行支付，处理支付结果
+        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+            NSLog(@"result = %@",resultDic);
+        }];
+    }
+    return YES;
+}
+-(void)config{
+    [self configBaiduMap];
+
+    [[YuWeChatShareManager manager] registWX];
+       IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+       //默认为YES，关闭为NO
+       manager.enable = YES;
+       //键盘弹出时，点击背景，键盘收回
+       manager.shouldResignOnTouchOutside = YES;
+       //如果YES，那么使用textField的tintColor属性为IQToolbar，否则颜色为黑色。默认是否定的。
+       manager.shouldToolbarUsesTextFieldTintColor = YES;
+       //如果YES，则在IQToolbar上添加textField的占位符文本。默认是肯定的。
+       manager.shouldShowToolbarPlaceholder = YES;
+       //设置IQToolbar按钮的文字
+       manager.toolbarDoneBarButtonItemText = @"完成";
+       //隐藏键盘上面的toolBar,默认是开启的
+       manager.enableAutoToolbar = YES;
+       manager.enable = NO;
+       
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -110,4 +117,23 @@
 }
 
 
+@end
+
+@implementation AppDelegate (BaiduMapLocation)
+
+#pragma mark 百度地图设置
+- (void)configBaiduMap {
+//    TODO 补全百度地图apikey
+    NSString *ak = @"W1Btv2pd45POt10CC1P86Xhj";
+    BMKMapManager *mapManager = [[BMKMapManager alloc] init];
+    self.mapManager = mapManager;
+    BOOL ret = [mapManager start:ak generalDelegate:nil];
+    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:ak authDelegate:self];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+}
+-(void)onCheckPermissionState:(BMKLocationAuthErrorCode)iError{
+    
+}
 @end

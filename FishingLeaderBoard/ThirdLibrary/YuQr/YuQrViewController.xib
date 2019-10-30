@@ -19,13 +19,13 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ol-n0-Koy">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ol-n0-Koy">
                     <rect key="frame" x="42" y="66" width="95" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="Dab-Ry-rjZ"/>
                         <constraint firstAttribute="width" constant="95" id="Utq-IO-BpC"/>
                     </constraints>
-                    <state key="normal" title="🔙"/>
+                    <state key="normal" image="alipay_msp_back.png"/>
                     <connections>
                         <action selector="dismissQrViewController:" destination="-1" eventType="touchUpInside" id="rHp-89-IYX"/>
                     </connections>
@@ -40,4 +40,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="84.375"/>
         </view>
     </objects>
+    <resources>
+        <image name="alipay_msp_back.png" width="10" height="17"/>
+    </resources>
 </document>

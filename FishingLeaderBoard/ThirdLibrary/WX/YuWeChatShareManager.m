@@ -136,6 +136,35 @@ static YuWeChatShareManager *manager;
         
     }];
 }
++(void)shareToWxMinProgramWithTitle:(NSString *)title
+                        description:(NSString *) description
+                           userName:(NSString *)userName
+                         webpageUrl:(NSString *)webpageUrl
+                               path:(NSString *)path
+                        hdImageData:(NSData *) hdImageData
+                    withShareTicket:(BOOL) withShareTicket miniProgramType:(int) programType{
+    WXMiniProgramObject *object = [WXMiniProgramObject object];
+    object.webpageUrl = webpageUrl;
+    object.userName = userName;
+    object.path = path;
+    object.hdImageData = hdImageData;
+    object.withShareTicket = withShareTicket;
+    object.miniProgramType = programType;
+    WXMediaMessage *message = [WXMediaMessage message];
+    message.title = title;
+    message.description = description;
+    message.thumbData = nil;  //兼容旧版本节点的图片，小于32KB，新版本优先
+                              //使用WXMiniProgramObject的hdImageData属性
+    message.mediaObject = object;
+    SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
+    req.bText = NO;
+    req.message = message;
+    req.scene = WXSceneSession;  //目前只支持会话
+    [WXApi sendReq:req
+        completion:^(BOOL success) {
+        
+    }];
+}
 -(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
     return [WXApi handleOpenURL:url delegate:self];
@@ -148,7 +177,7 @@ static YuWeChatShareManager *manager;
 
 #pragma 微信操作结果提示
 -(void)showMessage:(NSString *) msg{
-    AppDelegate * appDelegate = [UIApplication sharedApplication].delegate;
+    AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
              MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:appDelegate.window.rootViewController.view animated:YES];
              hud.label.text = msg;
              [hud hideAnimated:YES afterDelay:0.25];
