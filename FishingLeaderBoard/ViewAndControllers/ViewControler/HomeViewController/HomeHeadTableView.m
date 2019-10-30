@@ -12,7 +12,7 @@
 
 @implementation HomeHeadTableView
 
-- (id)initWithFrame:(CGRect)frame withType:(FPageHeadViewType)type
+- (id)initWithFrame:(CGRect)frame withType:(FPageHeadViewType)type vc:(id)de
 {
     self = [super initWithFrame:frame];
     if(self)
@@ -24,35 +24,15 @@
         }else{
             [self addFishingClassHeadView];
         }
-        self.segmentedCtr=[[UISegmentedControl alloc]initWithItems:@[@"最热",@"最新"]];
-        self.segmentedCtr.frame=(CGRect){0, topSegCtrlY, SCREEN_WIDTH, 45};
-        self.segmentedCtr.selectedSegmentIndex=0;
-        self.segmentedCtr.tintColor = CLEARCOLOR;
-        [self.segmentedCtr setTitleTextAttributes:@{NSForegroundColorAttributeName:BLACKCOLOR}forState:UIControlStateNormal];
-        [self.segmentedCtr addTarget:self action:@selector(segmentSelect:) forControlEvents:UIControlEventValueChanged];
-        [self addSubview:self.segmentedCtr];
-        
-        float xl = (CGRectGetWidth(frame)/2.0 -25)/2.0;
-        lineView = [[UIView alloc]initWithFrame:CGRectMake(xl, CGRectGetMaxY(self.segmentedCtr.frame)-2, 25, 1)];
-        lineView.backgroundColor = BLACKCOLOR;
-        [self addSubview:lineView];
+        FSSegmentTitleView *titleView = [[FSSegmentTitleView alloc]initWithFrame:CGRectMake(0, topSegCtrlY, SCREEN_WIDTH, 45) delegate:de indicatorType:1];
+          titleView.titlesArr = @[@"最热",@"最新"];
+          [self addSubview:titleView];
+          titleView.titleSelectColor= BLACKCOLOR;
+          titleView.indicatorColor = BLACKCOLOR;
+          titleView.backgroundColor = WHITECOLOR;
+
     }
     return self;
-}
-//====================选择页面===================
--(void)segmentSelect:(UISegmentedControl *)segmentedCtr
-{
-    
-    self.segmentCtrlClick(segmentedCtr);
-    
-    float xl = CGRectGetWidth(self.frame)/2.0;
-    
-    if(segmentedCtr.selectedSegmentIndex == 0)
-    {
-        lineView.frame = CGRectMake((xl -25)/2.0, CGRectGetMaxY(self.frame)-2, 25, 1);
-    }else{
-        lineView.frame = CGRectMake(xl + (xl -25)/2.0, CGRectGetMaxY(self.frame)-2, 25, 1);
-    }
 }
 //=====================钓技课堂===================
 -(void)addFishingClassHeadView

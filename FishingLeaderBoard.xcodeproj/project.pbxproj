@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6202B678B2A2B6BF76CF2CD1 /* Pods_FishingLeaderBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8E8522460D3AB52BDD643F /* Pods_FishingLeaderBoardTests.framework */; };
+		8A25AF962369465700006ED4 /* DiaoChangListHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A25AF952369465700006ED4 /* DiaoChangListHeadView.m */; };
+		8A25AF982369468100006ED4 /* DiaoChangListHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A25AF972369468100006ED4 /* DiaoChangListHeadView.xib */; };
+		8A25AF9B236982F200006ED4 /* DiaoChangListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A25AF9A236982F200006ED4 /* DiaoChangListViewController.m */; };
 		8A3488B6235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488B5235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m */; };
 		8A3488BB235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3488B9235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib */; };
 		8A3488BE235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488BD235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m */; };
@@ -65,7 +68,6 @@
 		8A500D842367F5AF0064704F /* DiaoChangDetailHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A500D832367F5AF0064704F /* DiaoChangDetailHeadView.xib */; };
 		8A500D87236844310064704F /* ReleaseFishGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D86236844310064704F /* ReleaseFishGetViewController.m */; };
 		8A500D8B23686D540064704F /* FindDiaoChangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D8A23686D540064704F /* FindDiaoChangViewController.m */; };
-		8A500D8E23686E8B0064704F /* DiaoChangListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D8D23686E8B0064704F /* DiaoChangListViewController.m */; };
 		8AD5E112235702E8000717A5 /* FViewCreateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E111235702E8000717A5 /* FViewCreateFactory.m */; };
 		8AD5E115235706FF000717A5 /* UIColor+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E114235706FF000717A5 /* UIColor+Additional.m */; };
 		8AD5E1222357EEB0000717A5 /* YHSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5E1202357EEB0000717A5 /* YHSegmentView.m */; };
@@ -128,6 +130,11 @@
 		4C8E8522460D3AB52BDD643F /* Pods_FishingLeaderBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7907D6E6275CC3ABE58427 /* Pods_FishingLeaderBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDB28D40FCEF542B7335B33 /* Pods_FishingLeaderBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A25AF942369465700006ED4 /* DiaoChangListHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangListHeadView.h; sourceTree = "<group>"; };
+		8A25AF952369465700006ED4 /* DiaoChangListHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangListHeadView.m; sourceTree = "<group>"; };
+		8A25AF972369468100006ED4 /* DiaoChangListHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaoChangListHeadView.xib; sourceTree = "<group>"; };
+		8A25AF99236982F200006ED4 /* DiaoChangListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangListViewController.h; sourceTree = "<group>"; };
+		8A25AF9A236982F200006ED4 /* DiaoChangListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangListViewController.m; sourceTree = "<group>"; };
 		8A3488B4235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangSearchTableViewController.h; sourceTree = "<group>"; };
 		8A3488B5235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangSearchTableViewController.m; sourceTree = "<group>"; };
 		8A3488B9235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaoChangSearchTableViewCell.xib; sourceTree = "<group>"; };
@@ -231,8 +238,6 @@
 		8A500D86236844310064704F /* ReleaseFishGetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReleaseFishGetViewController.m; sourceTree = "<group>"; };
 		8A500D8923686D540064704F /* FindDiaoChangViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindDiaoChangViewController.h; sourceTree = "<group>"; };
 		8A500D8A23686D540064704F /* FindDiaoChangViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindDiaoChangViewController.m; sourceTree = "<group>"; };
-		8A500D8C23686E8B0064704F /* DiaoChangListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangListViewController.h; sourceTree = "<group>"; };
-		8A500D8D23686E8B0064704F /* DiaoChangListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangListViewController.m; sourceTree = "<group>"; };
 		8AD5E110235702E8000717A5 /* FViewCreateFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FViewCreateFactory.h; sourceTree = "<group>"; };
 		8AD5E111235702E8000717A5 /* FViewCreateFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FViewCreateFactory.m; sourceTree = "<group>"; };
 		8AD5E113235706FF000717A5 /* UIColor+Additional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additional.h"; sourceTree = "<group>"; };
@@ -688,8 +693,11 @@
 			children = (
 				8A500D8923686D540064704F /* FindDiaoChangViewController.h */,
 				8A500D8A23686D540064704F /* FindDiaoChangViewController.m */,
-				8A500D8C23686E8B0064704F /* DiaoChangListViewController.h */,
-				8A500D8D23686E8B0064704F /* DiaoChangListViewController.m */,
+				8A25AF942369465700006ED4 /* DiaoChangListHeadView.h */,
+				8A25AF952369465700006ED4 /* DiaoChangListHeadView.m */,
+				8A25AF972369468100006ED4 /* DiaoChangListHeadView.xib */,
+				8A25AF99236982F200006ED4 /* DiaoChangListViewController.h */,
+				8A25AF9A236982F200006ED4 /* DiaoChangListViewController.m */,
 			);
 			path = FindDiaoChnag;
 			sourceTree = "<group>";
@@ -847,7 +855,6 @@
 				8A365956235609E000A51BEF /* Frameworks */,
 				8A365957235609E000A51BEF /* Resources */,
 				7C9EF7507B21E0A5D84FC477 /* [CP] Embed Pods Frameworks */,
-				C5A6EA35F61A5B371730FA22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -948,6 +955,7 @@
 				8A348905235FFD8300AED1B7 /* SaiShiListTableViewCell.xib in Resources */,
 				8A3488CC235D603B00AED1B7 /* SaiShiTableViewCell.xib in Resources */,
 				8A34891023615E7000AED1B7 /* GreenLineTextField.xib in Resources */,
+				8A25AF982369468100006ED4 /* DiaoChangListHeadView.xib in Resources */,
 				8AD5E184235B0C21000717A5 /* MyTableViewCell.xib in Resources */,
 				8A3488BB235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib in Resources */,
 				8A365966235609E000A51BEF /* Assets.xcassets in Resources */,
@@ -1067,23 +1075,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C5A6EA35F61A5B371730FA22 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FishingLeaderBoard/Pods-FishingLeaderBoard-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FishingLeaderBoard/Pods-FishingLeaderBoard-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FishingLeaderBoard/Pods-FishingLeaderBoard-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1112,7 +1103,6 @@
 				8A365A252356EE8B00A51BEF /* FNavigationController.m in Sources */,
 				8AD5E115235706FF000717A5 /* UIColor+Additional.m in Sources */,
 				8A3488D4235D639F00AED1B7 /* UserTableViewController.m in Sources */,
-				8A500D8E23686E8B0064704F /* DiaoChangListViewController.m in Sources */,
 				8AD5E1652359BF3A000717A5 /* SearchViewController.m in Sources */,
 				8A3488F7235EADBF00AED1B7 /* SaiShiAndHuoDongTableViewController.m in Sources */,
 				8AD5E1A0235C882A000717A5 /* MainCollectionViewCell.m in Sources */,
@@ -1148,6 +1138,7 @@
 				8A3489082360900B00AED1B7 /* MenuView.m in Sources */,
 				8A500D6D23674AF60064704F /* YuShareViewController.m in Sources */,
 				8AD5E1702359E7DF000717A5 /* WMZBannerFlowLayout.m in Sources */,
+				8A25AF962369465700006ED4 /* DiaoChangListHeadView.m in Sources */,
 				8AD5E188235B3E21000717A5 /* MainTableViewCell.m in Sources */,
 				8A365A222356ED9D00A51BEF /* FViewController.m in Sources */,
 				8AD5E196235B5FCF000717A5 /* MainOneTableViewCell.m in Sources */,
@@ -1158,6 +1149,7 @@
 				8A365A0B2356AC9200A51BEF /* AppDelegate.m in Sources */,
 				8A34892F23633CFC00AED1B7 /* EditView.m in Sources */,
 				8A500D5B23672D8B0064704F /* DCDBriefTableViewCell.m in Sources */,
+				8A25AF9B236982F200006ED4 /* DiaoChangListViewController.m in Sources */,
 				8AD5E17F235AF33B000717A5 /* TwoLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

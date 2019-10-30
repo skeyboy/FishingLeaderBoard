@@ -2,7 +2,7 @@
 //  DiaoChangListViewController.h
 //  FishingLeaderBoard
 //
-//  Created by yue on 2019/10/29.
+//  Created by yue on 2019/10/30.
 //  Copyright © 2019 yue. All rights reserved.
 //
 
@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DiaoChangListViewController : UIViewController
-
+@property(strong,nonatomic)UITableView*tableView;
 @end
 
 NS_ASSUME_NONNULL_END

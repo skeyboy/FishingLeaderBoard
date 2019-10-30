@@ -10,7 +10,7 @@
 #import "DiaoChangDetailViewController.h"
 #import "YuQrViewController.h"
 #import "FindDiaoChangViewController.h"
-@interface HomeTableViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface HomeTableViewController ()<UITableViewDataSource,UITableViewDelegate,FSSegmentTitleViewDelegate>
 {
     NSArray *arrTableSource;
 }
@@ -44,7 +44,7 @@
     
     [hkNavigationView setNavBarViewCenterSearchTag:SEARCH_HOME_TAG];
     __weak __typeof(self) weakSelf = self;
-    hkNavigationView.searchClick = ^(UISearchBar * search) {
+    hkNavigationView.searchClick = ^(UISearchBar *se) {
         SearchViewController *vc =[[SearchViewController alloc]init];
         [weakSelf.navigationController pushViewController:vc animated:YES];
     };
@@ -82,22 +82,22 @@
     }else{
         headY = 40 + 10 + 60 + 10 + 60 + 10 + 45;
     }
-    self.headView = [[HomeHeadTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, headY) withType:_headType];
+    self.headView = [[HomeHeadTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, headY) withType:_headType vc:self];
     self.tableView.tableHeaderView = self.headView;
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.bounces = NO;
     __weak __typeof(self) weakSelf = self;
-    self.headView.segmentCtrlClick = ^(UISegmentedControl * sem) {
-        __typeof(&*weakSelf) strongSelf = weakSelf;
-        NSLog(@"seg click");
-    };
     self.headView.btnCtrlClick = ^(UIButton * btn) {
         __typeof(&*weakSelf) strongSelf = weakSelf;
         [strongSelf btnClick:btn];
     };
    
 }
-
+#pragma mark - 
+- (void)FSSegmentTitleView:(FSSegmentTitleView *)titleView startIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex
+{
+    
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

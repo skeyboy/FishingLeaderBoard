@@ -10,7 +10,7 @@
 #import "LoginAndRegisterViewController.h"
 #import "IQKeyboardManager.h"
 #import "YuWeChatShareManager.h"
-#import <AlipaySDK/AlipaySDK.h>
+//#import <AlipaySDK/AlipaySDK.h>
 
 @interface AppDelegate ()
 
@@ -43,43 +43,43 @@
     self.window.rootViewController = self.tbc;
     return YES;
 }
-#pragma 微信支付回调(下面两个兼容iOS版本)
--(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    return  [[YuWeChatShareManager manager] application:application handleOpenURL:url];
-}
-
--(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    
-    if ([url.host isEqualToString:@"safepay"]) {
-        //跳转支付宝钱包进行支付，处理支付结果
-        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-            NSLog(@"result = %@",resultDic);
-        }];
-    }
-    return YES;
-    
-
-//微信的
-    return   [[YuWeChatShareManager manager] application:app
-                                                 openURL:url
-                                                 options:options];
-}
-
-#pragma 支付宝
-
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation {
-    
-    if ([url.host isEqualToString:@"safepay"]) {
-        //跳转支付宝钱包进行支付，处理支付结果
-        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-            NSLog(@"result = %@",resultDic);
-        }];
-    }
-    return YES;
-}
+//#pragma 微信支付回调(下面两个兼容iOS版本)
+//-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+//    return  [[YuWeChatShareManager manager] application:application handleOpenURL:url];
+//}
+//
+//-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+//
+//    if ([url.host isEqualToString:@"safepay"]) {
+//        //跳转支付宝钱包进行支付，处理支付结果
+//        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+//            NSLog(@"result = %@",resultDic);
+//        }];
+//    }
+//    return YES;
+//
+//
+////微信的
+//    return   [[YuWeChatShareManager manager] application:app
+//                                                 openURL:url
+//                                                 options:options];
+//}
+//
+//#pragma 支付宝
+//
+//- (BOOL)application:(UIApplication *)application
+//            openURL:(NSURL *)url
+//  sourceApplication:(NSString *)sourceApplication
+//         annotation:(id)annotation {
+//
+//    if ([url.host isEqualToString:@"safepay"]) {
+//        //跳转支付宝钱包进行支付，处理支付结果
+//        [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+//            NSLog(@"result = %@",resultDic);
+//        }];
+//    }
+//    return YES;
+//}
 
 
 
