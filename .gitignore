@@ -1,4 +1,5 @@
 Pods
+.DS_Store
 Podfile.lock
 FishingLeaderBoard.xcodeproj/xcuserdata
 FishingLeaderBoard.xcworkspace/xcuserdata

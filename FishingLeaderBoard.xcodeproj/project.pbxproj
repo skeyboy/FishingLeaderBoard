@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53059A532369882000E38C68 /* wechat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53059A522369882000E38C68 /* wechat.jpg */; };
+		53EAE4C42368935F00862DA8 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EAE4C32368935F00862DA8 /* AppManager.m */; };
+		53EAE4C72368949900862DA8 /* ApiFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EAE4C62368949900862DA8 /* ApiFetch.m */; };
+		53EAE4CA23691EA800862DA8 /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EAE4C923691EA800862DA8 /* AppModel.m */; };
+		53F0D73B2368850800A9D21C /* BMKLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F0D73A2368850800A9D21C /* BMKLocationKit.framework */; };
+		53F0D73F2368874400A9D21C /* YuPosterShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F0D73D2368874400A9D21C /* YuPosterShareViewController.m */; };
+		53F0D7402368874400A9D21C /* YuPosterShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F0D73E2368874400A9D21C /* YuPosterShareViewController.xib */; };
 		6202B678B2A2B6BF76CF2CD1 /* Pods_FishingLeaderBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8E8522460D3AB52BDD643F /* Pods_FishingLeaderBoardTests.framework */; };
 		8A3488B6235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488B5235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m */; };
 		8A3488BB235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3488B9235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib */; };
@@ -124,6 +131,17 @@
 		02BF1BF83C73713E95788D93 /* Pods-FishingLeaderBoardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingLeaderBoardTests.release.xcconfig"; path = "Target Support Files/Pods-FishingLeaderBoardTests/Pods-FishingLeaderBoardTests.release.xcconfig"; sourceTree = "<group>"; };
 		36B33BA1BD75CE815CD1D8CE /* Pods-FishingLeaderBoardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingLeaderBoardTests.debug.xcconfig"; path = "Target Support Files/Pods-FishingLeaderBoardTests/Pods-FishingLeaderBoardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C8E8522460D3AB52BDD643F /* Pods_FishingLeaderBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53059A522369882000E38C68 /* wechat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wechat.jpg; sourceTree = "<group>"; };
+		53EAE4C22368935F00862DA8 /* AppManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppManager.h; path = FishingLeaderBoard/ThirdLibrary/WX/AppManager.h; sourceTree = SOURCE_ROOT; };
+		53EAE4C32368935F00862DA8 /* AppManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppManager.m; path = FishingLeaderBoard/ThirdLibrary/WX/AppManager.m; sourceTree = SOURCE_ROOT; };
+		53EAE4C52368949900862DA8 /* ApiFetch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ApiFetch.h; path = FishingLeaderBoard/ThirdLibrary/WX/ApiFetch.h; sourceTree = SOURCE_ROOT; };
+		53EAE4C62368949900862DA8 /* ApiFetch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ApiFetch.m; path = FishingLeaderBoard/ThirdLibrary/WX/ApiFetch.m; sourceTree = SOURCE_ROOT; };
+		53EAE4C823691EA800862DA8 /* AppModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppModel.h; path = FishingLeaderBoard/ThirdLibrary/WX/AppModel.h; sourceTree = SOURCE_ROOT; };
+		53EAE4C923691EA800862DA8 /* AppModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppModel.m; path = FishingLeaderBoard/ThirdLibrary/WX/AppModel.m; sourceTree = SOURCE_ROOT; };
+		53F0D73A2368850800A9D21C /* BMKLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BMKLocationKit.framework; sourceTree = "<group>"; };
+		53F0D73C2368874400A9D21C /* YuPosterShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YuPosterShareViewController.h; sourceTree = "<group>"; };
+		53F0D73D2368874400A9D21C /* YuPosterShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuPosterShareViewController.m; sourceTree = "<group>"; };
+		53F0D73E2368874400A9D21C /* YuPosterShareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YuPosterShareViewController.xib; sourceTree = "<group>"; };
 		5B7907D6E6275CC3ABE58427 /* Pods_FishingLeaderBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDB28D40FCEF542B7335B33 /* Pods_FishingLeaderBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3488B4235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangSearchTableViewController.h; sourceTree = "<group>"; };
@@ -308,6 +326,7 @@
 				8A3489202362DB5900AED1B7 /* PhotosUI.framework in Frameworks */,
 				8A34891E2362DB4700AED1B7 /* Photos.framework in Frameworks */,
 				F4DE0FCA08AE3F0086854EEC /* Pods_FishingLeaderBoard.framework in Frameworks */,
+				53F0D73B2368850800A9D21C /* BMKLocationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +575,8 @@
 		8A365A112356AF7700A51BEF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				53EAE4C823691EA800862DA8 /* AppModel.h */,
+				53EAE4C923691EA800862DA8 /* AppModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -570,6 +591,10 @@
 		8A365A132356AFA500A51BEF /* NetRequests */ = {
 			isa = PBXGroup;
 			children = (
+				53EAE4C22368935F00862DA8 /* AppManager.h */,
+				53EAE4C32368935F00862DA8 /* AppManager.m */,
+				53EAE4C52368949900862DA8 /* ApiFetch.h */,
+				53EAE4C62368949900862DA8 /* ApiFetch.m */,
 			);
 			path = NetRequests;
 			sourceTree = "<group>";
@@ -649,7 +674,11 @@
 				8A500D6723674AF60064704F /* YuShareViewController.m */,
 				8A500D6923674AF60064704F /* YuShareViewController.h */,
 				8A500D6A23674AF60064704F /* wx_pyq.png */,
+				53059A522369882000E38C68 /* wechat.jpg */,
 				8A500D6B23674AF60064704F /* YuShareViewController.xib */,
+				53F0D73C2368874400A9D21C /* YuPosterShareViewController.h */,
+				53F0D73D2368874400A9D21C /* YuPosterShareViewController.m */,
+				53F0D73E2368874400A9D21C /* YuPosterShareViewController.xib */,
 			);
 			path = WX;
 			sourceTree = "<group>";
@@ -808,6 +837,7 @@
 		948148CA40BB241CA51B54EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53F0D73A2368850800A9D21C /* BMKLocationKit.framework */,
 				8A34891F2362DB5900AED1B7 /* PhotosUI.framework */,
 				8A34891D2362DB4700AED1B7 /* Photos.framework */,
 				6FDB28D40FCEF542B7335B33 /* Pods_FishingLeaderBoard.framework */,
@@ -931,9 +961,11 @@
 				8A3488CC235D603B00AED1B7 /* SaiShiTableViewCell.xib in Resources */,
 				8A34891023615E7000AED1B7 /* GreenLineTextField.xib in Resources */,
 				8AD5E184235B0C21000717A5 /* MyTableViewCell.xib in Resources */,
+				53059A532369882000E38C68 /* wechat.jpg in Resources */,
 				8A3488BB235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib in Resources */,
 				8A365966235609E000A51BEF /* Assets.xcassets in Resources */,
 				8A500D6E23674AF60064704F /* wx_pyq.png in Resources */,
+				53F0D7402368874400A9D21C /* YuPosterShareViewController.xib in Resources */,
 				8A365964235609E000A51BEF /* Main.storyboard in Resources */,
 				8A500D6F23674AF60064704F /* YuShareViewController.xib in Resources */,
 				8A500D6523672F810064704F /* YuQrViewController.xib in Resources */,
@@ -1083,11 +1115,13 @@
 				8A500D782367CE9E0064704F /* STSegmentView.m in Sources */,
 				8A3489182362D2DC00AED1B7 /* PhotoCollectionViewCell.m in Sources */,
 				8A500D7F2367F13F0064704F /* FSSegmentTitleView.m in Sources */,
+				53EAE4C72368949900862DA8 /* ApiFetch.m in Sources */,
 				8AD5E13E235872AF000717A5 /* UIImage+LZScaleToSize.m in Sources */,
 				8A3488C7235D602000AED1B7 /* BuHuoTableViewController.m in Sources */,
 				8AD5E140235872AF000717A5 /* LZCustomTabbar.m in Sources */,
 				8AD5E13F235872AF000717A5 /* FTabBarVC.m in Sources */,
 				8AD5E158235958BA000717A5 /* HomeHeadTableView.m in Sources */,
+				53EAE4C42368935F00862DA8 /* AppManager.m in Sources */,
 				8A365A2B2356F02800A51BEF /* FNavigationView.m in Sources */,
 				8AD5E1712359E7DF000717A5 /* WMZBannerParam.m in Sources */,
 				8A365A252356EE8B00A51BEF /* FNavigationController.m in Sources */,
@@ -1108,6 +1142,7 @@
 				8A3488BE235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m in Sources */,
 				8AD5E1A5235C96BA000717A5 /* MainTwoCollectionViewCell.m in Sources */,
 				8AD5E1732359E7DF000717A5 /* WMZBannerControl.m in Sources */,
+				53EAE4CA23691EA800862DA8 /* AppModel.m in Sources */,
 				8AD5E16223598BE1000717A5 /* LPButton.m in Sources */,
 				8AD5E112235702E8000717A5 /* FViewCreateFactory.m in Sources */,
 				8A3488DD235DE21100AED1B7 /* ColorLabel.m in Sources */,
@@ -1123,6 +1158,7 @@
 				8AD5E15223594A4B000717A5 /* HomeTableViewController.m in Sources */,
 				8A3488D0235D605200AED1B7 /* BuHuoTableViewCell.m in Sources */,
 				8A3488C1235D5FC800AED1B7 /* SaiShiTableViewController.m in Sources */,
+				53F0D73F2368874400A9D21C /* YuPosterShareViewController.m in Sources */,
 				8A500D802367F13F0064704F /* FSPageContentView.m in Sources */,
 				8A3489082360900B00AED1B7 /* MenuView.m in Sources */,
 				8A500D6D23674AF60064704F /* YuShareViewController.m in Sources */,
@@ -1317,6 +1353,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8R29X3H9MY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FishingLeaderBoard/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "FishingLeaderBoard/Supporting Files/Info.plist";
@@ -1340,6 +1380,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8R29X3H9MY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FishingLeaderBoard/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "FishingLeaderBoard/Supporting Files/Info.plist";
