@@ -66,6 +66,9 @@
     if (self.qrDelegate) {
         [self.qrDelegate yuQrScanResultWithArray:array];
     }
+    if (self.qrResult) {
+        self.qrResult(array);
+    }
 }
 
 @end

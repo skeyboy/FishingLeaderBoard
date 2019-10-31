@@ -10,6 +10,8 @@
 #import "DiaoChangDetailViewController.h"
 #import "YuQrViewController.h"
 #import "FindDiaoChangViewController.h"
+#import "MBProgressHUD.h"
+#import <AVFoundation/AVFoundation.h>
 #import "AppDelegate.h"
 @interface HomeTableViewController ()<UITableViewDataSource,UITableViewDelegate,FSSegmentTitleViewDelegate>
 {
@@ -53,9 +55,22 @@
 -(void)btnLeftClick:(UIButton *)btn
 {
 //    TODO
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType: AVMediaTypeVideo];
+    //读取设备授权状态
+    if(authStatus == AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied){
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.label.text = @"请在iOS设置中打开App相机使用权限";
+        [hud hideAnimated:YES
+               afterDelay:1.0];
+        return;
+    
+    }
+    
     YuQrViewController *qrScanVC  =[[YuQrViewController alloc] init];
     qrScanVC.modalPresentationStyle = UIModalPresentationFullScreen;
-    
+    qrScanVC.qrResult = ^(NSArray<LBXScanResult *> * result) {
+        
+    };
     [self presentViewController:qrScanVC animated:YES completion:^{
         
     }];
