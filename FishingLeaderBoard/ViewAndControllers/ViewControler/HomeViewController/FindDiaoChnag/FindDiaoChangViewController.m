@@ -28,7 +28,7 @@
     DiaoChangListViewController *diaoChangListVc = [[DiaoChangListViewController alloc]init];
     DiaoChangListViewController *registerView = [[DiaoChangListViewController alloc]init];
     [mutArr addObjectsFromArray:@[diaoChangListVc,registerView]];
-    YHSegmentView *segmentView = [[YHSegmentView alloc] initWithFrame:CGRectMake(0, Height_StatusBar, SCREEN_WIDTH,  [UIScreen mainScreen].bounds.size.height - CGRectGetMaxY(hkNavigationView.frame)) ViewControllersArr:[mutArr copy] TitleArr:titleArr TitleNormalSize:16 TitleSelectedSize:16 SegmentStyle:YHSegementStyleIndicate ParentViewController:self ReturnIndexBlock:^(NSInteger index) {
+    YHSegmentView *segmentView = [[YHSegmentView alloc] initWithFrame:CGRectMake(0, Height_StatusBar, SCREEN_WIDTH,SCREEN_HEIGHT-Height_NavBar ) ViewControllersArr:[mutArr copy] TitleArr:titleArr TitleNormalSize:16 TitleSelectedSize:16 SegmentStyle:YHSegementStyleIndicate ParentViewController:self ReturnIndexBlock:^(NSInteger index) {
         NSLog(@"点击了%ld模块",(long)index);
     }];
     segmentView.yh_titleSelectedColor = [UIColor groupTableViewBackgroundColor];
@@ -36,8 +36,16 @@
     segmentView.yh_segmentTintColor = [UIColor groupTableViewBackgroundColor];
     segmentView.yh_bgColor = NAVBGCOLOR;
     [self.view addSubview:segmentView];
+    UIButton *btn =[FViewCreateFactory createCustomButtonWithName:@"" delegate:self selector:@selector(back) tag:0];
+    [btn setImage:[UIImage imageNamed:@"nav_back_nor"] forState:UIControlStateNormal];
+    [self.view addSubview:btn];
+    btn.frame = CGRectMake(20, Height_StatusBar+5, 40, 40);
+    
 }
-
+-(void)back
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 - (void)viewWillAppear:(BOOL)animated
 {
     
