@@ -20,7 +20,6 @@
     [super viewDidLoad];
     
     [self setNavViewWithTitle:@"" isShowBack:YES];
-    hkNavigationView.backgroundColor = NAVBGCOLOR;
     hkNavigationView.frame =CGRectMake(0, 0, SCREEN_WIDTH, Height_StatusBar+50);
     hkNavigationView.navLineView.frame =(CGRect){0, Height_StatusBar+50 - 0.5, SCREEN_WIDTH, 0.5};
     self.view.backgroundColor = [UIColor whiteColor];
