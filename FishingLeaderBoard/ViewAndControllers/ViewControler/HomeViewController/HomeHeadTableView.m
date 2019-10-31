@@ -102,10 +102,10 @@
 }
 -(void)addButton
 {
-    UIButton *btn1 = [self btnTitle:@"赛事报名" image:@"game"tag:BUTTON_SAISHIBAOMING_HOME_TAG];
-    UIButton *btn2 = [self btnTitle:@"积分商城" image:@"game"tag:BUTTON_JIFENSHANGCHENG_HOME_TAG];
-    UIButton *btn3 = [self btnTitle:@"发现钓场" image:@"game"tag:BUTTON_FAXIANYUCHANG_HOME_TAG];
-    UIButton *btn4 = [self btnTitle:@"钓技课堂" image:@"game"tag:BUTTON_FISHCLASS_HOME_TAG];
+    UIButton *btn1 = [self btnTitle:@"赛事报名" image:@"Home_saishibaoming"tag:BUTTON_SAISHIBAOMING_HOME_TAG];
+    UIButton *btn2 = [self btnTitle:@"积分商城" image:@"Home_jifenshangcheng"tag:BUTTON_JIFENSHANGCHENG_HOME_TAG];
+    UIButton *btn3 = [self btnTitle:@"发现钓场" image:@"Home_faxiandiaochang"tag:BUTTON_FAXIANYUCHANG_HOME_TAG];
+    UIButton *btn4 = [self btnTitle:@"钓技课堂" image:@"Home_diaojiketang"tag:BUTTON_FISHCLASS_HOME_TAG];
     NSMutableArray *btnArr = [[NSMutableArray alloc]init];
     [btnArr addObjectsFromArray:@[btn1,btn2,btn3,btn4]];
     [btnArr mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedItemLength:100 leadSpacing:0 tailSpacing:0];
