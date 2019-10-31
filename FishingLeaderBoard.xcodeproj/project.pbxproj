@@ -14,6 +14,7 @@
 		53F0D73B2368850800A9D21C /* BMKLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F0D73A2368850800A9D21C /* BMKLocationKit.framework */; };
 		53F0D73F2368874400A9D21C /* YuPosterShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F0D73D2368874400A9D21C /* YuPosterShareViewController.m */; };
 		53F0D7402368874400A9D21C /* YuPosterShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F0D73E2368874400A9D21C /* YuPosterShareViewController.xib */; };
+		53FFE70D236A82FE007ABC6A /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FFE70C236A82FE007ABC6A /* libc++abi.tbd */; };
 		6202B678B2A2B6BF76CF2CD1 /* Pods_FishingLeaderBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8E8522460D3AB52BDD643F /* Pods_FishingLeaderBoardTests.framework */; };
 		8A25AF962369465700006ED4 /* DiaoChangListHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A25AF952369465700006ED4 /* DiaoChangListHeadView.m */; };
 		8A25AF982369468100006ED4 /* DiaoChangListHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A25AF972369468100006ED4 /* DiaoChangListHeadView.xib */; };
@@ -153,6 +154,7 @@
 		53F0D73C2368874400A9D21C /* YuPosterShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YuPosterShareViewController.h; sourceTree = "<group>"; };
 		53F0D73D2368874400A9D21C /* YuPosterShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YuPosterShareViewController.m; sourceTree = "<group>"; };
 		53F0D73E2368874400A9D21C /* YuPosterShareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YuPosterShareViewController.xib; sourceTree = "<group>"; };
+		53FFE70C236A82FE007ABC6A /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		5B7907D6E6275CC3ABE58427 /* Pods_FishingLeaderBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDB28D40FCEF542B7335B33 /* Pods_FishingLeaderBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A25AF942369465700006ED4 /* DiaoChangListHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangListHeadView.h; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53FFE70D236A82FE007ABC6A /* libc++abi.tbd in Frameworks */,
 				8A25AFA92369F04E00006ED4 /* libssl.a in Frameworks */,
 				8A25AFA42369F04E00006ED4 /* BaiduMapAPI_Base.framework in Frameworks */,
 				8A3489202362DB5900AED1B7 /* PhotosUI.framework in Frameworks */,
@@ -893,6 +896,7 @@
 		948148CA40BB241CA51B54EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53FFE70C236A82FE007ABC6A /* libc++abi.tbd */,
 				8A25AF9C2369F04800006ED4 /* BaiduMapAPI_Base.framework */,
 				8A25AFA32369F04D00006ED4 /* BaiduMapAPI_Cloud.framework */,
 				8A25AF9F2369F04B00006ED4 /* BaiduMapAPI_Map.framework */,

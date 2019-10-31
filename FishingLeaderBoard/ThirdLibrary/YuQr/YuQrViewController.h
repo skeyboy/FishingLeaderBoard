@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LBXScanTypes.h"
+typedef void(^QrResult)(NSArray<LBXScanResult *> * result);
 @protocol YuQrViewControllerDelegate<NSObject>
 @optional
 - (void)yuQrScanResultWithArray:(NSArray<LBXScanResult*>*_Nullable)array;
@@ -16,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YuQrViewController : UIViewController
 @property(assign, nonatomic) id<YuQrViewControllerDelegate> qrDelegate;
+@property (copy,nonatomic) QrResult _Nullable  qrResult;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -13,8 +13,10 @@
 #import <AlipaySDK/AlipaySDK.h>
 #import <BMKLocationKit/BMKLocationComponent.h>
 @interface AppDelegate ()
+@property(nonatomic,copy,nullable) BMKLocationResult bmkLocationResult;
+
 @end
-@interface AppDelegate ()<BMKLocationAuthDelegate>
+@interface AppDelegate ()<BMKLocationAuthDelegate,BMKLocationManagerDelegate>
  
 @end
 
@@ -22,13 +24,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self config];
    
     
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     self.tbc = [[FTabBarVC alloc] init];
     [self.tbc setSelectedIndex:4];
     self.window.rootViewController = self.tbc;
+    [self config];
+
     return YES;
 }
  //#pragma 微信支付回调(下面两个兼容iOS版本)
@@ -69,7 +72,18 @@
     return YES;
 }
 -(void)config{
-    [self configBaiduMap];
+    if ([CLLocationManager locationServicesEnabled] && ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorized)) {
+
+    //定位功能可用
+        [self performSelector:@selector(configBaiduMap) withObject:nil afterDelay:1];
+
+    }else if ([CLLocationManager authorizationStatus] ==kCLAuthorizationStatusDenied) {
+
+    //定位不能用
+        
+
+    }
+    
 
     [[YuWeChatShareManager manager] registWX];
        IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
@@ -121,6 +135,12 @@
 
 @implementation AppDelegate (BaiduMapLocation)
 
+-(void)fetchNewLocationInfo:(BMKLocationResult)result{
+    if (self.locationManager) {
+        self.bmkLocationResult = result;
+        [self.locationManager startUpdatingLocation];
+    }
+}
 #pragma mark 百度地图设置
 - (void)configBaiduMap {
 //    TODO 补全百度地图apikey
@@ -132,8 +152,45 @@
     if (!ret) {
         NSLog(@"manager start failed!");
     }
+  
+
+ }
+-(void)startLocation{
+        self.locationManager = [[BMKLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        self.locationManager.coordinateType = BMKLocationCoordinateTypeBMK09LL;
+        self.locationManager.distanceFilter = kCLDistanceFilterNone;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        self.locationManager.activityType = CLActivityTypeAutomotiveNavigation;
+        self.locationManager.pausesLocationUpdatesAutomatically = NO;
+    //    locationManager.allowsBackgroundLocationUpdates = YES;
+        self.locationManager.locationTimeout = 10;
+    self.locationManager.reGeocodeTimeout = 10;
+    [self.locationManager startUpdatingLocation];
+
+        [self.locationManager requestLocationWithReGeocode:YES withNetworkState:YES completionBlock:^(BMKLocation * _Nullable location, BMKLocationNetworkState state, NSError * _Nullable error) {
+                 //获取经纬度和该定位点对应的位置信息
+            
+        }];
 }
 -(void)onCheckPermissionState:(BMKLocationAuthErrorCode)iError{
+    if (iError == BMKLocationAuthErrorSuccess) {
+        
+        [self startLocation];
+    }
+}
+#pragma 定位回调
+-(void)BMKLocationManager:(BMKLocationManager *)manager didFailWithError:(NSError *)error{
     
+}
+-(void)BMKLocationManager:(BMKLocationManager *)manager didUpdateLocation:(BMKLocation *)location orError:(NSError *)error{
+    NSLog(@"%@ %@",location.location,location.rgcData);
+    if (self.bmkLocationResult) {
+        self.bmkLocationResult(location.location, location.rgcData);
+        
+    }
+    self.bmkLocationResult = nil;
+}
+-(void)BMKLocationManager:(BMKLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
 }
 @end
