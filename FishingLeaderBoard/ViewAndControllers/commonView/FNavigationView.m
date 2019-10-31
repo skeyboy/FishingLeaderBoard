@@ -307,10 +307,10 @@ NS_ASSUME_NONNULL_BEGIN
     _searchBar.tag = tag;
     
     if (@available(iOS 13,*)) {
-        self.searchBar.barStyle = UIBarStyleDefault;
+         self.searchBar.barStyle = UIBarStyleDefault;
          self.searchBar.searchBarStyle = UISearchBarStyleMinimal;
          self.searchBar.searchTextField.font = [UIFont systemFontOfSize:15];
-    self.searchBar.searchTextField.backgroundColor=[UIColor colorWithWhite:1 alpha:0.2];
+         self.searchBar.searchTextField.backgroundColor=[UIColor colorWithWhite:1 alpha:0.2];
         self.searchBar.searchTextField.textColor = [UIColor lightGrayColor];
         
     } else {
@@ -342,15 +342,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 }
 -(BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
-    return YES;
-}
--(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
-{
     if(searchBar.tag == SEARCH_HOME_TAG)
-    {
-        [_searchBar resignFirstResponder];
-              self.searchClick(searchBar);
-    }
+       {
+           [_searchBar resignFirstResponder];
+                 self.searchClick(searchBar);
+           return NO;
+       }
+    return YES;
 }
 
 - (void)setNavBarViewRightBtnTag:(NSInteger)tag
