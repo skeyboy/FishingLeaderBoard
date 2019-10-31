@@ -13,6 +13,7 @@
 
 @interface YuQrViewController ()<LBXScanViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *qrBackBtn;
+@property (weak, nonatomic) IBOutlet UILabel *qrbackTitleLabel;
 
 @end
 
@@ -53,7 +54,8 @@
     [self addChildViewController:vc];
     [self.view addSubview:vc.view];
     [self.view bringSubviewToFront:self.qrBackBtn];
- 
+    [self.view bringSubviewToFront:self.qrbackTitleLabel];
+    
 }
 
 - (IBAction)dismissQrViewController:(id)sender {

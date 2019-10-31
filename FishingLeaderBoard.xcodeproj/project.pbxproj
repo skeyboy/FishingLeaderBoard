@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		53059A532369882000E38C68 /* wechat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53059A522369882000E38C68 /* wechat.jpg */; };
+		53CA6AC4236AB9D200E47219 /* DiaochangMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CA6AC2236AB9D200E47219 /* DiaochangMapViewController.m */; };
+		53CA6AC5236AB9D200E47219 /* DiaochangMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53CA6AC3236AB9D200E47219 /* DiaochangMapViewController.xib */; };
+		53CA6AC8236ADDC600E47219 /* UIViewController+ShowHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CA6AC7236ADDC600E47219 /* UIViewController+ShowHud.m */; };
 		53EAE4C42368935F00862DA8 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EAE4C32368935F00862DA8 /* AppManager.m */; };
 		53EAE4C72368949900862DA8 /* ApiFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EAE4C62368949900862DA8 /* ApiFetch.m */; };
 		53EAE4CA23691EA800862DA8 /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EAE4C923691EA800862DA8 /* AppModel.m */; };
@@ -145,6 +148,11 @@
 		36B33BA1BD75CE815CD1D8CE /* Pods-FishingLeaderBoardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingLeaderBoardTests.debug.xcconfig"; path = "Target Support Files/Pods-FishingLeaderBoardTests/Pods-FishingLeaderBoardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C8E8522460D3AB52BDD643F /* Pods_FishingLeaderBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53059A522369882000E38C68 /* wechat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wechat.jpg; sourceTree = "<group>"; };
+		53CA6AC1236AB9D200E47219 /* DiaochangMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaochangMapViewController.h; sourceTree = "<group>"; };
+		53CA6AC2236AB9D200E47219 /* DiaochangMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaochangMapViewController.m; sourceTree = "<group>"; };
+		53CA6AC3236AB9D200E47219 /* DiaochangMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaochangMapViewController.xib; sourceTree = "<group>"; };
+		53CA6AC6236ADDC600E47219 /* UIViewController+ShowHud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ShowHud.h"; sourceTree = "<group>"; };
+		53CA6AC7236ADDC600E47219 /* UIViewController+ShowHud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ShowHud.m"; sourceTree = "<group>"; };
 		53EAE4C22368935F00862DA8 /* AppManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppManager.h; path = FishingLeaderBoard/ThirdLibrary/WX/AppManager.h; sourceTree = SOURCE_ROOT; };
 		53EAE4C32368935F00862DA8 /* AppManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppManager.m; path = FishingLeaderBoard/ThirdLibrary/WX/AppManager.m; sourceTree = SOURCE_ROOT; };
 		53EAE4C52368949900862DA8 /* ApiFetch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ApiFetch.h; path = FishingLeaderBoard/ThirdLibrary/WX/ApiFetch.h; sourceTree = SOURCE_ROOT; };
@@ -387,6 +395,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53CA6AC0236AB9BA00E47219 /* DiaoChangMap */ = {
+			isa = PBXGroup;
+			children = (
+				53CA6AC1236AB9D200E47219 /* DiaochangMapViewController.h */,
+				53CA6AC2236AB9D200E47219 /* DiaochangMapViewController.m */,
+				53CA6AC3236AB9D200E47219 /* DiaochangMapViewController.xib */,
+			);
+			path = DiaoChangMap;
+			sourceTree = "<group>";
+		};
 		5BD6CBB891C274BD8CC7FB8D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,6 +604,8 @@
 			children = (
 				8AD5E113235706FF000717A5 /* UIColor+Additional.h */,
 				8AD5E114235706FF000717A5 /* UIColor+Additional.m */,
+				53CA6AC6236ADDC600E47219 /* UIViewController+ShowHud.h */,
+				53CA6AC7236ADDC600E47219 /* UIViewController+ShowHud.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -836,6 +856,7 @@
 		8AD5E14C2359433A000717A5 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				53CA6AC0236AB9BA00E47219 /* DiaoChangMap */,
 				8A500D8823686D0C0064704F /* FindDiaoChnag */,
 				8A348938236588F700AED1B7 /* DiaoChangDetail */,
 				8A34893023648A3100AED1B7 /* Scan */,
@@ -1039,6 +1060,7 @@
 				8A500D6E23674AF60064704F /* wx_pyq.png in Resources */,
 				53F0D7402368874400A9D21C /* YuPosterShareViewController.xib in Resources */,
 				8A365964235609E000A51BEF /* Main.storyboard in Resources */,
+				53CA6AC5236AB9D200E47219 /* DiaochangMapViewController.xib in Resources */,
 				8A500D6F23674AF60064704F /* YuShareViewController.xib in Resources */,
 				8A500D6523672F810064704F /* YuQrViewController.xib in Resources */,
 				8AD5E1AB235C9E26000717A5 /* MainNoTableViewCell.xib in Resources */,
@@ -1205,6 +1227,7 @@
 				8AD5E1A0235C882A000717A5 /* MainCollectionViewCell.m in Sources */,
 				8A3488FA235EAFDF00AED1B7 /* SaiShiListTableViewController.m in Sources */,
 				8A34890B23614EAB00AED1B7 /* UserInfoViewController.m in Sources */,
+				53CA6AC4236AB9D200E47219 /* DiaochangMapViewController.m in Sources */,
 				8A500D87236844310064704F /* ReleaseFishGetViewController.m in Sources */,
 				8A34893B236589C100AED1B7 /* DiaoChangDetailViewController.m in Sources */,
 				8A34890E23615E5A00AED1B7 /* GreenLineTextField.m in Sources */,
@@ -1246,6 +1269,7 @@
 				8AD5E1AA235C9E26000717A5 /* MainNoTableViewCell.m in Sources */,
 				8A34891C2362D47800AED1B7 /* SelectPhotosViewController.m in Sources */,
 				8AD5E183235B0C21000717A5 /* MyTableViewCell.m in Sources */,
+				53CA6AC8236ADDC600E47219 /* UIViewController+ShowHud.m in Sources */,
 				8A365A0B2356AC9200A51BEF /* AppDelegate.m in Sources */,
 				8A34892F23633CFC00AED1B7 /* EditView.m in Sources */,
 				8A500D5B23672D8B0064704F /* DCDBriefTableViewCell.m in Sources */,
@@ -1448,7 +1472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gener-tech-bj.imsp.ElbALL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1479,7 +1503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gener-tech-bj.imsp.ElbALL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

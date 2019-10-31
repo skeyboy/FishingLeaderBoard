@@ -8,6 +8,7 @@
 
 #import "FindDiaoChangViewController.h"
 #import "DiaoChangListViewController.h"
+#import "DiaochangMapViewController.h"
 #import "YHSegmentView.h"
 #import "AppDelegate.h"
 @interface FindDiaoChangViewController ()
@@ -27,10 +28,10 @@
     NSMutableArray *mutArr = [NSMutableArray array];
     NSArray *titleArr = @[@"列表模式",@"地图模式"];
     DiaoChangListViewController *diaoChangListVc = [[DiaoChangListViewController alloc]init];
-    DiaoChangListViewController *registerView = [[DiaoChangListViewController alloc]init];
+    DiaochangMapViewController *registerView = [[DiaochangMapViewController alloc]init];
     [mutArr addObjectsFromArray:@[diaoChangListVc,registerView]];
-    YHSegmentView *segmentView = [[YHSegmentView alloc] initWithFrame:CGRectMake(0, Height_StatusBar, SCREEN_WIDTH,SCREEN_HEIGHT-Height_StatusBar-Height_BottomLine) ViewControllersArr:[mutArr copy] TitleArr:titleArr TitleNormalSize:16 TitleSelectedSize:16 SegmentStyle:YHSegementStyleIndicate ParentViewController:self ReturnIndexBlock:^(NSInteger index) {
-        NSLog(@"点击了%ld模块,%f",(long)index,Height_BottomLine);
+    YHSegmentView *segmentView = [[YHSegmentView alloc] initWithFrame:CGRectMake(0, Height_StatusBar, SCREEN_WIDTH,  [UIScreen mainScreen].bounds.size.height - 0) ViewControllersArr:[mutArr copy] TitleArr:titleArr TitleNormalSize:16 TitleSelectedSize:16 SegmentStyle:YHSegementStyleIndicate ParentViewController:self ReturnIndexBlock:^(NSInteger index) {
+        NSLog(@"点击了%ld模块",(long)index);
     }];
     segmentView.yh_titleSelectedColor = [UIColor groupTableViewBackgroundColor];
     [segmentView setSelectedItemAtIndex:1];
