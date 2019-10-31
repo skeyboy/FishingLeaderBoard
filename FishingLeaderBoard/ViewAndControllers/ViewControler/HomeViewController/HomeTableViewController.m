@@ -195,6 +195,7 @@
 
 -(void)btnClick:(UIButton *)btn
 {
+    
     NSInteger tag = btn.tag;
     switch (tag) {
         case BUTTON_FISHCLASS_HOME_TAG:
@@ -210,6 +211,7 @@
             case BUTTON_FAXIANYUCHANG_HOME_TAG:
         {
             FindDiaoChangViewController*vc =[[FindDiaoChangViewController alloc]init];
+        vc.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
