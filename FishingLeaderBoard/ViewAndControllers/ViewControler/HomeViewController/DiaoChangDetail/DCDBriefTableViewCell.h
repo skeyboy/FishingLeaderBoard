@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef void(^ButtonClick) (UIButton *);
 @interface DCDBriefTableViewCell : UITableViewCell
 
 @property (strong,nonatomic)NSArray *arr;
@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *fishTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *titleNoteLabel;
 
+@property (copy,nonatomic)  ButtonClick btnClick;
 
 @property (weak, nonatomic) IBOutlet UILabel *noteLabel;
 

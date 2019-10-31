@@ -9,7 +9,8 @@
 #import "HomeTableViewController.h"
 #import "DiaoChangDetailViewController.h"
 #import "YuQrViewController.h"
-@interface HomeTableViewController ()<UITableViewDataSource,UITableViewDelegate>
+#import "FindDiaoChangViewController.h"
+@interface HomeTableViewController ()<UITableViewDataSource,UITableViewDelegate,FSSegmentTitleViewDelegate>
 {
     NSArray *arrTableSource;
 }
@@ -32,20 +33,18 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self setNavViewWithTitle:@"钓技课堂" isShowBack:YES];
     hkNavigationView.backgroundColor = NAVBGCOLOR;
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 -(void)setNavHome
 {
     self.view.backgroundColor = [UIColor whiteColor];
     [self setNavViewWithTitle:@"" isShowBack:NO];
     hkNavigationView.backgroundColor = NAVBGCOLOR;
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [hkNavigationView setNavBarViewLeftBtnWithTitle:@"扫一扫" normalImage:@"saoyisao" highlightedImage:@"saoyisao" target:self action:@selector(btnLeftClick:)];
     [hkNavigationView setNavBarViewRightBtnWithTitle:@"消息" normalImage:@"msg" highlightedImage:@"msg" target:self action:@selector(btnRightClick:)];
     
     [hkNavigationView setNavBarViewCenterSearchTag:SEARCH_HOME_TAG];
     __weak __typeof(self) weakSelf = self;
-    hkNavigationView.searchClick = ^(UISearchBar * search) {
+    hkNavigationView.searchClick = ^(UISearchBar *se) {
         SearchViewController *vc =[[SearchViewController alloc]init];
         [weakSelf.navigationController pushViewController:vc animated:YES];
     };
@@ -83,22 +82,22 @@
     }else{
         headY = 40 + 10 + 60 + 10 + 60 + 10 + 45;
     }
-    self.headView = [[HomeHeadTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, headY) withType:_headType];
+    self.headView = [[HomeHeadTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, headY) withType:_headType vc:self];
     self.tableView.tableHeaderView = self.headView;
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.bounces = NO;
     __weak __typeof(self) weakSelf = self;
-    self.headView.segmentCtrlClick = ^(UISegmentedControl * sem) {
-        __typeof(&*weakSelf) strongSelf = weakSelf;
-        NSLog(@"seg click");
-    };
     self.headView.btnCtrlClick = ^(UIButton * btn) {
         __typeof(&*weakSelf) strongSelf = weakSelf;
         [strongSelf btnClick:btn];
     };
    
 }
-
+#pragma mark - 
+- (void)FSSegmentTitleView:(FSSegmentTitleView *)titleView startIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex
+{
+    
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -192,6 +191,12 @@
                 DiaoChangDetailViewController *diaoChangDetailVc = [[DiaoChangDetailViewController alloc]init];
                 [self.navigationController pushViewController:diaoChangDetailVc animated:YES];
             }
+            break;
+            case BUTTON_FAXIANYUCHANG_HOME_TAG:
+        {
+            FindDiaoChangViewController*vc =[[FindDiaoChangViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
             
         default:

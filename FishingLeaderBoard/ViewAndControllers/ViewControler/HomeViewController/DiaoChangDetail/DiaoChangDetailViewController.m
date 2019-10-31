@@ -7,8 +7,9 @@
 //
 
 #import "DiaoChangDetailViewController.h"
-
-@interface DiaoChangDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "FSSegmentTitleView.h"
+#import "ReleaseFishGetViewController.h"
+@interface DiaoChangDetailViewController ()<UITableViewDelegate,UITableViewDataSource,FSSegmentTitleViewDelegate>
 
 @end
 
@@ -19,8 +20,25 @@
     self.view.backgroundColor = [UIColor greenColor];
     [self setNavViewWithTitle:@"钓场详情" isShowBack:YES];
     hkNavigationView.backgroundColor = NAVBGCOLOR;
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self initPageView];
+}
+#pragma mark -FSSegmentTitleViewDelegate
+- (void)FSSegmentTitleView:(FSSegmentTitleView *)titleView startIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex
+{
+    NSLog(@"click =%ld",(long)endIndex);
+    if(endIndex == 0)
+    {
+        self.cellType = FPageDCDAct;
+    }else if (endIndex == 1)
+    {
+        self.cellType = FPageDCDJianJie;
+    }else{
+        self.cellType = FPageDCDFishGet;
+    }
+    if(startIndex!=endIndex)
+    {
+        [self.tableView reloadData];
+    }
 }
 #pragma mark - 页面初始化
 -(void)initPageView
@@ -31,13 +49,15 @@
 //    self.headView =[[DiaoChangDetailHeadView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
 //    self.tableView.tableHeaderView = self.headView;
     self.headView = [[[NSBundle mainBundle]loadNibNamed:@"DiaoChangDetailHeadView" owner:self options:nil]firstObject];
+    [_headView addAllViewDelegate:self];
+
     self.tableView.tableHeaderView =_headView;
     
     [self.view addSubview:self.tableView];
     self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
     [self.tableView registerNib:[UINib nibWithNibName:@"DiaoChangDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"DiaoChangDetailTableViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"DCDBriefTableViewCell" bundle:nil] forCellReuseIdentifier:@"DCDBriefTableViewCell"];
-    
+    [self.tableView registerNib:[UINib nibWithNibName:@"BuHuoTableViewCell" bundle:nil] forCellReuseIdentifier:@"BuHuoTableViewCell"];
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.bounces = NO;
     __weak __typeof(self) weakSelf = self;
@@ -53,31 +73,57 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    switch (self.cellType) {
+        case FPageDCDAct:{
+            return 10;
+        }
+        break;
+        case FPageDCDJianJie:{
+            return 1;
+        }
+            break;
+        case FPageDCDFishGet:{
+            return 13;
+        }
+            break;
+        default: return 1;
+            break;
+    }
+   
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    DiaoChangDetailTableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:@"DiaoChangDetailTableViewCell" forIndexPath:indexPath];
+    
+    if(self.cellType ==FPageDCDJianJie)
+    {
     DCDBriefTableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:@"DCDBriefTableViewCell" forIndexPath:indexPath];
-//    if(indexPath.row ==0)
-//    {
-//    cell.arr = @[@"鲫鱼1",@"雪域2"];
-//    [cell addCharView];
-//    [cell addTypeFish];
-//    }else if(indexPath.row == 1)
-//    {
         cell.arr = @[@"鲫鱼",@"雪域",@"雪域",@"雪域",@"雪域",@"雪域",@"雪域",@"雪域",@"雪域",@"雪域",@"雪域",@"雪域",@"雪域",@"雪域",@"雪域",@"雪域"];
         [cell addCharView];
         [cell addTypeFish];
+        cell.btnClick = ^(UIButton * btn) {
+            ReleaseFishGetViewController*vc = [[ReleaseFishGetViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        };
     cell.noteLabel.text = @"vvwacdccoencoejoqjcoweoekokeojfirjernvirnievmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmsdddddddddddddddddddddddddddddddddddddddddddddcnncejdiejiiowdjwodjomckdsncenfjrifjirjfiojeoalfnckaljnfkn;jnknknfk";
-//    }else
-//    {
-//        @[@"鲫鱼1",@"雪域2",@"雪域3",@"雪域4",@"雪域5"];
-//    }
+        
+        return cell;
+    }else if (self.cellType == FPageDCDAct)
+    {
+        DiaoChangDetailTableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:@"DiaoChangDetailTableViewCell" forIndexPath:indexPath];
+        return cell;
+    }else {
+        BuHuoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BuHuoTableViewCell" forIndexPath:indexPath];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.button1.tag = 900+indexPath.row*2;
+        cell.button2.tag = 900+indexPath.row*2+1;
+        [cell.userButton1 setImage:[UIImage imageNamed:@"page1"] forState:UIControlStateNormal];
+        [cell.userButton2 setImage:[UIImage imageNamed:@"page1"] forState:UIControlStateNormal];
+        return cell;
+    }
+
    
     
-    return cell;
 }
 @end

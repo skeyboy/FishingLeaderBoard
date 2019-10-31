@@ -11,8 +11,6 @@
 {
     FViewController *vcCtr;
 }
-
-
 @end
 @implementation MyHeadView
 

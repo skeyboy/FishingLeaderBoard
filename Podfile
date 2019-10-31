@@ -19,8 +19,9 @@ target 'FishingLeaderBoard' do
    pod 'LBXScan',:path=>'~/Documents/Github/LBXScan'
    pod 'WechatOpenSDK'
    pod 'IQKeyboardManager',:path=>'~/Documents/Github/IQKeyboardManager'
+
    pod 'XTCAlipaySDK-iOS',:path=>'~/Documents/Github/XTC_AlipaySDK'
-   pod 'BaiduMapKit'
+#   pod 'BaiduMapKit'
    pod 'RITLKit',:path=>'~/Documents/Github/RITLKit'
 
    pod 'RITLPhotos',:path=>'~/Documents/Github/RITLImagePickerDemo'

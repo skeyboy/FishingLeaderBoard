@@ -12,6 +12,7 @@
 #import "LPButton.h"
 #import "MainCollectionViewCell.h"
 #import "MainTwoCollectionViewCell.h"
+#import "FSSegmentTitleView.h"
 NS_ASSUME_NONNULL_BEGIN
 typedef NS_OPTIONS(NSInteger, FPageHeadViewType) {
     FPageTypeHomeHeadView                 =1,                         //!<主页面头页面
@@ -36,7 +37,7 @@ typedef void(^ButtonCtrolClick) (UIButton *);
 @property (nonatomic, copy) ButtonCtrolClick     btnCtrlClick;
 
 
-- (id)initWithFrame:(CGRect)frame withType:(FPageHeadViewType)type;
+- (id)initWithFrame:(CGRect)frame withType:(FPageHeadViewType)type vc:(id)de;
 
 @end
 
