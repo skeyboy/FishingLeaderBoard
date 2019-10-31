@@ -32,6 +32,7 @@
     self.window.rootViewController = self.tbc;
     [self config];
 
+    self.window.backgroundColor = WHITECOLOR;
     return YES;
 }
  //#pragma 微信支付回调(下面两个兼容iOS版本)

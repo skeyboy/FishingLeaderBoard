@@ -26,6 +26,7 @@
 		8A25AFA82369F04E00006ED4 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A25AFA12369F04D00006ED4 /* libcrypto.a */; };
 		8A25AFA92369F04E00006ED4 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A25AFA22369F04D00006ED4 /* libssl.a */; };
 		8A25AFAA2369F04E00006ED4 /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A25AFA32369F04D00006ED4 /* BaiduMapAPI_Cloud.framework */; };
+		8A25AFAD236AFA7600006ED4 /* MyDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A25AFAC236AFA7600006ED4 /* MyDataObject.m */; };
 		8A3488B6235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488B5235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m */; };
 		8A3488BB235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3488B9235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib */; };
 		8A3488BE235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488BD235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m */; };
@@ -169,6 +170,8 @@
 		8A25AFA12369F04D00006ED4 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 		8A25AFA22369F04D00006ED4 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
 		8A25AFA32369F04D00006ED4 /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
+		8A25AFAB236AFA7600006ED4 /* MyDataObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDataObject.h; sourceTree = "<group>"; };
+		8A25AFAC236AFA7600006ED4 /* MyDataObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDataObject.m; sourceTree = "<group>"; };
 		8A3488B4235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangSearchTableViewController.h; sourceTree = "<group>"; };
 		8A3488B5235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangSearchTableViewController.m; sourceTree = "<group>"; };
 		8A3488B9235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaoChangSearchTableViewCell.xib; sourceTree = "<group>"; };
@@ -824,6 +827,8 @@
 				8AD5E182235B0C21000717A5 /* MyTableViewCell.xib */,
 				8A34890923614EAB00AED1B7 /* UserInfoViewController.h */,
 				8A34890A23614EAB00AED1B7 /* UserInfoViewController.m */,
+				8A25AFAB236AFA7600006ED4 /* MyDataObject.h */,
+				8A25AFAC236AFA7600006ED4 /* MyDataObject.m */,
 			);
 			path = MyViewControllers;
 			sourceTree = "<group>";
@@ -1208,6 +1213,7 @@
 				8A3488EA235E87A900AED1B7 /* DiaoChangHeadView.m in Sources */,
 				8AD5E1292357F005000717A5 /* LoginViewController.m in Sources */,
 				8AD5E1222357EEB0000717A5 /* YHSegmentView.m in Sources */,
+				8A25AFAD236AFA7600006ED4 /* MyDataObject.m in Sources */,
 				8A3488BE235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m in Sources */,
 				8AD5E1A5235C96BA000717A5 /* MainTwoCollectionViewCell.m in Sources */,
 				8AD5E1732359E7DF000717A5 /* WMZBannerControl.m in Sources */,

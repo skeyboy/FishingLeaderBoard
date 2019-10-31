@@ -43,12 +43,12 @@
     //第一个控制器
     LoginAndRegisterViewController * vc1 = [[LoginAndRegisterViewController alloc] init];
     vc1.view.backgroundColor = [UIColor redColor];
-    UINavigationController * NC1 = [self addChildVc:vc1 title:@"品牌" image:kImg_TabHome selectedImage:kImg_TabHome_select];
+    UINavigationController * NC1 = [self addChildVc:vc1 title:@"品牌" image:kImg_TabPinPai selectedImage:kImg_TabPinPai_select];
     
     //第3个控制器
     BuHuoTableViewController * vc3 = [[BuHuoTableViewController alloc] init];
     vc3.pageType = FPageTypeDiaoChangView;
-    UINavigationController * NC3 = [self addChildVc:vc3 title:@"钓场" image:kImg_TabPinPai selectedImage:kImg_TabPinPai_select];
+    UINavigationController * NC3 = [self addChildVc:vc3 title:@"钓场" image:kImg_TabDiao selectedImage:kImg_TabDiao_select];
     
     //第4个控制器
     MyViewController* vc4 = [[MyViewController alloc] init];

@@ -12,6 +12,7 @@
 #import "FindDiaoChangViewController.h"
 #import "MBProgressHUD.h"
 #import <AVFoundation/AVFoundation.h>
+#import "AppDelegate.h"
 @interface HomeTableViewController ()<UITableViewDataSource,UITableViewDelegate,FSSegmentTitleViewDelegate>
 {
     NSArray *arrTableSource;
@@ -73,8 +74,8 @@
     [self presentViewController:qrScanVC animated:YES completion:^{
         
     }];
-    
 }
+
 -(void)btnRightClick:(UIButton *)btn
 {
     
@@ -204,12 +205,16 @@
 //                [self.navigationController pushViewController:fishingClassVc animated:YES];
                 
                 DiaoChangDetailViewController *diaoChangDetailVc = [[DiaoChangDetailViewController alloc]init];
+                AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
+                           de.tbc.tabBar.hidden =YES;
                 [self.navigationController pushViewController:diaoChangDetailVc animated:YES];
             }
             break;
             case BUTTON_FAXIANYUCHANG_HOME_TAG:
         {
             FindDiaoChangViewController*vc =[[FindDiaoChangViewController alloc]init];
+            AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
+            de.tbc.tabBar.hidden =YES;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

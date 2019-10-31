@@ -135,16 +135,16 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 
 //******************tab*****************************
-#define  kImg_TabHome_select  @"home_select"
-#define  kImg_TabHome  @"home"
-#define  kImg_TabDiao_select  @"home_select"
-#define  kImg_TabDiao  @"home"
-#define  kImg_TabMe_select  @"user_select"
-#define  kImg_TabMe  @"user"
-#define  kImg_TabPinPai_select  @"home_select"
-#define  kImg_TabPinPai  @"home"
-#define  kImg_TabGame_select  @"game"
-#define  kImg_TabGame  @"game"
+#define  kImg_TabHome_select  @"tab_home_select"
+#define  kImg_TabHome  @"tab_home"
+#define  kImg_TabDiao_select  @"tab_DiaoChang_select"
+#define  kImg_TabDiao  @"tab_DiaoChang"
+#define  kImg_TabMe_select  @"tab_user_select"
+#define  kImg_TabMe  @"tab_user"
+#define  kImg_TabPinPai_select  @"tab_pinpai_select"
+#define  kImg_TabPinPai  @"tab_pinpai"
+#define  kImg_TabGame_select  @"tab_saishi_select"
+#define  kImg_TabGame  @"tab_saishi"
 
 
 //pikerview 暂不用

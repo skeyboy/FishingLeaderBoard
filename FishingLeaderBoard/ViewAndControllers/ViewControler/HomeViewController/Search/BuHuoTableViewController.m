@@ -1,7 +1,7 @@
 //
 //  BuHuoTableViewController.m
 //  FishingLeaderBoard
-//
+//  捕获和钓场两个VC
 //  Created by yue on 2019/10/21.
 //  Copyright © 2019 yue. All rights reserved.
 //
@@ -24,7 +24,6 @@
     {
         [self setNavViewWithTitle:@"" isShowBack:NO];
         [hkNavigationView setNavBarViewLeftSearchTag:SEARCH_DIAOCHANG_TAG];
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
         [hkNavigationView setNavBarViewRightBtnWithTitle:@"未知" normalImage:@"location" highlightedImage:@"location" target:self action:@selector(btnRightClick:)];
         hkNavigationView.searchClick = ^(UISearchBar * search) {
             

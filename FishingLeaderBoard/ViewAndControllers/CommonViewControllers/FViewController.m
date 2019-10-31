@@ -151,6 +151,7 @@
     [self.view addSubview:hkNavigationView];
     hkNavigationView.backgroundColor = NAVBGCOLOR;
 }
+
 /**
  *  设置导航栏视图
  *
