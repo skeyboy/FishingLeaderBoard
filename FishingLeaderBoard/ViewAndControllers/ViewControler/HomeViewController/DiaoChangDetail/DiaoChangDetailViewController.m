@@ -9,8 +9,11 @@
 #import "DiaoChangDetailViewController.h"
 #import "FSSegmentTitleView.h"
 #import "ReleaseFishGetViewController.h"
+#import "AppDelegate.h"
 @interface DiaoChangDetailViewController ()<UITableViewDelegate,UITableViewDataSource,FSSegmentTitleViewDelegate>
-
+{
+    UIButton *sendFishGetBtn;//发送渔获按钮
+}
 @end
 
 @implementation DiaoChangDetailViewController
@@ -19,8 +22,17 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor greenColor];
     [self setNavViewWithTitle:@"钓场详情" isShowBack:YES];
+    UIButton *btn = [hkNavigationView getNavBarLeftBtn];
+    [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     hkNavigationView.backgroundColor = NAVBGCOLOR;
     [self initPageView];
+    
+}
+
+-(void)back{
+    [self.navigationController popViewControllerAnimated:YES];
+    AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
+      de.tbc.tabBar.hidden =NO;
 }
 #pragma mark -FSSegmentTitleViewDelegate
 - (void)FSSegmentTitleView:(FSSegmentTitleView *)titleView startIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex
@@ -28,12 +40,19 @@
     NSLog(@"click =%ld",(long)endIndex);
     if(endIndex == 0)
     {
+        
         self.cellType = FPageDCDAct;
+        sendFishGetBtn.hidden = YES;
+        
     }else if (endIndex == 1)
     {
         self.cellType = FPageDCDJianJie;
+        sendFishGetBtn.hidden = YES;
+      
     }else{
         self.cellType = FPageDCDFishGet;
+        sendFishGetBtn.hidden = NO;
+        
     }
     if(startIndex!=endIndex)
     {
@@ -43,18 +62,19 @@
 #pragma mark - 页面初始化
 -(void)initPageView
 {
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(hkNavigationView.frame) - CGRectGetHeight(self.tabBarController.tabBar.frame)) style:UITableViewStylePlain];
+    UIView *bgView =[FViewCreateFactory createViewWithBgColor:[UIColor redColor]];
+    bgView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    [self.view addSubview:bgView];
+    self.view.backgroundColor = WHITECOLOR;
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(hkNavigationView.frame) - Height_BottomLine) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-//    self.headView =[[DiaoChangDetailHeadView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
-//    self.tableView.tableHeaderView = self.headView;
     self.headView = [[[NSBundle mainBundle]loadNibNamed:@"DiaoChangDetailHeadView" owner:self options:nil]firstObject];
     [_headView addAllViewDelegate:self];
-
     self.tableView.tableHeaderView =_headView;
-    
-    [self.view addSubview:self.tableView];
+    [bgView addSubview:self.tableView];
     self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"DiaoChangDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"DiaoChangDetailTableViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"DCDBriefTableViewCell" bundle:nil] forCellReuseIdentifier:@"DCDBriefTableViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"BuHuoTableViewCell" bundle:nil] forCellReuseIdentifier:@"BuHuoTableViewCell"];
@@ -62,10 +82,19 @@
     self.tableView.bounces = NO;
     __weak __typeof(self) weakSelf = self;
     
-
+    //渔获选项发渔获
+    sendFishGetBtn = [FViewCreateFactory createCustomButtonWithFrame:CGRectMake(20, SCREEN_HEIGHT - 50-Height_BottomLine, SCREEN_WIDTH - 20 *2, 40) name:@"发渔获" delegate:self selector:@selector(sendFishGet) tag:0];
+    sendFishGetBtn.backgroundColor = [UIColor orangeColor];
+    sendFishGetBtn.layer.cornerRadius = 5.0;
+    sendFishGetBtn.hidden = YES;
+    [bgView addSubview:sendFishGetBtn];
     
 }
-
+-(void)sendFishGet
+{
+    ReleaseFishGetViewController*vc = [[ReleaseFishGetViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -126,4 +155,6 @@
    
     
 }
+
+
 @end

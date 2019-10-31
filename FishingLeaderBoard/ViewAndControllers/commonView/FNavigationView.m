@@ -257,38 +257,39 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setNavBarViewLeftSearchTag:(int)tag
 {
     _searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(10, Height_StatusBar + 8, SCREEN_WIDTH - 45 - 10, 30)];
-    _searchBar.backgroundColor = NAVBGCOLOR;
-    _searchBar.tintColor = WHITECOLOR;
-    _searchBar.barTintColor = WHITECOLOR;
-    _searchBar.delegate = self;
-    _searchBar.tag = tag;
-    _searchBar.placeholder = @"搜索钓场关键词";
-    UITextField *textfield = nil;
+        _searchBar.delegate = self;
+        _searchBar.tag = tag;
+        _searchBar.placeholder = @"搜索钓场关键字";
+
     if (@available(iOS 13,*)) {
-        textfield =  _searchBar.searchTextField;
+         self.searchBar.barStyle = UIBarStyleDefault;
+         self.searchBar.searchBarStyle = UISearchBarStyleMinimal;
+         self.searchBar.searchTextField.font = [UIFont systemFontOfSize:15];
+         self.searchBar.searchTextField.backgroundColor=[UIColor colorWithWhite:1 alpha:0.2];
+        self.searchBar.searchTextField.textColor = [UIColor lightGrayColor];
+        
     } else {
+        _searchBar.backgroundColor = NAVBGCOLOR;
+        _searchBar.tintColor = WHITECOLOR;
+        _searchBar.barTintColor = WHITECOLOR;
+       
+        UITextField *textfield = nil;
+        UITextField *searchField = nil;
         [_searchBar valueForKey:@"_searchField"];
-        [textfield setValue:[UIFont systemFontOfSize:12.0] forKeyPath:@"_placeholderLabel.font"];
-           [textfield setValue:[UIColor colorWithWhite:1 alpha:0.6] forKeyPath:@"_placeholderLabel.textColor"];
-    }
-   
-    UITextField *searchField = nil;
-    if (@available(iOS 13,*)) {
-        searchField =  _searchBar.searchTextField;
-    } else {
-        [_searchBar valueForKey:@"_searchField"];
-    }
-    textfield.font = [UIFont systemFontOfSize:12];
-    searchField.textColor = WHITECOLOR;
-    for (UIView *subview in _searchBar.subviews) {
-        for(UIView* grandSonView in subview.subviews){
-            if ([grandSonView isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
-                grandSonView.alpha = 0.0f;
-            }else if([grandSonView isKindOfClass:NSClassFromString(@"UISearchBarTextField")] ){
-                NSLog(@"Keep textfiedld bkg color");
-                grandSonView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.3];
-            }else{
-                grandSonView.alpha = 0.0f;
+        [textfield setValue:[UIFont systemFontOfSize:15.0] forKeyPath:@"_placeholderLabel.font"];
+        [textfield setValue:[UIColor colorWithWhite:1 alpha:0.5] forKeyPath:@"_placeholderLabel.textColor"];
+        textfield.font = [UIFont systemFontOfSize:12];
+        searchField.textColor = WHITECOLOR;
+        for (UIView *subview in _searchBar.subviews) {
+            for(UIView* grandSonView in subview.subviews){
+                if ([grandSonView isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
+                    grandSonView.alpha = 0.0f;
+                }else if([grandSonView isKindOfClass:NSClassFromString(@"UISearchBarTextField")] ){
+                    NSLog(@"Keep textfiedld bkg color");
+                    grandSonView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.3];
+                }else{
+                    grandSonView.alpha = 0.0f;
+                }
             }
         }
     }

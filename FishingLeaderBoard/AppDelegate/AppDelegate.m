@@ -29,6 +29,7 @@
     self.tbc = [[FTabBarVC alloc] init];
     [self.tbc setSelectedIndex:4];
     self.window.rootViewController = self.tbc;
+    self.window.backgroundColor = WHITECOLOR;
     return YES;
 }
  //#pragma 微信支付回调(下面两个兼容iOS版本)
