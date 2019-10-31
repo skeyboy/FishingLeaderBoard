@@ -23,8 +23,8 @@
         
 //        UIImage *normalImage = [UIImage originImage:[UIImage imageNamed:@"game"] scaleToSize:CGSizeMake(70, 70)];
 //        UIImage *selectedImage = [UIImage originImage:[UIImage imageNamed:@"game"] scaleToSize:CGSizeMake(70, 70)];
-        UIImage *normalImage = [UIImage originImage:[UIImage imageNamed:kImg_TabGame] scaleToSize:CGSizeMake(50, 50)];
-        UIImage *selectedImage = [UIImage originImage:[UIImage imageNamed:kImg_TabGame_select] scaleToSize:CGSizeMake(50, 50)];
+        UIImage *normalImage = [UIImage originImage:[UIImage imageNamed:kImg_TabGame] scaleToSize:CGSizeMake(40, 40)];
+        UIImage *selectedImage = [UIImage originImage:[UIImage imageNamed:kImg_TabGame_select] scaleToSize:CGSizeMake(40, 40)];
 
         UIButton * button = [[UIButton alloc] init];
         [button setImage:selectedImage forState:UIControlStateSelected];
