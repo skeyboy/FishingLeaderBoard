@@ -29,8 +29,12 @@
 }
 
 -(void)back{
-    AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
-      de.tbc.tabBar.hidden =NO;
+    NSLog(@"back = %d",self.navigationController.viewControllers.count);
+    if(self.navigationController.viewControllers.count ==1)
+    {
+        AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
+         de.tbc.tabBar.hidden =NO;
+    }
 }
 #pragma mark -FSSegmentTitleViewDelegate
 - (void)FSSegmentTitleView:(FSSegmentTitleView *)titleView startIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex
