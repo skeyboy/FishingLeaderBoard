@@ -37,7 +37,8 @@
         [self.layer addSublayer:layerFaBu];
         btnFaBu =[FViewCreateFactory createCustomButtonWithFrame:CGRectMake(0, 0, 50, 50) name:[nameArr objectAtIndex:0]  delegate:self selector:@selector(btnClick:) tag:0];
         btnFaBu.backgroundColor =[colorArr objectAtIndex:0];
-        btnFaBu.titleLabel.font = [UIFont systemFontOfSize:15];
+        btnFaBu.titleLabel.font = [UIFont systemFontOfSize:14];
+        btnFaBu.titleLabel.numberOfLines = 0;
         btnFaBu.layer.cornerRadius = 25;
         [self addSubview:btnFaBu];
         

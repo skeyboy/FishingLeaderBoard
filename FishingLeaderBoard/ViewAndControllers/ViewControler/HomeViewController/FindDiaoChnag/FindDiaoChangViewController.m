@@ -34,7 +34,7 @@
         NSLog(@"点击了%ld模块",(long)index);
     }];
     segmentView.yh_titleSelectedColor = [UIColor groupTableViewBackgroundColor];
-    [segmentView setSelectedItemAtIndex:1];
+    [segmentView setSelectedItemAtIndex:0];
     segmentView.yh_segmentTintColor = [UIColor groupTableViewBackgroundColor];
     segmentView.yh_bgColor = NAVBGCOLOR;
     segmentView.backgroundColor = WHITECOLOR;

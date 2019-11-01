@@ -175,24 +175,7 @@
 }
 - (void)btnClickBack
 {
-    NSString *vcName = NSStringFromClass([self.navigationController.topViewController class]);
-    if ([vcName isEqualToString:@"HKLoginViewController"] ||
-        [vcName isEqualToString:@"HKRegisterViewController"] ||
-        [vcName isEqualToString:@"HKPrivacyPolicyViewController"])
-    {
-        [self setViewControllerPopAnimation];
-    }
-    else if ([vcName isEqualToString:@"HKSearchResultViewController"])
-    {
-        //不要动画
-    }
-    else
-    {
-        [self.navigationController popViewControllerAnimated:YES];
-        return;
-        //[self setViewControllerAnimationLeft];
-    }
-    [self.navigationController popViewControllerAnimated:NO];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 ///**

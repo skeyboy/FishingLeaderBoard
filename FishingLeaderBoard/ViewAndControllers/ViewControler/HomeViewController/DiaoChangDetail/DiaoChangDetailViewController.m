@@ -20,7 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
     [self setNavViewWithTitle:@"钓场详情" isShowBack:YES];
     UIButton *btn = [hkNavigationView getNavBarLeftBtn];
     [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
@@ -30,7 +29,6 @@
 }
 
 -(void)back{
-    [self.navigationController popViewControllerAnimated:YES];
     AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
       de.tbc.tabBar.hidden =NO;
 }
@@ -43,15 +41,18 @@
         
         self.cellType = FPageDCDAct;
         sendFishGetBtn.hidden = YES;
+        self.tableView.frame = CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(hkNavigationView.frame) - Height_BottomLine);
         
     }else if (endIndex == 1)
     {
         self.cellType = FPageDCDJianJie;
         sendFishGetBtn.hidden = YES;
+        self.tableView.frame = CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(hkNavigationView.frame) - Height_BottomLine);
       
     }else{
         self.cellType = FPageDCDFishGet;
         sendFishGetBtn.hidden = NO;
+        self.tableView.frame = CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(hkNavigationView.frame) - Height_BottomLine-60);
         
     }
     if(startIndex!=endIndex)
@@ -62,7 +63,6 @@
 #pragma mark - 页面初始化
 -(void)initPageView
 {
-    self.view.backgroundColor = [UIColor blueColor];
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(hkNavigationView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(hkNavigationView.frame) - Height_BottomLine) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;

@@ -9,6 +9,8 @@
 #import "DiaoChangListViewController.h"
 #import "DiaoChangListHeadView.h"
 #import "DiaoChangSearchTableViewCell.h"
+#import "MenuView.h"
+#import "DiaoChangDetailViewController.h"
 @interface DiaoChangListViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     DiaoChangListHeadView *headView;
@@ -19,8 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor =[UIColor redColor];
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-Height_BottomLine-Height_StatusBar) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-Height_BottomLine-Height_NavBar-80) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
@@ -29,6 +30,25 @@
     self.tableView.tableHeaderView = headView;
     
      [self.tableView registerNib:[UINib nibWithNibName:@"DiaoChangSearchTableViewCell" bundle:nil] forCellReuseIdentifier:@"DiaoChangSearchTableViewCell"];
+    
+
+    UIButton* btn = [FViewCreateFactory createCustomButtonWithFrame:CGRectMake(20, CGRectGetMaxY(self.tableView.frame)+10,SCREEN_WIDTH-40, 40) name:@"我是钓场主" delegate:self selector:@selector(intorenZheng:) tag:0];
+    btn.backgroundColor = [UIColor orangeColor];
+    btn.layer.cornerRadius = 5.0;
+    [self.view addSubview:btn];
+    
+     MenuView *menvView = [[MenuView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-80, CGRectGetMaxY(self.tableView.frame)-150-10, 50, 150) name:@[@"排序方式",@"人气",@"距离"] color:@[[UIColor blackColor],[UIColor orangeColor],[UIColor greenColor]]];
+       [self.view addSubview:menvView];
+       [self.view bringSubviewToFront:menvView];
+       menvView.menuClick = ^(int index) {
+           NSLog(@"%d",index);
+       };
+    
+}
+//我是钓场主d按钮点击事件
+-(void)intorenZheng:(UIButton*)btn
+{
+    
 }
 
 #pragma mark - Table view data source
@@ -50,6 +70,10 @@
        return cell;
 }
 
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DiaoChangDetailViewController *diaoChangDetailVc = [[DiaoChangDetailViewController alloc]init];
+    [self.navigationController pushViewController:diaoChangDetailVc animated:YES];
+}
 
 @end

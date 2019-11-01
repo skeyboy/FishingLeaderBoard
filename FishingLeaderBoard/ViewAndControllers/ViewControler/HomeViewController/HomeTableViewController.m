@@ -216,7 +216,6 @@
             case BUTTON_FAXIANYUCHANG_HOME_TAG:
         {
             FindDiaoChangViewController*vc =[[FindDiaoChangViewController alloc]init];
-        vc.hidesBottomBarWhenPushed = YES;
             AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
             de.tbc.tabBar.hidden =YES;
             vc.hidesBottomBarWhenPushed = YES;
