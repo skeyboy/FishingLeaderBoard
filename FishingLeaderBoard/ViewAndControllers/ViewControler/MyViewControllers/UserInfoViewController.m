@@ -120,7 +120,7 @@
     sexGreenTF.enterTextField.hidden = YES;
     sexGreenTF.rightButton.hidden = NO;
     [sexGreenTF.rightButton setTitle:@"请选择" forState:UIControlStateNormal];
-
+    [sexGreenTF.rightButton addTarget:self action:@selector(chooseSex) forControlEvents:UIControlEventTouchUpInside];
     areaGreenTF = [[[NSBundle mainBundle]loadNibNamed:@"GreenLineTextField" owner:self options:nil]firstObject];
     [self.view addSubview:areaGreenTF];
     [areaGreenTF mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -173,7 +173,21 @@
     }];
     
 }
+-(void)chooseSex{
+    [self.view endEditing:YES];
+    SexChooseView* sexChooseView = [[[NSBundle mainBundle]loadNibNamed:@"SexChooseView" owner:self options:nil]firstObject];
+    sexChooseView.btnYesClick = ^(BOOL isNan) {
+        if(isNan)
+        {
+            [self->sexGreenTF.rightButton setTitle:@"男" forState:UIControlStateNormal];
+        }else{
+            [self->sexGreenTF.rightButton setTitle:@"女" forState:UIControlStateNormal];
+        }
+    };
+    [self.view addSubview:sexChooseView];
+}
 -(void)chooseBirthday{
+    [self.view endEditing:YES];
     //年-月-日
    CXDatePickerView *datepicker = [[CXDatePickerView alloc] initWithDateStyle:CXDateStyleShowYearMonthDay CompleteBlock:^(NSDate *selectDate) {
        NSString *dateString = [selectDate stringWithFormat:@"yyyy-MM-dd"];

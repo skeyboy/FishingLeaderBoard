@@ -12,6 +12,7 @@
 #import "FTabBarVC.h"
 #import "SelectPhotosViewController.h"
 #import "CXDatePickerView.h"
+#import "SexChooseView.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UserInfoViewController : FViewController
