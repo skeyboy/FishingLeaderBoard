@@ -10,6 +10,7 @@
 #import "FSSegmentTitleView.h"
 #import "ReleaseFishGetViewController.h"
 #import "AppDelegate.h"
+#import "DCDetailAndFishGetViewController.h"
 @interface DiaoChangDetailViewController ()<UITableViewDelegate,UITableViewDataSource,FSSegmentTitleViewDelegate>
 {
     UIButton *sendFishGetBtn;//发送渔获按钮
@@ -29,7 +30,6 @@
 }
 
 -(void)back{
-    NSLog(@"back = %d",self.navigationController.viewControllers.count);
     if(self.navigationController.viewControllers.count ==1)
     {
         AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
@@ -161,5 +161,12 @@
     
 }
 
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(self.cellType ==FPageDCDAct)
+    {
+        DCDetailAndFishGetViewController *vc = [[DCDetailAndFishGetViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
 @end

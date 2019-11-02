@@ -76,6 +76,9 @@
 		8A365A222356ED9D00A51BEF /* FViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A365A212356ED9D00A51BEF /* FViewController.m */; };
 		8A365A252356EE8B00A51BEF /* FNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A365A242356EE8B00A51BEF /* FNavigationController.m */; };
 		8A365A2B2356F02800A51BEF /* FNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A365A2A2356F02800A51BEF /* FNavigationView.m */; };
+		8A4463A9236D3F23002012D3 /* ChooseMutlPicturesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4463A8236D3F23002012D3 /* ChooseMutlPicturesView.m */; };
+		8A4463AD236D4DDE002012D3 /* DCDetailAndFishGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4463AC236D4DDE002012D3 /* DCDetailAndFishGetViewController.m */; };
+		8A4463B0236D50CC002012D3 /* BaoMingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4463AF236D50CC002012D3 /* BaoMingDetailViewController.m */; };
 		8A500D5B23672D8B0064704F /* DCDBriefTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D5923672D8B0064704F /* DCDBriefTableViewCell.m */; };
 		8A500D5C23672D8B0064704F /* DCDBriefTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A500D5A23672D8B0064704F /* DCDBriefTableViewCell.xib */; };
 		8A500D6323672F810064704F /* YuQrCreateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D5E23672F800064704F /* YuQrCreateHelper.m */; };
@@ -269,6 +272,12 @@
 		8A365A242356EE8B00A51BEF /* FNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNavigationController.m; sourceTree = "<group>"; };
 		8A365A292356F02800A51BEF /* FNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNavigationView.h; sourceTree = "<group>"; };
 		8A365A2A2356F02800A51BEF /* FNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNavigationView.m; sourceTree = "<group>"; };
+		8A4463A7236D3F23002012D3 /* ChooseMutlPicturesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseMutlPicturesView.h; sourceTree = "<group>"; };
+		8A4463A8236D3F23002012D3 /* ChooseMutlPicturesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseMutlPicturesView.m; sourceTree = "<group>"; };
+		8A4463AB236D4DDE002012D3 /* DCDetailAndFishGetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCDetailAndFishGetViewController.h; sourceTree = "<group>"; };
+		8A4463AC236D4DDE002012D3 /* DCDetailAndFishGetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCDetailAndFishGetViewController.m; sourceTree = "<group>"; };
+		8A4463AE236D50CC002012D3 /* BaoMingDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaoMingDetailViewController.h; sourceTree = "<group>"; };
+		8A4463AF236D50CC002012D3 /* BaoMingDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaoMingDetailViewController.m; sourceTree = "<group>"; };
 		8A500D5823672D8B0064704F /* DCDBriefTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCDBriefTableViewCell.h; sourceTree = "<group>"; };
 		8A500D5923672D8B0064704F /* DCDBriefTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCDBriefTableViewCell.m; sourceTree = "<group>"; };
 		8A500D5A23672D8B0064704F /* DCDBriefTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DCDBriefTableViewCell.xib; sourceTree = "<group>"; };
@@ -744,8 +753,21 @@
 				8A34890C23615E5A00AED1B7 /* GreenLineTextField.h */,
 				8A34890D23615E5A00AED1B7 /* GreenLineTextField.m */,
 				8A34890F23615E7000AED1B7 /* GreenLineTextField.xib */,
+				8A4463A7236D3F23002012D3 /* ChooseMutlPicturesView.h */,
+				8A4463A8236D3F23002012D3 /* ChooseMutlPicturesView.m */,
 			);
 			path = commonView;
+			sourceTree = "<group>";
+		};
+		8A4463AA236D4D88002012D3 /* DiaoChangDetailAndFishGet */ = {
+			isa = PBXGroup;
+			children = (
+				8A4463AB236D4DDE002012D3 /* DCDetailAndFishGetViewController.h */,
+				8A4463AC236D4DDE002012D3 /* DCDetailAndFishGetViewController.m */,
+				8A4463AE236D50CC002012D3 /* BaoMingDetailViewController.h */,
+				8A4463AF236D50CC002012D3 /* BaoMingDetailViewController.m */,
+			);
+			path = DiaoChangDetailAndFishGet;
 			sourceTree = "<group>";
 		};
 		8A500D5D23672F800064704F /* YuQr */ = {
@@ -884,6 +906,7 @@
 		8AD5E14C2359433A000717A5 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8A4463AA236D4D88002012D3 /* DiaoChangDetailAndFishGet */,
 				53CA6AC0236AB9BA00E47219 /* DiaoChangMap */,
 				8A500D8823686D0C0064704F /* FindDiaoChnag */,
 				8A348938236588F700AED1B7 /* DiaoChangDetail */,
@@ -1278,6 +1301,7 @@
 				8A500D7023674AF60064704F /* YuWeChatShareManager.m in Sources */,
 				8AD5E1262357EFE5000717A5 /* LoginAndRegisterViewController.m in Sources */,
 				8A348904235FFD8300AED1B7 /* SaiShiListTableViewCell.m in Sources */,
+				8A4463AD236D4DDE002012D3 /* DCDetailAndFishGetViewController.m in Sources */,
 				8A3488CB235D603B00AED1B7 /* SaiShiTableViewCell.m in Sources */,
 				8A25AFDD236C0D2D00006ED4 /* CXDatePickerView.m in Sources */,
 				8AD5E14B2358B5FB000717A5 /* MyViewController.m in Sources */,
@@ -1292,6 +1316,8 @@
 				8A500D802367F13F0064704F /* FSPageContentView.m in Sources */,
 				8A3489082360900B00AED1B7 /* MenuView.m in Sources */,
 				8A500D6D23674AF60064704F /* YuShareViewController.m in Sources */,
+				8A4463B0236D50CC002012D3 /* BaoMingDetailViewController.m in Sources */,
+				8A4463A9236D3F23002012D3 /* ChooseMutlPicturesView.m in Sources */,
 				8AD5E1702359E7DF000717A5 /* WMZBannerFlowLayout.m in Sources */,
 				8A25AF962369465700006ED4 /* DiaoChangListHeadView.m in Sources */,
 				8AD5E188235B3E21000717A5 /* MainTableViewCell.m in Sources */,
