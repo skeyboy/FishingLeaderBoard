@@ -31,7 +31,7 @@
     [self.tbc setSelectedIndex:4];
     self.window.rootViewController = self.tbc;
     [self config];
-
+    
     self.window.backgroundColor = WHITECOLOR;
     return YES;
 }

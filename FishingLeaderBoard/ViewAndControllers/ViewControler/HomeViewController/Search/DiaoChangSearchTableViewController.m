@@ -39,6 +39,8 @@
     DiaoChangSearchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DiaoChangSearchTableViewCell" forIndexPath:indexPath];
     cell.leftImageView.image = [UIImage imageNamed:@"page1"];
     cell.rightLabel.text = @"赛事";
+    cell.centerLabel.text = @"认证";
+    cell.leftLabel.text = @"自然水域";
     return cell;
 }
 
