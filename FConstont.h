@@ -143,8 +143,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define  kImg_TabMe  @"tab_user"
 #define  kImg_TabPinPai_select  @"tab_pinpai_select"
 #define  kImg_TabPinPai  @"tab_pinpai"
-#define  kImg_TabGame_select  @"tab_saishi_select"
-#define  kImg_TabGame  @"tab_saishi"
+#define  kImg_TabGame_select  @"tab_jifen_select"
+#define  kImg_TabGame  @"tab_jifen"
 
 
 //pikerview 暂不用

@@ -120,7 +120,7 @@
     sexGreenTF.enterTextField.hidden = YES;
     sexGreenTF.rightButton.hidden = NO;
     [sexGreenTF.rightButton setTitle:@"请选择" forState:UIControlStateNormal];
-
+    [sexGreenTF.rightButton addTarget:self action:@selector(chooseSex) forControlEvents:UIControlEventTouchUpInside];
     areaGreenTF = [[[NSBundle mainBundle]loadNibNamed:@"GreenLineTextField" owner:self options:nil]firstObject];
     [self.view addSubview:areaGreenTF];
     [areaGreenTF mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -144,6 +144,7 @@
     birthdayGreenTF.enterTextField.hidden = YES;
     birthdayGreenTF.rightButton.hidden = NO;
     [birthdayGreenTF.rightButton setTitle:@"请选择日期" forState:UIControlStateNormal];
+    [birthdayGreenTF.rightButton addTarget:self action:@selector(chooseBirthday) forControlEvents:UIControlEventTouchUpInside];
 
     qianMingGreenTF = [[[NSBundle mainBundle]loadNibNamed:@"GreenLineTextField" owner:self options:nil]firstObject];
     [self.view addSubview:qianMingGreenTF];
@@ -171,6 +172,36 @@
         make.right.equalTo(weakSelf.view.mas_right).offset(-10);
     }];
     
+}
+-(void)chooseSex{
+    [self.view endEditing:YES];
+    SexChooseView* sexChooseView = [[[NSBundle mainBundle]loadNibNamed:@"SexChooseView" owner:self options:nil]firstObject];
+    sexChooseView.btnYesClick = ^(BOOL isNan) {
+        if(isNan)
+        {
+            [self->sexGreenTF.rightButton setTitle:@"男" forState:UIControlStateNormal];
+        }else{
+            [self->sexGreenTF.rightButton setTitle:@"女" forState:UIControlStateNormal];
+        }
+    };
+    [self.view addSubview:sexChooseView];
+}
+-(void)chooseBirthday{
+    [self.view endEditing:YES];
+    //年-月-日
+   CXDatePickerView *datepicker = [[CXDatePickerView alloc] initWithDateStyle:CXDateStyleShowYearMonthDay CompleteBlock:^(NSDate *selectDate) {
+       NSString *dateString = [selectDate stringWithFormat:@"yyyy-MM-dd"];
+       NSLog(@"选择的日期：%@",dateString);
+       [self->birthdayGreenTF.rightButton setTitle:dateString forState:UIControlStateNormal];
+    }];
+    datepicker.dateLabelColor = [UIColor blackColor];//年-月-日-时-分 颜色
+    datepicker.datePickerColor = [UIColor blackColor];//滚轮日期颜色
+    datepicker.doneButtonColor = [UIColor blackColor];//确定按钮的颜色
+    datepicker.cancelButtonColor = datepicker.doneButtonColor;
+    datepicker.headerViewColor = [UIColor colorWithWhite:0.7 alpha:1];
+    datepicker.hideSegmentedLine=YES;
+    datepicker.hideBackgroundYearLabel=YES;
+    [datepicker show];
 }
 -(void)confirmBtnClick
 {

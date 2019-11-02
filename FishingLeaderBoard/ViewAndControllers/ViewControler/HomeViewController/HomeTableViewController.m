@@ -208,15 +208,17 @@
                 DiaoChangDetailViewController *diaoChangDetailVc = [[DiaoChangDetailViewController alloc]init];
                 AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
                            de.tbc.tabBar.hidden =YES;
+                diaoChangDetailVc.hidesBottomBarWhenPushed
+                =YES;
                 [self.navigationController pushViewController:diaoChangDetailVc animated:YES];
             }
             break;
             case BUTTON_FAXIANYUCHANG_HOME_TAG:
         {
             FindDiaoChangViewController*vc =[[FindDiaoChangViewController alloc]init];
-        vc.hidesBottomBarWhenPushed = YES;
             AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
             de.tbc.tabBar.hidden =YES;
+            vc.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

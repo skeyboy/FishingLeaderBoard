@@ -1,35 +1,35 @@
 //
-//  DiaoChangListViewController.m
+//  DCDetailAndFishGetViewController.m
 //  FishingLeaderBoard
 //
-//  Created by yue on 2019/10/29.
+//  Created by yue on 2019/11/2.
 //  Copyright © 2019 yue. All rights reserved.
 //
 
-#import "FindDiaoChangViewController.h"
-#import "DiaoChangListViewController.h"
-#import "DiaochangMapViewController.h"
+#import "DCDetailAndFishGetViewController.h"
+#import "BaoMingDetailViewController.h"
 #import "YHSegmentView.h"
 #import "AppDelegate.h"
-@interface FindDiaoChangViewController ()
+#import "BuHuoTableViewController.h"
+@interface DCDetailAndFishGetViewController ()
 
 @end
 
-@implementation FindDiaoChangViewController
-
+@implementation DCDetailAndFishGetViewController
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    
+[super viewDidLoad];
+
     [self setNavViewWithTitle:@"" isShowBack:YES];
     hkNavigationView.frame =CGRectMake(0, 0, SCREEN_WIDTH, Height_StatusBar+50);
     hkNavigationView.navLineView.frame =(CGRect){0, Height_StatusBar+50 - 0.5, SCREEN_WIDTH, 0.5};
     self.view.backgroundColor = [UIColor whiteColor];
     
     NSMutableArray *mutArr = [NSMutableArray array];
-    NSArray *titleArr = @[@"列表模式",@"地图模式"];
-    DiaoChangListViewController *diaoChangListVc = [[DiaoChangListViewController alloc]init];
-    DiaochangMapViewController *registerView = [[DiaochangMapViewController alloc]init];
-    [mutArr addObjectsFromArray:@[diaoChangListVc,registerView]];
+    NSArray *titleArr = @[@"详情",@"渔获"];
+    BaoMingDetailViewController *diaoChangVc = [[BaoMingDetailViewController alloc]init];
+    BuHuoTableViewController *buHuoVc = [[BuHuoTableViewController alloc]init];
+    buHuoVc.pageType = FPageTypeBuHuoView;
+    [mutArr addObjectsFromArray:@[diaoChangVc,buHuoVc]];
     YHSegmentView *segmentView = [[YHSegmentView alloc] initWithFrame:CGRectMake(0, Height_StatusBar, SCREEN_WIDTH,  [UIScreen mainScreen].bounds.size.height - 0) ViewControllersArr:[mutArr copy] TitleArr:titleArr TitleNormalSize:16 TitleSelectedSize:16 SegmentStyle:YHSegementStyleIndicate ParentViewController:self ReturnIndexBlock:^(NSInteger index) {
         NSLog(@"点击了%ld模块",(long)index);
     }];

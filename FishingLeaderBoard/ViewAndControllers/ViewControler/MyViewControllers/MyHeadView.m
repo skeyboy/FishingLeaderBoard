@@ -44,7 +44,7 @@
     self.costomLabel.textAlignment = NSTextAlignmentLeft;
     [self addSubview:self.costomLabel];
     
-    self.iconButton = [FViewCreateFactory createCustomButtonWithName:@"" delegate:self selector:@selector(btnClick:) tag:0];
+    self.iconButton = [FViewCreateFactory createCustomButtonWithName:@"" delegate:self selector:@selector(tapUserInfo) tag:0];
     [self.iconButton setImage:[UIImage imageNamed:@"user_my"] forState:UIControlStateNormal];
     
     [self.iconButton.imageView setContentMode:UIViewContentModeCenter];
@@ -64,7 +64,7 @@
         make.left.mas_equalTo(self.topView.mas_left).mas_offset(90);
         make.right.mas_equalTo(self.topView.mas_right).mas_offset(-40);
         make.top.mas_equalTo(self.topView.mas_top).mas_offset(Height_StatusBar+20);
-        make.height.mas_equalTo(@30);
+            make.height.mas_equalTo(@30);
     }];
     [self.idLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.userNameLabel.mas_left);
@@ -106,9 +106,9 @@
     float space = (SCREEN_WIDTH - 80 - 80 - 90)/4.0;
     [self.guanZhuLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.topView.mas_bottom).mas_offset(20);
-        make.height.mas_equalTo(@40);
+             make.height.mas_equalTo(@40);
         make.left.mas_equalTo(self.mas_left).mas_offset(space);
-        make.width.mas_equalTo(@80);
+            make.width.mas_equalTo(@80);
     }];
     [self.fenSiLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.guanZhuLabel.mas_centerY);
@@ -123,6 +123,7 @@
         make.width.mas_equalTo(@90);
     }];
    
+    
     
 }
 -(void)tapUserInfo

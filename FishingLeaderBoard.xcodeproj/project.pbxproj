@@ -30,6 +30,10 @@
 		8A25AFA92369F04E00006ED4 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A25AFA22369F04D00006ED4 /* libssl.a */; };
 		8A25AFAA2369F04E00006ED4 /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A25AFA32369F04D00006ED4 /* BaiduMapAPI_Cloud.framework */; };
 		8A25AFAD236AFA7600006ED4 /* MyDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A25AFAC236AFA7600006ED4 /* MyDataObject.m */; };
+		8A25AFDD236C0D2D00006ED4 /* CXDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A25AFD8236C0D2D00006ED4 /* CXDatePickerView.m */; };
+		8A25AFDE236C0D2D00006ED4 /* NSDate+CXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A25AFDB236C0D2D00006ED4 /* NSDate+CXCategory.m */; };
+		8A25AFE6236C379000006ED4 /* SexChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A25AFE5236C379000006ED4 /* SexChooseView.m */; };
+		8A25AFE8236C37A700006ED4 /* SexChooseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A25AFE7236C37A700006ED4 /* SexChooseView.xib */; };
 		8A3488B6235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488B5235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m */; };
 		8A3488BB235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A3488B9235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib */; };
 		8A3488BE235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3488BD235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m */; };
@@ -72,6 +76,9 @@
 		8A365A222356ED9D00A51BEF /* FViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A365A212356ED9D00A51BEF /* FViewController.m */; };
 		8A365A252356EE8B00A51BEF /* FNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A365A242356EE8B00A51BEF /* FNavigationController.m */; };
 		8A365A2B2356F02800A51BEF /* FNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A365A2A2356F02800A51BEF /* FNavigationView.m */; };
+		8A4463A9236D3F23002012D3 /* ChooseMutlPicturesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4463A8236D3F23002012D3 /* ChooseMutlPicturesView.m */; };
+		8A4463AD236D4DDE002012D3 /* DCDetailAndFishGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4463AC236D4DDE002012D3 /* DCDetailAndFishGetViewController.m */; };
+		8A4463B0236D50CC002012D3 /* BaoMingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4463AF236D50CC002012D3 /* BaoMingDetailViewController.m */; };
 		8A500D5B23672D8B0064704F /* DCDBriefTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D5923672D8B0064704F /* DCDBriefTableViewCell.m */; };
 		8A500D5C23672D8B0064704F /* DCDBriefTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A500D5A23672D8B0064704F /* DCDBriefTableViewCell.xib */; };
 		8A500D6323672F810064704F /* YuQrCreateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D5E23672F800064704F /* YuQrCreateHelper.m */; };
@@ -180,6 +187,14 @@
 		8A25AFA32369F04D00006ED4 /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
 		8A25AFAB236AFA7600006ED4 /* MyDataObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDataObject.h; sourceTree = "<group>"; };
 		8A25AFAC236AFA7600006ED4 /* MyDataObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDataObject.m; sourceTree = "<group>"; };
+		8A25AFD8236C0D2D00006ED4 /* CXDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXDatePickerView.m; sourceTree = "<group>"; };
+		8A25AFD9236C0D2D00006ED4 /* NSDate+CXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CXCategory.h"; sourceTree = "<group>"; };
+		8A25AFDA236C0D2D00006ED4 /* CXDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXDatePickerView.h; sourceTree = "<group>"; };
+		8A25AFDB236C0D2D00006ED4 /* NSDate+CXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CXCategory.m"; sourceTree = "<group>"; };
+		8A25AFDC236C0D2D00006ED4 /* PickerViewParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewParameter.h; sourceTree = "<group>"; };
+		8A25AFE4236C379000006ED4 /* SexChooseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SexChooseView.h; sourceTree = "<group>"; };
+		8A25AFE5236C379000006ED4 /* SexChooseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SexChooseView.m; sourceTree = "<group>"; };
+		8A25AFE7236C37A700006ED4 /* SexChooseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SexChooseView.xib; sourceTree = "<group>"; };
 		8A3488B4235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaoChangSearchTableViewController.h; sourceTree = "<group>"; };
 		8A3488B5235D4A8C00AED1B7 /* DiaoChangSearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaoChangSearchTableViewController.m; sourceTree = "<group>"; };
 		8A3488B9235D4AD600AED1B7 /* DiaoChangSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaoChangSearchTableViewCell.xib; sourceTree = "<group>"; };
@@ -257,6 +272,12 @@
 		8A365A242356EE8B00A51BEF /* FNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNavigationController.m; sourceTree = "<group>"; };
 		8A365A292356F02800A51BEF /* FNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNavigationView.h; sourceTree = "<group>"; };
 		8A365A2A2356F02800A51BEF /* FNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNavigationView.m; sourceTree = "<group>"; };
+		8A4463A7236D3F23002012D3 /* ChooseMutlPicturesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseMutlPicturesView.h; sourceTree = "<group>"; };
+		8A4463A8236D3F23002012D3 /* ChooseMutlPicturesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseMutlPicturesView.m; sourceTree = "<group>"; };
+		8A4463AB236D4DDE002012D3 /* DCDetailAndFishGetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCDetailAndFishGetViewController.h; sourceTree = "<group>"; };
+		8A4463AC236D4DDE002012D3 /* DCDetailAndFishGetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCDetailAndFishGetViewController.m; sourceTree = "<group>"; };
+		8A4463AE236D50CC002012D3 /* BaoMingDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaoMingDetailViewController.h; sourceTree = "<group>"; };
+		8A4463AF236D50CC002012D3 /* BaoMingDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaoMingDetailViewController.m; sourceTree = "<group>"; };
 		8A500D5823672D8B0064704F /* DCDBriefTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCDBriefTableViewCell.h; sourceTree = "<group>"; };
 		8A500D5923672D8B0064704F /* DCDBriefTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCDBriefTableViewCell.m; sourceTree = "<group>"; };
 		8A500D5A23672D8B0064704F /* DCDBriefTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DCDBriefTableViewCell.xib; sourceTree = "<group>"; };
@@ -425,6 +446,18 @@
 				8A25AFA22369F04D00006ED4 /* libssl.a */,
 			);
 			path = thirdlibs;
+			sourceTree = "<group>";
+		};
+		8A25AFD7236C0D2D00006ED4 /* CXDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				8A25AFD8236C0D2D00006ED4 /* CXDatePickerView.m */,
+				8A25AFD9236C0D2D00006ED4 /* NSDate+CXCategory.h */,
+				8A25AFDA236C0D2D00006ED4 /* CXDatePickerView.h */,
+				8A25AFDB236C0D2D00006ED4 /* NSDate+CXCategory.m */,
+				8A25AFDC236C0D2D00006ED4 /* PickerViewParameter.h */,
+			);
+			path = CXDatePickerView;
 			sourceTree = "<group>";
 		};
 		8A3488B0235D2C3400AED1B7 /* Search */ = {
@@ -620,6 +653,7 @@
 		8A365A0F2356AF2C00A51BEF /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				8A25AFD7236C0D2D00006ED4 /* CXDatePickerView */,
 				8A500D792367F13F0064704F /* FSScrollContentViewLib */,
 				8A500D752367CE9E0064704F /* STSegmentView */,
 				8A500D6623674AF60064704F /* WX */,
@@ -719,8 +753,21 @@
 				8A34890C23615E5A00AED1B7 /* GreenLineTextField.h */,
 				8A34890D23615E5A00AED1B7 /* GreenLineTextField.m */,
 				8A34890F23615E7000AED1B7 /* GreenLineTextField.xib */,
+				8A4463A7236D3F23002012D3 /* ChooseMutlPicturesView.h */,
+				8A4463A8236D3F23002012D3 /* ChooseMutlPicturesView.m */,
 			);
 			path = commonView;
+			sourceTree = "<group>";
+		};
+		8A4463AA236D4D88002012D3 /* DiaoChangDetailAndFishGet */ = {
+			isa = PBXGroup;
+			children = (
+				8A4463AB236D4DDE002012D3 /* DCDetailAndFishGetViewController.h */,
+				8A4463AC236D4DDE002012D3 /* DCDetailAndFishGetViewController.m */,
+				8A4463AE236D50CC002012D3 /* BaoMingDetailViewController.h */,
+				8A4463AF236D50CC002012D3 /* BaoMingDetailViewController.m */,
+			);
+			path = DiaoChangDetailAndFishGet;
 			sourceTree = "<group>";
 		};
 		8A500D5D23672F800064704F /* YuQr */ = {
@@ -742,9 +789,9 @@
 				8A500D6C23674AF60064704F /* YuWeChatShareManager.m */,
 				8A500D6723674AF60064704F /* YuShareViewController.m */,
 				8A500D6923674AF60064704F /* YuShareViewController.h */,
+				8A500D6B23674AF60064704F /* YuShareViewController.xib */,
 				8A500D6A23674AF60064704F /* wx_pyq.png */,
 				53059A522369882000E38C68 /* wechat.jpg */,
-				8A500D6B23674AF60064704F /* YuShareViewController.xib */,
 				53F0D73C2368874400A9D21C /* YuPosterShareViewController.h */,
 				53F0D73D2368874400A9D21C /* YuPosterShareViewController.m */,
 				53F0D73E2368874400A9D21C /* YuPosterShareViewController.xib */,
@@ -849,6 +896,9 @@
 				8A34890A23614EAB00AED1B7 /* UserInfoViewController.m */,
 				8A25AFAB236AFA7600006ED4 /* MyDataObject.h */,
 				8A25AFAC236AFA7600006ED4 /* MyDataObject.m */,
+				8A25AFE4236C379000006ED4 /* SexChooseView.h */,
+				8A25AFE5236C379000006ED4 /* SexChooseView.m */,
+				8A25AFE7236C37A700006ED4 /* SexChooseView.xib */,
 			);
 			path = MyViewControllers;
 			sourceTree = "<group>";
@@ -856,6 +906,7 @@
 		8AD5E14C2359433A000717A5 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8A4463AA236D4D88002012D3 /* DiaoChangDetailAndFishGet */,
 				53CA6AC0236AB9BA00E47219 /* DiaoChangMap */,
 				8A500D8823686D0C0064704F /* FindDiaoChnag */,
 				8A348938236588F700AED1B7 /* DiaoChangDetail */,
@@ -1063,6 +1114,7 @@
 				53CA6AC5236AB9D200E47219 /* DiaochangMapViewController.xib in Resources */,
 				8A500D6F23674AF60064704F /* YuShareViewController.xib in Resources */,
 				8A500D6523672F810064704F /* YuQrViewController.xib in Resources */,
+				8A25AFE8236C37A700006ED4 /* SexChooseView.xib in Resources */,
 				8AD5E1AB235C9E26000717A5 /* MainNoTableViewCell.xib in Resources */,
 				8A3489462365A9C600AED1B7 /* DiaoChangDetailTableViewCell.xib in Resources */,
 				8A500D842367F5AF0064704F /* DiaoChangDetailHeadView.xib in Resources */,
@@ -1224,6 +1276,7 @@
 				8A3488D4235D639F00AED1B7 /* UserTableViewController.m in Sources */,
 				8AD5E1652359BF3A000717A5 /* SearchViewController.m in Sources */,
 				8A3488F7235EADBF00AED1B7 /* SaiShiAndHuoDongTableViewController.m in Sources */,
+				8A25AFDE236C0D2D00006ED4 /* NSDate+CXCategory.m in Sources */,
 				8AD5E1A0235C882A000717A5 /* MainCollectionViewCell.m in Sources */,
 				8A3488FA235EAFDF00AED1B7 /* SaiShiListTableViewController.m in Sources */,
 				8A34890B23614EAB00AED1B7 /* UserInfoViewController.m in Sources */,
@@ -1236,6 +1289,7 @@
 				8A3488EA235E87A900AED1B7 /* DiaoChangHeadView.m in Sources */,
 				8AD5E1292357F005000717A5 /* LoginViewController.m in Sources */,
 				8AD5E1222357EEB0000717A5 /* YHSegmentView.m in Sources */,
+				8A25AFE6236C379000006ED4 /* SexChooseView.m in Sources */,
 				8A25AFAD236AFA7600006ED4 /* MyDataObject.m in Sources */,
 				8A3488BE235D59D200AED1B7 /* DiaoChangSearchTableViewCell.m in Sources */,
 				8AD5E1A5235C96BA000717A5 /* MainTwoCollectionViewCell.m in Sources */,
@@ -1247,7 +1301,9 @@
 				8A500D7023674AF60064704F /* YuWeChatShareManager.m in Sources */,
 				8AD5E1262357EFE5000717A5 /* LoginAndRegisterViewController.m in Sources */,
 				8A348904235FFD8300AED1B7 /* SaiShiListTableViewCell.m in Sources */,
+				8A4463AD236D4DDE002012D3 /* DCDetailAndFishGetViewController.m in Sources */,
 				8A3488CB235D603B00AED1B7 /* SaiShiTableViewCell.m in Sources */,
+				8A25AFDD236C0D2D00006ED4 /* CXDatePickerView.m in Sources */,
 				8AD5E14B2358B5FB000717A5 /* MyViewController.m in Sources */,
 				8A500D6323672F810064704F /* YuQrCreateHelper.m in Sources */,
 				8A3489452365A9C600AED1B7 /* DiaoChangDetailTableViewCell.m in Sources */,
@@ -1260,6 +1316,8 @@
 				8A500D802367F13F0064704F /* FSPageContentView.m in Sources */,
 				8A3489082360900B00AED1B7 /* MenuView.m in Sources */,
 				8A500D6D23674AF60064704F /* YuShareViewController.m in Sources */,
+				8A4463B0236D50CC002012D3 /* BaoMingDetailViewController.m in Sources */,
+				8A4463A9236D3F23002012D3 /* ChooseMutlPicturesView.m in Sources */,
 				8AD5E1702359E7DF000717A5 /* WMZBannerFlowLayout.m in Sources */,
 				8A25AF962369465700006ED4 /* DiaoChangListHeadView.m in Sources */,
 				8AD5E188235B3E21000717A5 /* MainTableViewCell.m in Sources */,
@@ -1364,6 +1422,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1387,6 +1446,8 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = "";
 			};
 			name = Debug;
 		};
@@ -1425,6 +1486,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1441,6 +1503,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
