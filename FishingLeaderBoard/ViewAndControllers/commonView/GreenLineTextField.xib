@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -35,7 +33,6 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="aKM-qw-dhL"/>
                     </constraints>
-                    <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -56,9 +53,18 @@
                         <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="77b-3B-NLt">
+                    <rect key="frame" x="20" y="91" width="478" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Px9-HC-64I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="77b-3B-NLt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6hv-I7-X0n"/>
                 <constraint firstAttribute="trailing" secondItem="zEm-Dv-vSw" secondAttribute="trailing" constant="20" id="6ks-R5-dPh"/>
                 <constraint firstAttribute="bottom" secondItem="b2X-Os-Amm" secondAttribute="bottom" id="71T-md-Efy"/>
                 <constraint firstItem="6XT-FF-2eW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Ahz-LT-EFc"/>
@@ -67,6 +73,8 @@
                 <constraint firstAttribute="trailing" secondItem="tla-Ye-BLR" secondAttribute="trailing" constant="20" id="FAH-aK-p93"/>
                 <constraint firstItem="b2X-Os-Amm" firstAttribute="top" secondItem="t23-Vv-DqK" secondAttribute="bottom" constant="20" id="O0Y-ba-24z"/>
                 <constraint firstAttribute="trailing" secondItem="b2X-Os-Amm" secondAttribute="trailing" constant="10" id="U3z-qw-D6M"/>
+                <constraint firstItem="77b-3B-NLt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="YMg-uo-SJK"/>
+                <constraint firstItem="77b-3B-NLt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Zpm-EM-h3g"/>
                 <constraint firstItem="zEm-Dv-vSw" firstAttribute="leading" secondItem="6XT-FF-2eW" secondAttribute="trailing" constant="10" id="cYa-wy-z0d"/>
                 <constraint firstItem="b2X-Os-Amm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="cZl-oA-ywN"/>
                 <constraint firstAttribute="trailing" secondItem="t23-Vv-DqK" secondAttribute="trailing" constant="20" id="faF-se-RnH"/>
@@ -81,6 +89,7 @@
                 <outlet property="bottomLine" destination="b2X-Os-Amm" id="HwJ-qI-moL"/>
                 <outlet property="enterTextField" destination="zEm-Dv-vSw" id="BhH-CL-gQh"/>
                 <outlet property="leftLabel" destination="6XT-FF-2eW" id="Zuo-XY-Kk0"/>
+                <outlet property="leftTextField" destination="77b-3B-NLt" id="MPj-zE-fHy"/>
                 <outlet property="rightButton" destination="tla-Ye-BLR" id="WuJ-xa-2rz"/>
                 <outlet property="textView" destination="t23-Vv-DqK" id="mUb-AS-oaZ"/>
             </connections>

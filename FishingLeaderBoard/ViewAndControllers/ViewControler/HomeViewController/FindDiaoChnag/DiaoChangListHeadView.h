@@ -22,3 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+@interface UIView (subViewOfClassName)
+- (UIView*)subViewOfClassName:(NSString*)className ;
+@end

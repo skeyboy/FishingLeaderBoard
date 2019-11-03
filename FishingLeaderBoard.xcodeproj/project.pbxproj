@@ -77,9 +77,15 @@
 		8A365A222356ED9D00A51BEF /* FViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A365A212356ED9D00A51BEF /* FViewController.m */; };
 		8A365A252356EE8B00A51BEF /* FNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A365A242356EE8B00A51BEF /* FNavigationController.m */; };
 		8A365A2B2356F02800A51BEF /* FNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A365A2A2356F02800A51BEF /* FNavigationView.m */; };
-		8A4463A9236D3F23002012D3 /* ChooseMutlPicturesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4463A8236D3F23002012D3 /* ChooseMutlPicturesView.m */; };
 		8A4463AD236D4DDE002012D3 /* DCDetailAndFishGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4463AC236D4DDE002012D3 /* DCDetailAndFishGetViewController.m */; };
 		8A4463B0236D50CC002012D3 /* BaoMingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4463AF236D50CC002012D3 /* BaoMingDetailViewController.m */; };
+		8A4463B8236EA2C2002012D3 /* RemovableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4463B5236EA2C2002012D3 /* RemovableView.m */; };
+		8A4463BD236EAF5D002012D3 /* plus@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4463BA236EAF5D002012D3 /* plus@3x.png */; };
+		8A4463BE236EAF5D002012D3 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4463BB236EAF5D002012D3 /* plus.png */; };
+		8A4463BF236EAF5D002012D3 /* plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4463BC236EAF5D002012D3 /* plus@2x.png */; };
+		8A4463C3236EAF93002012D3 /* delete-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4463C0236EAF93002012D3 /* delete-1.png */; };
+		8A4463C4236EAF93002012D3 /* delete-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4463C1236EAF93002012D3 /* delete-2.png */; };
+		8A4463C5236EAF93002012D3 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4463C2236EAF93002012D3 /* delete.png */; };
 		8A500D5B23672D8B0064704F /* DCDBriefTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D5923672D8B0064704F /* DCDBriefTableViewCell.m */; };
 		8A500D5C23672D8B0064704F /* DCDBriefTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A500D5A23672D8B0064704F /* DCDBriefTableViewCell.xib */; };
 		8A500D6323672F810064704F /* YuQrCreateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A500D5E23672F800064704F /* YuQrCreateHelper.m */; };
@@ -274,12 +280,18 @@
 		8A365A242356EE8B00A51BEF /* FNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNavigationController.m; sourceTree = "<group>"; };
 		8A365A292356F02800A51BEF /* FNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNavigationView.h; sourceTree = "<group>"; };
 		8A365A2A2356F02800A51BEF /* FNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNavigationView.m; sourceTree = "<group>"; };
-		8A4463A7236D3F23002012D3 /* ChooseMutlPicturesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseMutlPicturesView.h; sourceTree = "<group>"; };
-		8A4463A8236D3F23002012D3 /* ChooseMutlPicturesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseMutlPicturesView.m; sourceTree = "<group>"; };
 		8A4463AB236D4DDE002012D3 /* DCDetailAndFishGetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCDetailAndFishGetViewController.h; sourceTree = "<group>"; };
 		8A4463AC236D4DDE002012D3 /* DCDetailAndFishGetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCDetailAndFishGetViewController.m; sourceTree = "<group>"; };
 		8A4463AE236D50CC002012D3 /* BaoMingDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaoMingDetailViewController.h; sourceTree = "<group>"; };
 		8A4463AF236D50CC002012D3 /* BaoMingDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaoMingDetailViewController.m; sourceTree = "<group>"; };
+		8A4463B5236EA2C2002012D3 /* RemovableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemovableView.m; sourceTree = "<group>"; };
+		8A4463B6236EA2C2002012D3 /* RemovableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemovableView.h; sourceTree = "<group>"; };
+		8A4463BA236EAF5D002012D3 /* plus@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plus@3x.png"; path = "FishingLeaderBoard/Supporting Files/Assets.xcassets/My/plus.imageset/plus@3x.png"; sourceTree = SOURCE_ROOT; };
+		8A4463BB236EAF5D002012D3 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plus.png; path = "FishingLeaderBoard/Supporting Files/Assets.xcassets/My/plus.imageset/plus.png"; sourceTree = SOURCE_ROOT; };
+		8A4463BC236EAF5D002012D3 /* plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plus@2x.png"; path = "FishingLeaderBoard/Supporting Files/Assets.xcassets/My/plus.imageset/plus@2x.png"; sourceTree = SOURCE_ROOT; };
+		8A4463C0236EAF93002012D3 /* delete-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "delete-1.png"; path = "FishingLeaderBoard/Supporting Files/Assets.xcassets/selfImage/delete.imageset/delete-1.png"; sourceTree = SOURCE_ROOT; };
+		8A4463C1236EAF93002012D3 /* delete-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "delete-2.png"; path = "FishingLeaderBoard/Supporting Files/Assets.xcassets/selfImage/delete.imageset/delete-2.png"; sourceTree = SOURCE_ROOT; };
+		8A4463C2236EAF93002012D3 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = delete.png; path = "FishingLeaderBoard/Supporting Files/Assets.xcassets/selfImage/delete.imageset/delete.png"; sourceTree = SOURCE_ROOT; };
 		8A500D5823672D8B0064704F /* DCDBriefTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCDBriefTableViewCell.h; sourceTree = "<group>"; };
 		8A500D5923672D8B0064704F /* DCDBriefTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCDBriefTableViewCell.m; sourceTree = "<group>"; };
 		8A500D5A23672D8B0064704F /* DCDBriefTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DCDBriefTableViewCell.xib; sourceTree = "<group>"; };
@@ -741,6 +753,7 @@
 		8A365A1F2356ED3700A51BEF /* commonView */ = {
 			isa = PBXGroup;
 			children = (
+				8A4463B4236EA2C2002012D3 /* removable */,
 				8A3489142362D28800AED1B7 /* Photo */,
 				8A3488DB235DE21100AED1B7 /* ColorLabel.h */,
 				8A3488DC235DE21100AED1B7 /* ColorLabel.m */,
@@ -755,8 +768,6 @@
 				8A34890C23615E5A00AED1B7 /* GreenLineTextField.h */,
 				8A34890D23615E5A00AED1B7 /* GreenLineTextField.m */,
 				8A34890F23615E7000AED1B7 /* GreenLineTextField.xib */,
-				8A4463A7236D3F23002012D3 /* ChooseMutlPicturesView.h */,
-				8A4463A8236D3F23002012D3 /* ChooseMutlPicturesView.m */,
 			);
 			path = commonView;
 			sourceTree = "<group>";
@@ -771,6 +782,21 @@
 				53991C65236EA32500266136 /* BaoMingDetailViewController.xib */,
 			);
 			path = DiaoChangDetailAndFishGet;
+			sourceTree = "<group>";
+		};
+		8A4463B4236EA2C2002012D3 /* removable */ = {
+			isa = PBXGroup;
+			children = (
+				8A4463C0236EAF93002012D3 /* delete-1.png */,
+				8A4463C1236EAF93002012D3 /* delete-2.png */,
+				8A4463C2236EAF93002012D3 /* delete.png */,
+				8A4463BB236EAF5D002012D3 /* plus.png */,
+				8A4463BC236EAF5D002012D3 /* plus@2x.png */,
+				8A4463BA236EAF5D002012D3 /* plus@3x.png */,
+				8A4463B6236EA2C2002012D3 /* RemovableView.h */,
+				8A4463B5236EA2C2002012D3 /* RemovableView.m */,
+			);
+			path = removable;
 			sourceTree = "<group>";
 		};
 		8A500D5D23672F800064704F /* YuQr */ = {
@@ -1103,6 +1129,7 @@
 			files = (
 				8A365969235609E000A51BEF /* LaunchScreen.storyboard in Resources */,
 				8A3488D1235D605200AED1B7 /* BuHuoTableViewCell.xib in Resources */,
+				8A4463BD236EAF5D002012D3 /* plus@3x.png in Resources */,
 				8A348905235FFD8300AED1B7 /* SaiShiListTableViewCell.xib in Resources */,
 				8A3488CC235D603B00AED1B7 /* SaiShiTableViewCell.xib in Resources */,
 				8A34891023615E7000AED1B7 /* GreenLineTextField.xib in Resources */,
@@ -1117,9 +1144,14 @@
 				8A365964235609E000A51BEF /* Main.storyboard in Resources */,
 				53CA6AC5236AB9D200E47219 /* DiaochangMapViewController.xib in Resources */,
 				8A500D6F23674AF60064704F /* YuShareViewController.xib in Resources */,
+				8A4463C5236EAF93002012D3 /* delete.png in Resources */,
 				8A500D6523672F810064704F /* YuQrViewController.xib in Resources */,
 				8A25AFE8236C37A700006ED4 /* SexChooseView.xib in Resources */,
 				8AD5E1AB235C9E26000717A5 /* MainNoTableViewCell.xib in Resources */,
+				8A4463C4236EAF93002012D3 /* delete-2.png in Resources */,
+				8A4463BF236EAF5D002012D3 /* plus@2x.png in Resources */,
+				8A4463C3236EAF93002012D3 /* delete-1.png in Resources */,
+				8A4463BE236EAF5D002012D3 /* plus.png in Resources */,
 				8A3489462365A9C600AED1B7 /* DiaoChangDetailTableViewCell.xib in Resources */,
 				8A500D842367F5AF0064704F /* DiaoChangDetailHeadView.xib in Resources */,
 				8AD5E1A6235C96BA000717A5 /* MainTwoCollectionViewCell.xib in Resources */,
@@ -1321,7 +1353,6 @@
 				8A3489082360900B00AED1B7 /* MenuView.m in Sources */,
 				8A500D6D23674AF60064704F /* YuShareViewController.m in Sources */,
 				8A4463B0236D50CC002012D3 /* BaoMingDetailViewController.m in Sources */,
-				8A4463A9236D3F23002012D3 /* ChooseMutlPicturesView.m in Sources */,
 				8AD5E1702359E7DF000717A5 /* WMZBannerFlowLayout.m in Sources */,
 				8A25AF962369465700006ED4 /* DiaoChangListHeadView.m in Sources */,
 				8AD5E188235B3E21000717A5 /* MainTableViewCell.m in Sources */,
@@ -1336,6 +1367,7 @@
 				8A34892F23633CFC00AED1B7 /* EditView.m in Sources */,
 				8A500D5B23672D8B0064704F /* DCDBriefTableViewCell.m in Sources */,
 				8A25AF9B236982F200006ED4 /* DiaoChangListViewController.m in Sources */,
+				8A4463B8236EA2C2002012D3 /* RemovableView.m in Sources */,
 				8AD5E17F235AF33B000717A5 /* TwoLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
