@@ -15,7 +15,7 @@
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天气信息加载中..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrC-IF-mLz">
                     <rect key="frame" x="0.0" y="0.0" width="614" height="57"/>
-                    <color key="backgroundColor" red="0.18855160469999999" green="0.4200729728" blue="0.96475619079999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="0.086511261759999999" green="0.19269803169999999" blue="0.32158321140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="57" id="1uT-i6-OuK"/>
                     </constraints>

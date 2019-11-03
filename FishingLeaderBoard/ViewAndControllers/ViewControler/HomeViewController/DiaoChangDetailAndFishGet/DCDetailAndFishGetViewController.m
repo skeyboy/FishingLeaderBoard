@@ -48,7 +48,5 @@
 -(void)back
 {
     [self.navigationController popViewControllerAnimated:YES];
-     AppDelegate *de =(AppDelegate *)[UIApplication sharedApplication].delegate;
-       de.tbc.tabBar.hidden =NO;
 }
 @end

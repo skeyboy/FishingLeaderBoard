@@ -48,7 +48,8 @@
     segmentView.yh_segmentTintColor = [UIColor groupTableViewBackgroundColor];
     segmentView.yh_bgColor =NAVBGCOLOR;
     [self.view addSubview:segmentView];
-    MenuView *menvView = [[MenuView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-80, SCREEN_HEIGHT-Height_TabBar-150-20, 50, 150) name:@[@"发布",@"活动",@"赛事"] color:@[[UIColor blueColor],WHITEGRAY,WHITEGRAY]];
+//    MenuView *menvView = [[MenuView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-80, SCREEN_HEIGHT-Height_TabBar-150-20, 50, 150) name:@[@"发布",@"活动",@"赛事"] color:@[[[UIColor alloc]initWithRed:26/255.0 green:197/255.0 blue:136/255.0 alpha:1],WHITEGRAY,WHITEGRAY]];
+     MenuView *menvView = [[MenuView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-80, SCREEN_HEIGHT-Height_TabBar-60*3-20, 60, 60*3) name:@[@"发布",@"活动",@"赛事"] color:@[[[UIColor alloc]initWithRed:26/255.0 green:197/255.0 blue:136/255.0 alpha:1],WHITEGRAY,WHITEGRAY]];
     [self.view addSubview:menvView];
     [self.view bringSubviewToFront:menvView];
     menvView.menuClick = ^(int index) {

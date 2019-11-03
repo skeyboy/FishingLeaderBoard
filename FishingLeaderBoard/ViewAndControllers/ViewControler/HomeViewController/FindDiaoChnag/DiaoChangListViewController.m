@@ -37,7 +37,7 @@
     btn.layer.cornerRadius = 5.0;
     [self.view addSubview:btn];
     
-     MenuView *menvView = [[MenuView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-80, CGRectGetMaxY(self.tableView.frame)-150-10, 50, 150) name:@[@"排序方式",@"人气",@"距离"] color:@[[UIColor blackColor],[UIColor orangeColor],[UIColor greenColor]]];
+     MenuView *menvView = [[MenuView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-80, CGRectGetMaxY(self.tableView.frame)-60*3-10, 60, 60*3) name:@[@"排序方式",@"人气",@"距离"] color:@[NAVBGCOLOR,[[UIColor alloc]initWithRed:251/255.0 green:79/255.0 blue:6/255.0 alpha:1],[[UIColor alloc]initWithRed:26/255.0 green:197/255.0 blue:136/255.0 alpha:1]]];
        [self.view addSubview:menvView];
        [self.view bringSubviewToFront:menvView];
        menvView.menuClick = ^(int index) {
