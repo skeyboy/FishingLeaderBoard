@@ -68,6 +68,8 @@
     }else{
         msg = @"保存图片成功" ;
     }
+[self showWithInfo:msg
+   delayToHideAfter:0.75];
 }
 
 

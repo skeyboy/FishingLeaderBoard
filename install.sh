@@ -14,6 +14,7 @@ dests=(
         'https://github.com/CoderMJLee/MJRefresh.git'
         'https://github.com/MxABC/LBXScan.git'
         'https://github.com/MontakOleg/WechatOpenSDK.git'
+        'https://github.com/parakeety/PKYStepper.git'
         )
 
 function clone_all(){
@@ -27,4 +28,4 @@ function clone_all(){
 }
  
  
-clone_all "${dests[*]}"
+clone_all  "${dests[*]}"
