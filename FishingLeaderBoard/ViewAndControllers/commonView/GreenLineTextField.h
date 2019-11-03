@@ -23,7 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIButton *rightButton;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
-
+@property (strong,nonatomic)UILabel *placeHolderLabel;
+@property (weak, nonatomic) IBOutlet UITextField *leftTextField;
 
 @end
 

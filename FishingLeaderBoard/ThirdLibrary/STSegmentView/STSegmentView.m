@@ -294,10 +294,10 @@
     }
     
     [UIView animateWithDuration:duration animations:^{
-        _selectedView.frame = CGRectMake(x, 0, _titleLabelW, labelH);
-        _topContentView.frame = CGRectMake(-x, 0, _topContentView.bounds.size.width, labelH);
-        if (_slider) {
-             _slider.frame = CGRectMake(x, _slider.frame.origin.y, _slider.frame.size.width, _slider.frame.size.height);
+        self->_selectedView.frame = CGRectMake(x, 0, self->_titleLabelW, labelH);
+        self->_topContentView.frame = CGRectMake(-x, 0, self->_topContentView.bounds.size.width, labelH);
+        if (self->_slider) {
+            self->_slider.frame = CGRectMake(x, self->_slider.frame.origin.y, self->_slider.frame.size.width, self->_slider.frame.size.height);
         }
     }];
 }

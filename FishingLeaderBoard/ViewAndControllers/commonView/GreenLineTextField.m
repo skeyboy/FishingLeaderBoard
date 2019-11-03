@@ -17,18 +17,20 @@
     self.rightButton.hidden = YES;
     self.textView.hidden = YES;
     self.textView.delegate = self;
+    self.leftTextField.delegate = self;
+    self.leftTextField.hidden = YES;
     
-    UILabel *placeHolderLabel = [[UILabel alloc] init];
-    placeHolderLabel.text = @"个性签名~";
-    placeHolderLabel.numberOfLines = 0;
-    placeHolderLabel.textColor = [UIColor lightGrayColor];
-    [placeHolderLabel sizeToFit];
-    [self.textView addSubview:placeHolderLabel];
+    _placeHolderLabel = [[UILabel alloc] init];
+    _placeHolderLabel.text = @"个性签名~";
+    _placeHolderLabel.numberOfLines = 0;
+    _placeHolderLabel.textColor = [UIColor lightGrayColor];
+    [_placeHolderLabel sizeToFit];
+    [self.textView addSubview:_placeHolderLabel];
     
     // same font
-    placeHolderLabel.font = [UIFont systemFontOfSize:14.f];
+    _placeHolderLabel.font = [UIFont systemFontOfSize:14.f];
     
-    [_textView setValue:placeHolderLabel forKey:@"_placeholderLabel"];
+    [_textView setValue:_placeHolderLabel forKey:@"_placeholderLabel"];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField

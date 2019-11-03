@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -25,7 +25,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJB-Of-ghy">
-                    <rect key="frame" x="56" y="37.5" width="20" height="20"/>
+                    <rect key="frame" x="56" y="37.666666666666664" width="20" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="BMv-P2-P5w"/>
                         <constraint firstAttribute="width" constant="20" id="Ijf-Mf-aX5"/>
@@ -36,11 +36,15 @@
                         <action selector="downBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="uRC-in-Ypm"/>
                     </connections>
                 </button>
-                <searchBar contentMode="redraw" placeholder="搜索钓场关键词" translatesAutoresizingMaskIntoConstraints="NO" id="8cK-zV-sEo">
-                    <rect key="frame" x="76" y="32.5" width="243" height="30"/>
+                <searchBar contentMode="redraw" text="" placeholder="搜索钓场关键词" backgroundImage="msg" translatesAutoresizingMaskIntoConstraints="NO" id="8cK-zV-sEo">
+                    <rect key="frame" x="76" y="32.666666666666664" width="243" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="yaE-Ds-Wvw"/>
                     </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
             </subviews>
@@ -67,5 +71,6 @@
     </objects>
     <resources>
         <image name="down" width="48" height="48"/>
+        <image name="msg" width="13.333333015441895" height="13.333333015441895"/>
     </resources>
 </document>
