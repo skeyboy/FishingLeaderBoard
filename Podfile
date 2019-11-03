@@ -12,6 +12,7 @@ GitHubs = [
 'LBXScan',
 'IQKeyboardManager',
 'RITLKit',
+'PKYStepper'
 ]
 LocalPath = "~/Documents/Github/"
 target 'FishingLeaderBoard' do

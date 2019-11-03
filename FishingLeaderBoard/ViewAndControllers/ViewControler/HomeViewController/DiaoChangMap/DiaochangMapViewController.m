@@ -79,7 +79,7 @@
             annotationView = [[BMKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"annotationViewIdentifier"];
 //            TODO 
             //annotationView显示的图片，默认是大头针
-            //annotationView.image = nil;
+            annotationView.image = [UIImage imageNamed:@"spot_location"];
             /**
              默认情况下annotationView的中心点位于annotation的坐标位置，可以设置centerOffset改变
              annotationView的位置，正的偏移使annotationView朝右下方移动，负的朝左上方，单位是像素

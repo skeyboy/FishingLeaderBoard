@@ -21,4 +21,9 @@
 -(void)hideHud{
     [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
+-(void)showWithInfo:(NSString *)info
+    delayToHideAfter:(NSTimeInterval)timeInterval{
+    [self loadingWithMessage:info];
+    [self performSelector:@selector(hideHud) afterDelay:timeInterval];
+}
 @end
