@@ -30,7 +30,7 @@
     BuHuoTableViewController *buHuoVc = [[BuHuoTableViewController alloc]init];
     buHuoVc.pageType = FPageTypeBuHuoView;
     [mutArr addObjectsFromArray:@[diaoChangVc,buHuoVc]];
-    YHSegmentView *segmentView = [[YHSegmentView alloc] initWithFrame:CGRectMake(0, Height_StatusBar, SCREEN_WIDTH,  [UIScreen mainScreen].bounds.size.height - 0) ViewControllersArr:[mutArr copy] TitleArr:titleArr TitleNormalSize:16 TitleSelectedSize:16 SegmentStyle:YHSegementStyleIndicate ParentViewController:self ReturnIndexBlock:^(NSInteger index) {
+    YHSegmentView *segmentView = [[YHSegmentView alloc] initWithFrame:CGRectMake(0, Height_StatusBar, SCREEN_WIDTH,  [UIScreen mainScreen].bounds.size.height - Height_StatusBar) ViewControllersArr:[mutArr copy] TitleArr:titleArr TitleNormalSize:16 TitleSelectedSize:16 SegmentStyle:YHSegementStyleIndicate ParentViewController:self ReturnIndexBlock:^(NSInteger index) {
         NSLog(@"点击了%ld模块",(long)index);
     }];
     segmentView.yh_titleSelectedColor = [UIColor groupTableViewBackgroundColor];

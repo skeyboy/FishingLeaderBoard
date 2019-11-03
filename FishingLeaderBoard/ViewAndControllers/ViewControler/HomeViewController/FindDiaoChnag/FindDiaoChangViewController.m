@@ -11,6 +11,7 @@
 #import "DiaochangMapViewController.h"
 #import "YHSegmentView.h"
 #import "AppDelegate.h"
+#import "Masonry.h"
 @interface FindDiaoChangViewController ()
 
 @end
@@ -30,7 +31,7 @@
     DiaoChangListViewController *diaoChangListVc = [[DiaoChangListViewController alloc]init];
     DiaochangMapViewController *registerView = [[DiaochangMapViewController alloc]init];
     [mutArr addObjectsFromArray:@[diaoChangListVc,registerView]];
-    YHSegmentView *segmentView = [[YHSegmentView alloc] initWithFrame:CGRectMake(0, Height_StatusBar, SCREEN_WIDTH,  [UIScreen mainScreen].bounds.size.height - 0) ViewControllersArr:[mutArr copy] TitleArr:titleArr TitleNormalSize:16 TitleSelectedSize:16 SegmentStyle:YHSegementStyleIndicate ParentViewController:self ReturnIndexBlock:^(NSInteger index) {
+    YHSegmentView *segmentView = [[YHSegmentView alloc] initWithFrame:CGRectMake(0, Height_StatusBar, SCREEN_WIDTH,  [UIScreen mainScreen].bounds.size.height - Height_StatusBar*2) ViewControllersArr:[mutArr copy] TitleArr:titleArr TitleNormalSize:16 TitleSelectedSize:16 SegmentStyle:YHSegementStyleIndicate ParentViewController:self ReturnIndexBlock:^(NSInteger index) {
         NSLog(@"点击了%ld模块",(long)index);
     }];
     segmentView.yh_titleSelectedColor = [UIColor groupTableViewBackgroundColor];
@@ -39,6 +40,7 @@
     segmentView.yh_bgColor = NAVBGCOLOR;
     segmentView.backgroundColor = WHITECOLOR;
     [self.view addSubview:segmentView];
+    
     UIButton *btn =[FViewCreateFactory createCustomButtonWithName:@"" delegate:self selector:@selector(back) tag:0];
     [btn setImage:[UIImage imageNamed:@"nav_back_nor"] forState:UIControlStateNormal];
     [self.view addSubview:btn];

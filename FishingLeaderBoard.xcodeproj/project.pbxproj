@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		53059A532369882000E38C68 /* wechat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53059A522369882000E38C68 /* wechat.jpg */; };
+		53991C66236EA32500266136 /* BaoMingDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53991C65236EA32500266136 /* BaoMingDetailViewController.xib */; };
 		53CA6AC4236AB9D200E47219 /* DiaochangMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CA6AC2236AB9D200E47219 /* DiaochangMapViewController.m */; };
 		53CA6AC5236AB9D200E47219 /* DiaochangMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53CA6AC3236AB9D200E47219 /* DiaochangMapViewController.xib */; };
 		53CA6AC8236ADDC600E47219 /* UIViewController+ShowHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CA6AC7236ADDC600E47219 /* UIViewController+ShowHud.m */; };
@@ -155,6 +156,7 @@
 		36B33BA1BD75CE815CD1D8CE /* Pods-FishingLeaderBoardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishingLeaderBoardTests.debug.xcconfig"; path = "Target Support Files/Pods-FishingLeaderBoardTests/Pods-FishingLeaderBoardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C8E8522460D3AB52BDD643F /* Pods_FishingLeaderBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishingLeaderBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53059A522369882000E38C68 /* wechat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wechat.jpg; sourceTree = "<group>"; };
+		53991C65236EA32500266136 /* BaoMingDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaoMingDetailViewController.xib; sourceTree = "<group>"; };
 		53CA6AC1236AB9D200E47219 /* DiaochangMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaochangMapViewController.h; sourceTree = "<group>"; };
 		53CA6AC2236AB9D200E47219 /* DiaochangMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaochangMapViewController.m; sourceTree = "<group>"; };
 		53CA6AC3236AB9D200E47219 /* DiaochangMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaochangMapViewController.xib; sourceTree = "<group>"; };
@@ -766,6 +768,7 @@
 				8A4463AC236D4DDE002012D3 /* DCDetailAndFishGetViewController.m */,
 				8A4463AE236D50CC002012D3 /* BaoMingDetailViewController.h */,
 				8A4463AF236D50CC002012D3 /* BaoMingDetailViewController.m */,
+				53991C65236EA32500266136 /* BaoMingDetailViewController.xib */,
 			);
 			path = DiaoChangDetailAndFishGet;
 			sourceTree = "<group>";
@@ -1103,6 +1106,7 @@
 				8A348905235FFD8300AED1B7 /* SaiShiListTableViewCell.xib in Resources */,
 				8A3488CC235D603B00AED1B7 /* SaiShiTableViewCell.xib in Resources */,
 				8A34891023615E7000AED1B7 /* GreenLineTextField.xib in Resources */,
+				53991C66236EA32500266136 /* BaoMingDetailViewController.xib in Resources */,
 				8A25AF982369468100006ED4 /* DiaoChangListHeadView.xib in Resources */,
 				8AD5E184235B0C21000717A5 /* MyTableViewCell.xib in Resources */,
 				53059A532369882000E38C68 /* wechat.jpg in Resources */,
