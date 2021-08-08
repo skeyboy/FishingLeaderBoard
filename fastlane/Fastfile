@@ -1,0 +1,88 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :custom_lane do
+    # add actions here: https://docs.fastlane.tools/actions
+  end
+lane :fish do
+    # add actions here: https://docs.fastlane.tools/actions
+	build_app( scheme: "FishingLeaderBoard",
+  workspace:"FishingLeaderBoard.xcworkspace",
+output_directory:"./build",
+ clean: true,
+  configuration: "Debug",
+  export_options: {
+    method: "development",
+    provisioningProfiles: { 
+ "com.yuyue.sports.fishing": "YuYue Sports Fishing  Development",
+    }})
+ # upload_to_testflight(skip_waiting_for_build_processing: true)
+
+  pgyer(api_key: "26c2b54eda974d583ffc7893079df776", user_key: "630e54fce1da290131d5dba78616c6f0", password: "123456", install_type: "2")
+
+  end
+
+lane :fish1 do
+    # add actions here: https://docs.fastlane.tools/actions
+	build_app( scheme: "FishingLeaderBoard",
+  workspace:"FishingLeaderBoard.xcworkspace",
+output_directory:"./build",
+ clean: true,
+  configuration: "Debug",
+  export_options: {
+    method: "development",
+    provisioningProfiles: { 
+ "com.yuyue.sports.fishing": "YuYue Sports Fishing  Development",
+    }})
+  # upload_to_testflight(skip_waiting_for_build_processing: true)
+
+  pgyer(api_key: "26c2b54eda974d583ffc7893079df776", user_key: "630e54fce1da290131d5dba78616c6f0", password: "123456", install_type: "2")
+
+  end
+
+lane :beta do
+
+  build_app(scheme: "FishingLeaderBoard",  configuration: "Release",
+output_directory:"./build",
+  export_options: {
+    method: "app-store",
+    provisioningProfiles: { 
+ "com.diaoyupaihangbang.app": "com.diaoyupaihangbang.app AppStore",
+    }})
+  upload_to_testflight(skip_waiting_for_build_processing: true)
+end
+
+
+
+lane :release do
+get_certificates           # invokes cert
+  get_provisioning_profile   # invokes sigh
+  build_app(scheme: "FishingLeaderBoard",  configuration: "Release",
+output_directory:"./build",
+  export_options: {
+    method: "app-store",
+    provisioningProfiles: { 
+ "com.diaoyupaihangbang.app": "com.diaoyupaihangbang.app AppStore",
+    }})
+  upload_to_app_store
+end
+
+
+
+end

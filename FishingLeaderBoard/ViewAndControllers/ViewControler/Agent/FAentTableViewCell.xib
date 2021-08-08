@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="233" id="KGk-i7-Jjw" customClass="FAentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="233"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="233"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCa-hF-qyt">
+                        <rect key="frame" x="15" y="0.0" width="288" height="222"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page1" translatesAutoresizingMaskIntoConstraints="NO" id="30C-GO-bZZ">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="4XW-BA-Mzn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赛事标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlQ-kF-Gxj">
+                                <rect key="frame" x="10" y="160" width="69.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="B3O-VW-VYq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" · 待审批" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuW-If-4mZ">
+                                <rect key="frame" x="212.5" y="193" width="65.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tU3-AV-PNz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始时间：09/01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="191-HP-D3o">
+                                <rect key="frame" x="10" y="193" width="116" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aBi-mm-w5g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="191-HP-D3o" firstAttribute="leading" secondItem="FlQ-kF-Gxj" secondAttribute="leading" id="DuT-gv-Ysb"/>
+                            <constraint firstItem="191-HP-D3o" firstAttribute="leading" secondItem="nCa-hF-qyt" secondAttribute="leading" constant="10" id="NEK-UN-83t"/>
+                            <constraint firstAttribute="height" constant="222" id="Nu2-6R-oX9"/>
+                            <constraint firstAttribute="trailing" secondItem="WuW-If-4mZ" secondAttribute="trailing" constant="10" id="Xop-59-ADq"/>
+                            <constraint firstItem="FlQ-kF-Gxj" firstAttribute="top" secondItem="30C-GO-bZZ" secondAttribute="bottom" constant="10" id="cWj-FU-nhv"/>
+                            <constraint firstAttribute="trailing" secondItem="30C-GO-bZZ" secondAttribute="trailing" id="gh4-aq-9Hl"/>
+                            <constraint firstItem="30C-GO-bZZ" firstAttribute="leading" secondItem="nCa-hF-qyt" secondAttribute="leading" id="lbe-uf-PpV"/>
+                            <constraint firstItem="191-HP-D3o" firstAttribute="top" secondItem="FlQ-kF-Gxj" secondAttribute="bottom" constant="12" id="pbQ-tN-TZq"/>
+                            <constraint firstItem="30C-GO-bZZ" firstAttribute="top" secondItem="nCa-hF-qyt" secondAttribute="top" id="tjp-1O-dAj"/>
+                            <constraint firstItem="WuW-If-4mZ" firstAttribute="centerY" secondItem="191-HP-D3o" secondAttribute="centerY" id="zNH-Va-ztJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nCa-hF-qyt" secondAttribute="trailing" constant="15" id="0FU-nL-do0"/>
+                    <constraint firstAttribute="bottom" secondItem="nCa-hF-qyt" secondAttribute="bottom" constant="10" id="VjS-0j-OMo"/>
+                    <constraint firstItem="nCa-hF-qyt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="uU1-Vn-HPc"/>
+                    <constraint firstItem="nCa-hF-qyt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uXy-Ew-DjB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgview" destination="nCa-hF-qyt" id="n8t-N6-bjn"/>
+                <outlet property="coverImageView" destination="30C-GO-bZZ" id="hlz-wS-97f"/>
+                <outlet property="gameStartTimeView" destination="191-HP-D3o" id="6TY-Yg-A2R"/>
+                <outlet property="gameStatusView" destination="WuW-If-4mZ" id="Zez-ca-T7R"/>
+                <outlet property="gameTitleView" destination="FlQ-kF-Gxj" id="drm-z1-Lzv"/>
+            </connections>
+            <point key="canvasLocation" x="136.23188405797103" y="183.14732142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="page1" width="719" height="479.5"/>
+    </resources>
+</document>

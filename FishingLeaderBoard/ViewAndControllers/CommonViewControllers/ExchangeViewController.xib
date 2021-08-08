@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExchangeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMF-ok-Sfb">
+                    <rect key="frame" x="25" y="528" width="974" height="350"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="select" translatesAutoresizingMaskIntoConstraints="NO" id="kyM-7c-5W8">
+                            <rect key="frame" x="447" y="55" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="79.999999999999943" id="YT0-iV-rVG"/>
+                                <constraint firstAttribute="width" constant="79.999999999999943" id="k66-Wj-FCW"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="兑换成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sez-ra-ch1">
+                            <rect key="frame" x="400.5" y="166" width="173" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="173" id="7Uc-ra-gCg"/>
+                                <constraint firstAttribute="height" constant="55" id="sf6-Dn-qEb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-lT-SN9">
+                            <rect key="frame" x="35" y="266" width="41" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="41" id="fl2-o2-1fB"/>
+                                <constraint firstAttribute="height" constant="36" id="xHs-Sj-cid"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="返回">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="backkFromExchange:" destination="-1" eventType="touchUpInside" id="Lne-Lt-GiY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7w-iM-496">
+                            <rect key="frame" x="857" y="266" width="82" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="查看订单">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="scanExchangeBill:" destination="-1" eventType="touchUpInside" id="1TQ-Lb-THv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="sez-ra-ch1" firstAttribute="top" secondItem="kyM-7c-5W8" secondAttribute="bottom" constant="31" id="BmW-3h-DGi"/>
+                        <constraint firstItem="kyM-7c-5W8" firstAttribute="centerX" secondItem="xMF-ok-Sfb" secondAttribute="centerX" id="Dpf-9K-3aq"/>
+                        <constraint firstItem="h7w-iM-496" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gaO-lT-SN9" secondAttribute="trailing" constant="55" id="FDW-hF-qnQ"/>
+                        <constraint firstItem="kyM-7c-5W8" firstAttribute="top" secondItem="xMF-ok-Sfb" secondAttribute="top" constant="55" id="Idn-wT-2f6"/>
+                        <constraint firstItem="gaO-lT-SN9" firstAttribute="leading" secondItem="xMF-ok-Sfb" secondAttribute="leading" constant="35" id="Kso-Kp-iNj"/>
+                        <constraint firstItem="sez-ra-ch1" firstAttribute="centerX" secondItem="xMF-ok-Sfb" secondAttribute="centerX" id="O7M-Y4-C6c"/>
+                        <constraint firstItem="h7w-iM-496" firstAttribute="top" secondItem="gaO-lT-SN9" secondAttribute="top" id="OJj-Rd-8BC"/>
+                        <constraint firstAttribute="bottom" secondItem="gaO-lT-SN9" secondAttribute="bottom" constant="48" id="TE7-iT-2Ta"/>
+                        <constraint firstAttribute="height" constant="350" id="Z8K-15-hGL"/>
+                        <constraint firstItem="h7w-iM-496" firstAttribute="height" secondItem="gaO-lT-SN9" secondAttribute="height" id="nMX-Uy-IPZ"/>
+                        <constraint firstAttribute="trailing" secondItem="h7w-iM-496" secondAttribute="trailing" constant="35" id="v0A-Dz-eSl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40461793664383561" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xMF-ok-Sfb" secondAttribute="trailing" constant="25" id="3CA-ak-oBS"/>
+                <constraint firstItem="xMF-ok-Sfb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="25" id="HSF-eC-zH2"/>
+                <constraint firstItem="xMF-ok-Sfb" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" constant="20" id="xEv-rb-qno"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.25" y="143.66197183098592"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="select" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="KGk-i7-Jjw" customClass="AddDiaoKengTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pk4-Bx-BKS">
+                        <rect key="frame" x="10" y="16" width="342" height="147"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NyW-n6-pER">
+                                <rect key="frame" x="10" y="39" width="322" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="l7A-ew-ReA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9L-jC-aBe">
+                                <rect key="frame" x="307" y="8" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7LM-gc-DNM"/>
+                                    <constraint firstAttribute="width" constant="25" id="auE-21-Xzj"/>
+                                </constraints>
+                                <state key="normal" image="delete1"/>
+                                <connections>
+                                    <action selector="deleteBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="j88-oj-AiL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRB-lj-Fcl">
+                                <rect key="frame" x="10" y="10" width="42" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="XLm-2S-et1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVG-bT-aaC">
+                                <rect key="frame" x="10" y="53" width="322" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6to-CE-D9g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NyW-n6-pER" firstAttribute="leading" secondItem="Pk4-Bx-BKS" secondAttribute="leading" constant="10" id="3qv-qH-pjg"/>
+                            <constraint firstAttribute="bottom" secondItem="XVG-bT-aaC" secondAttribute="bottom" constant="14" id="8ed-e9-2LP"/>
+                            <constraint firstItem="IRB-lj-Fcl" firstAttribute="leading" secondItem="Pk4-Bx-BKS" secondAttribute="leading" constant="10" id="BRl-oh-NeC"/>
+                            <constraint firstItem="NyW-n6-pER" firstAttribute="top" secondItem="IRB-lj-Fcl" secondAttribute="bottom" constant="8.5" id="CxN-dc-a44"/>
+                            <constraint firstItem="B9L-jC-aBe" firstAttribute="centerY" secondItem="IRB-lj-Fcl" secondAttribute="centerY" id="EZ2-mj-gib"/>
+                            <constraint firstItem="IRB-lj-Fcl" firstAttribute="top" secondItem="Pk4-Bx-BKS" secondAttribute="top" constant="10" id="Sbt-uf-MUc"/>
+                            <constraint firstItem="XVG-bT-aaC" firstAttribute="leading" secondItem="IRB-lj-Fcl" secondAttribute="leading" id="VXl-5t-7Br"/>
+                            <constraint firstItem="XVG-bT-aaC" firstAttribute="top" secondItem="IRB-lj-Fcl" secondAttribute="bottom" constant="22.5" id="pbk-ix-DPE"/>
+                            <constraint firstItem="XVG-bT-aaC" firstAttribute="trailing" secondItem="B9L-jC-aBe" secondAttribute="trailing" id="qez-hm-b4I"/>
+                            <constraint firstAttribute="trailing" secondItem="NyW-n6-pER" secondAttribute="trailing" constant="10" id="qnn-9r-ubd"/>
+                            <constraint firstAttribute="trailing" secondItem="B9L-jC-aBe" secondAttribute="trailing" constant="10" id="vGm-pf-Fic"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Pk4-Bx-BKS" secondAttribute="trailing" constant="10" id="Sdk-gE-cVM"/>
+                    <constraint firstItem="Pk4-Bx-BKS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wwB-MK-xmS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="Pk4-Bx-BKS" firstAttribute="top" secondItem="aW0-zy-SZf" secondAttribute="top" constant="16" id="Tb9-hZ-dKv"/>
+                <constraint firstItem="aW0-zy-SZf" firstAttribute="bottom" secondItem="Pk4-Bx-BKS" secondAttribute="bottom" constant="17" id="ZsB-nI-Fki"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bgCharView" destination="XVG-bT-aaC" id="PF3-EM-A87"/>
+                <outlet property="bgView" destination="Pk4-Bx-BKS" id="kSi-6M-bJq"/>
+                <outlet property="nameLabel" destination="IRB-lj-Fcl" id="qkb-mc-MKO"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="148.66071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete1" width="100" height="100"/>
+    </resources>
+</document>

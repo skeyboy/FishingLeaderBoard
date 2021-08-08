@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpotLocationChoseViewController">
+            <connections>
+                <outlet property="cityLabel" destination="sCO-na-Tro" id="XFJ-6V-LvQ"/>
+                <outlet property="locationsTableview" destination="HP5-fN-iwH" id="HwE-6L-ZhU"/>
+                <outlet property="searchBar" destination="OsC-Rs-wFZ" id="syF-Pb-wPL"/>
+                <outlet property="spotMapView" destination="MaO-b1-Zf0" id="mW9-al-bxh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7T-hO-zC1">
+                    <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                    <subviews>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="北京市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCO-na-Tro">
+                            <rect key="frame" x="8" y="15" width="46" height="21"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Fan-Pk-3Sc"/>
+                                <constraint firstAttribute="width" constant="46" id="gVN-b1-QCD"/>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="76.5" id="hjO-ge-kj9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="jub-t3-HO7" appends="YES" id="8Fz-Wd-dKi"/>
+                            </connections>
+                        </label>
+                        <searchBar contentMode="redraw" text="" placeholder="搜索钓场关键词" backgroundImage="msg" translatesAutoresizingMaskIntoConstraints="NO" id="OsC-Rs-wFZ">
+                            <rect key="frame" x="74" y="10.5" width="325" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="I1p-QX-DKu"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y84-yS-FkX">
+                            <rect key="frame" x="54" y="15.5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="93Z-Wz-CA3"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="JO5-8X-Y07"/>
+                                <constraint firstAttribute="width" constant="20" id="eF8-eU-WKx"/>
+                            </constraints>
+                            <state key="normal" image="down"/>
+                            <connections>
+                                <action selector="downBtnClick:" destination="-1" eventType="touchUpInside" id="f5O-Vy-Zqx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="y84-yS-FkX" firstAttribute="leading" secondItem="sCO-na-Tro" secondAttribute="trailing" id="4Wu-Ke-cZa"/>
+                        <constraint firstItem="sCO-na-Tro" firstAttribute="leading" secondItem="z7T-hO-zC1" secondAttribute="leading" constant="8" id="A9f-yX-bTG"/>
+                        <constraint firstItem="sCO-na-Tro" firstAttribute="centerY" secondItem="z7T-hO-zC1" secondAttribute="centerY" id="OQ3-fz-tU2"/>
+                        <constraint firstItem="OsC-Rs-wFZ" firstAttribute="centerY" secondItem="y84-yS-FkX" secondAttribute="centerY" id="UWp-gg-6p6"/>
+                        <constraint firstAttribute="trailing" secondItem="OsC-Rs-wFZ" secondAttribute="trailing" constant="15" id="YQJ-Ik-KdO"/>
+                        <constraint firstAttribute="height" constant="51" id="d6G-7d-aeC"/>
+                        <constraint firstItem="OsC-Rs-wFZ" firstAttribute="leading" secondItem="y84-yS-FkX" secondAttribute="trailing" id="jZd-AQ-nep"/>
+                        <constraint firstItem="y84-yS-FkX" firstAttribute="centerY" secondItem="sCO-na-Tro" secondAttribute="centerY" id="rnt-N5-lXw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MaO-b1-Zf0" customClass="BMKMapView">
+                    <rect key="frame" x="0.0" y="139" width="414" height="523"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HP5-fN-iwH">
+                    <rect key="frame" x="0.0" y="662" width="414" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="5VA-lN-2Zx"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="HP5-fN-iwH" secondAttribute="trailing" id="Ga6-Yb-Cd2"/>
+                <constraint firstItem="MaO-b1-Zf0" firstAttribute="top" secondItem="z7T-hO-zC1" secondAttribute="bottom" id="L5R-Ae-5pi"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="MaO-b1-Zf0" secondAttribute="trailing" id="RSt-RV-b6q"/>
+                <constraint firstItem="z7T-hO-zC1" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="44" id="VBw-gs-b6f"/>
+                <constraint firstItem="z7T-hO-zC1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="ZtR-61-erN"/>
+                <constraint firstItem="HP5-fN-iwH" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="crF-57-wVI"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="HP5-fN-iwH" secondAttribute="bottom" id="f6D-kN-VL8"/>
+                <constraint firstItem="HP5-fN-iwH" firstAttribute="top" secondItem="MaO-b1-Zf0" secondAttribute="bottom" id="qov-JJ-VkT"/>
+                <constraint firstItem="MaO-b1-Zf0" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="qpM-kz-76N"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="z7T-hO-zC1" secondAttribute="trailing" id="wL8-x7-FdA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.8840579710145" y="144.64285714285714"/>
+        </view>
+        <tapGestureRecognizer id="jub-t3-HO7">
+            <connections>
+                <action selector="cityLabelClick:" destination="-1" id="T1X-Ux-nwc"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="down" width="48" height="48"/>
+        <image name="msg" width="30" height="30"/>
+    </resources>
+</document>

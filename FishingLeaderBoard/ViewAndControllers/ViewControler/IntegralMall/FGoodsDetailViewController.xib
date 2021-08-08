@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FGoodsDetailViewController">
+            <connections>
+                <outlet property="duiHuanBtn" destination="w9u-sr-Zmh" id="C8m-LR-yZA"/>
+                <outlet property="mainCollectionView" destination="z37-a9-VRe" id="J6T-kt-SS7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="z37-a9-VRe">
+                    <rect key="frame" x="0.0" y="88" width="414" height="714"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rLX-Qv-d30">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3G-5f-Nc1">
+                    <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9u-sr-Zmh">
+                            <rect key="frame" x="20" y="10" width="374" height="40"/>
+                            <color key="backgroundColor" red="0.118510507" green="0.23491221670000001" blue="0.39609622960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="lMP-oy-miB"/>
+                            </constraints>
+                            <state key="normal" title="去兑换">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="toDuiHuan:" destination="-1" eventType="touchUpInside" id="07f-mu-8AC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="IvM-Fo-wMe"/>
+                        <constraint firstItem="w9u-sr-Zmh" firstAttribute="centerX" secondItem="A3G-5f-Nc1" secondAttribute="centerX" id="U4H-lC-bL6"/>
+                        <constraint firstItem="w9u-sr-Zmh" firstAttribute="leading" secondItem="A3G-5f-Nc1" secondAttribute="leading" constant="20" id="V31-S6-kXJ"/>
+                        <constraint firstAttribute="trailing" secondItem="w9u-sr-Zmh" secondAttribute="trailing" constant="20" id="XND-X1-rmK"/>
+                        <constraint firstItem="w9u-sr-Zmh" firstAttribute="centerY" secondItem="A3G-5f-Nc1" secondAttribute="centerY" id="mPJ-MN-Ht4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="A3G-5f-Nc1" secondAttribute="bottom" id="6PL-Xg-2u8"/>
+                <constraint firstItem="z37-a9-VRe" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="44" id="H5c-9z-rYz"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="A3G-5f-Nc1" secondAttribute="trailing" id="TR8-iH-u7x"/>
+                <constraint firstItem="z37-a9-VRe" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="aUI-03-xFF"/>
+                <constraint firstItem="A3G-5f-Nc1" firstAttribute="top" secondItem="z37-a9-VRe" secondAttribute="bottom" id="d1v-PD-xjP"/>
+                <constraint firstItem="A3G-5f-Nc1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="h5P-Z5-6sP"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="z37-a9-VRe" secondAttribute="trailing" id="s1I-49-tQ3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="126" y="120"/>
+        </view>
+    </objects>
+</document>

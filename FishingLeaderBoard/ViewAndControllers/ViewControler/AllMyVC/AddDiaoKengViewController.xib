@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddDiaoKengViewController">
+            <connections>
+                <outlet property="addDiaoKenBtn" destination="BDN-gJ-H5J" id="w9B-Wt-Ojo"/>
+                <outlet property="meiDIaoKengTiShiLabel" destination="bLk-Go-SBd" id="Dy5-gg-rPs"/>
+                <outlet property="showTableView" destination="jeb-SS-TDw" id="jgI-AB-kTe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlm-h0-HQi">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" red="0.118510507" green="0.23491221670000001" blue="0.39609622960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="eNM-45-GY4"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDN-gJ-H5J">
+                    <rect key="frame" x="107" y="802" width="200" height="40"/>
+                    <color key="backgroundColor" red="0.118510507" green="0.23491221670000001" blue="0.39609622960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="8Sr-WQ-FtP"/>
+                        <constraint firstAttribute="height" constant="40" id="IG5-vT-sCz"/>
+                    </constraints>
+                    <state key="normal" title="添加钓坑">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addDiaoKeng:" destination="-1" eventType="touchUpInside" id="Wdh-da-YLn"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还没钓坑呢，添加一下吧~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLk-Go-SBd">
+                    <rect key="frame" x="0.0" y="88" width="414" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="kzP-Ve-mEC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jeb-SS-TDw">
+                    <rect key="frame" x="0.0" y="88" width="414" height="694"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="BDN-gJ-H5J" secondAttribute="bottom" constant="20" id="DJ1-W9-jPY"/>
+                <constraint firstItem="bLk-Go-SBd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="HB6-FM-95a"/>
+                <constraint firstItem="BDN-gJ-H5J" firstAttribute="top" secondItem="jeb-SS-TDw" secondAttribute="bottom" constant="20" id="TBy-HX-V5Y"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="jeb-SS-TDw" secondAttribute="trailing" id="TaP-uS-vSl"/>
+                <constraint firstItem="jeb-SS-TDw" firstAttribute="top" secondItem="rlm-h0-HQi" secondAttribute="bottom" id="U0j-Sj-oZw"/>
+                <constraint firstItem="bLk-Go-SBd" firstAttribute="top" secondItem="rlm-h0-HQi" secondAttribute="bottom" id="V6v-P5-dNq"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rlm-h0-HQi" secondAttribute="trailing" id="hcS-3S-rnK"/>
+                <constraint firstItem="jeb-SS-TDw" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="jCT-I6-rlg"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="top" secondItem="rlm-h0-HQi" secondAttribute="top" id="obr-nX-ba3"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="bLk-Go-SBd" secondAttribute="trailing" id="olw-AT-F4C"/>
+                <constraint firstItem="rlm-h0-HQi" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="pQV-d2-RWF"/>
+                <constraint firstItem="BDN-gJ-H5J" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="rQ2-8i-OuI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+        </view>
+    </objects>
+</document>

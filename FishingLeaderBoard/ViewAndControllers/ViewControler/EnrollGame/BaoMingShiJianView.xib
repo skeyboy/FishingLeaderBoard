@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BaoMingShiJianView">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="53"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="鲫鱼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9R-Sy-G4W">
+                    <rect key="frame" x="15" y="20.5" width="80" height="21"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Lhz-a3-QuB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正钓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YR9-Cg-zoi">
+                    <rect key="frame" x="115" y="20.5" width="35" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日场" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQ9-VK-R2t">
+                    <rect key="frame" x="170" y="20.5" width="35" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="2020-02-03 08:30        限20人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsy-mn-NxC">
+                    <rect key="frame" x="15" y="0.0" width="343" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YR9-Cg-zoi" firstAttribute="leading" secondItem="W9R-Sy-G4W" secondAttribute="trailing" constant="20" id="23E-PF-kiY"/>
+                <constraint firstItem="W9R-Sy-G4W" firstAttribute="leading" secondItem="bsy-mn-NxC" secondAttribute="leading" id="24e-Z4-LXB"/>
+                <constraint firstAttribute="trailing" secondItem="bsy-mn-NxC" secondAttribute="trailing" id="Dfa-CN-7y3"/>
+                <constraint firstItem="RQ9-VK-R2t" firstAttribute="leading" secondItem="YR9-Cg-zoi" secondAttribute="trailing" constant="20" id="DuH-ng-uai"/>
+                <constraint firstAttribute="top" secondItem="bsy-mn-NxC" secondAttribute="top" id="EGc-90-sLX"/>
+                <constraint firstItem="YR9-Cg-zoi" firstAttribute="centerY" secondItem="W9R-Sy-G4W" secondAttribute="centerY" id="Sza-sD-Xja"/>
+                <constraint firstItem="RQ9-VK-R2t" firstAttribute="centerY" secondItem="YR9-Cg-zoi" secondAttribute="centerY" id="ZTU-T5-BE2"/>
+                <constraint firstItem="bsy-mn-NxC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="beN-vr-syd"/>
+                <constraint firstItem="W9R-Sy-G4W" firstAttribute="top" secondItem="bsy-mn-NxC" secondAttribute="bottom" id="rFe-1I-Qm9"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="fishesLabel" destination="W9R-Sy-G4W" id="YPc-vU-ecP"/>
+                <outlet property="richangLabel" destination="RQ9-VK-R2t" id="rDO-Vf-GIR"/>
+                <outlet property="timeLabel" destination="bsy-mn-NxC" id="y1A-Xs-uDm"/>
+                <outlet property="typeLabel" destination="YR9-Cg-zoi" id="PWk-Ni-AhL"/>
+            </connections>
+            <point key="canvasLocation" x="113.04347826086958" y="-402.79017857142856"/>
+        </view>
+    </objects>
+</document>

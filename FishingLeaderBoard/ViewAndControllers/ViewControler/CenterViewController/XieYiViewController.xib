@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XieYiViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cky-Mf-A9r">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <mutableString key="text">“全民钓鱼英雄榜-黑坑英雄挑战赛积分赛”
+合作协议
+特别提醒：在接受本协议之前，请您仔细阅读本协议的全部内容（特别是以黑体标注的内容）。如果您对本合同的条款有疑问的，请通过钓鱼排行榜APP客服渠道（客服电话：4006215898）进行询问，钓鱼排行榜APP将向您解释条款内容。如果您不同意本协议的任意内容，或者无法准确理解钓鱼排行榜APP对条款的解释，请不要同意本协议或使用本协议项下的服务，否则，表示您已接受了以下所述的条款和条件，同意受本协议约束。届时您不应以未阅读本合同的内容或者未获得钓鱼排行榜APP对您问询的解答等理由，主张本协议无效，或要求撤销本协议。
+为充分维护您的合法权益，钓鱼排行榜APP特别提醒您特别关注本协议条款中的黑体部分，请您务必仔细阅读。
+
+1、定义条款
+您确认并同意本条款中对于各名词的解释及定义，并同意按照该定义履行相关义务。
+1.1 平台：特指由钓鱼排行榜APP拥有合格权限运营/ 管理的，提供赛事服务等技术服务的网络服务平台。
+1.2 用户：指在平台注册，并使用其本人注册的账户，通过平台展示的信息获取商品/ 服务的个人。
+1.3 赛事：指全民钓鱼英雄榜-黑坑英雄挑战赛系列赛事积分赛，是中国休闲垂钓协会指导、新农渔悦（北京）体育文化有限公司主办的的休闲垂钓赛事。
+1.4 赛事主办单位：特指新农渔悦（北京）体育文化有限公司。
+1.5 赛事承办单位：指经赛事主办方认证的，对赛事进行承办的单位或个人。
+1.6 钱包：特指平台为用户提供的资金账户。
+1.7 赛事报名缴费：指赛事活动发布后，用户通过平台进行赛事报名，并缴纳赛事报名费用，费用将存入赛事承办单位的钱包中。
+1.8 赛事服务费：指赛事主办单位按约定收取赛事承办单位的费用，由平台进行代收，并与赛事主办单位进行结算。
+1.9 收鱼：特指赛事活动中，赛事承办单位回购用户鱼获，并在平台上与用户进行交易的过程，收鱼款项存入用户钱包中。
+1.10 兑换积分：特指用户通过平台获取的，可用于兑换平台上商品的积分。
+1.11 赛事积分：特指用户通过参与赛事获得的中国休闲垂钓协会积分，由平台进行记录。
+
+2、服务内容
+为实现您进入平台开展经营活动、通过平台发布赛事活动服务信息、与用户进行交易之目的，钓鱼排行榜APP为您提供授权许可计算机软件及软件技术服务、网络技术服务及其他相关服务，具体服务内容如下：
+2.1 赛事认证服务：
+赛事主办单位通过平台对您进行承办单位的资质认证。认证通过后，赛事主办单位授予您赛事承办单位的权益和责任。
+2.2 商家服务：
+钓鱼排行榜APP在平台上为您开辟专业的商家版版块，为您提供抽号、收鱼、商品库存、活动管理等技术服务。
+3、赛事主办单位的权利与义务：
+3.1、当出现以下情况时，赛事主办单位有权判定赛事无效：
+3.1.1、单场赛事参赛人数（以本场赛事在平台上进行实际报名缴费的用户人数为准）低于15人；
+3.1.2、赛事出现重大执行问题，存在有失公平、公正、公开的问题，经赛事主办单位核实后，问题属实的情况；
+3.1.3、您未拍摄赛事前三名选手于赛事背景布前的照片，且未将照片的清晰原图发送到赛事主办单位处的情况。
+3.2、赛事主办单位负责向中国休闲垂钓协会进行赛事申报，您组织的赛事为中国休闲垂钓协会“全民钓鱼英雄榜——黑坑英雄挑战赛”的系列赛事，属中国休闲垂钓协会四类赛事；
+3.3、赛事主办单位负责设计积分赛宣传物品，并授权您进行使用；
+3.4、赛事主办单位负责赛事的宣传工作；
+3.5、在赛事有效的前提下，赛事主办单位将对您提供的参赛用户成绩进行认证，并在平台上进行记录，用户可在平台上进行查询。
+4、您的权利与义务：
+4.1、您应按照赛事主办单位发布的《“2020全民钓鱼英雄榜-黑坑英雄挑战赛积分赛”赛事规程》进行赛事组织； 
+4.2、您需承诺原则上不向参赛用户收取赛事服务费，您承担赛事服务费，赛事服务费按照您发布的赛事报名费比重收取，具体见下表：
+赛事报名费（人/元）票价	0-149	150-299	300以上
+赛事服务费（人/元）	10	20	30
+（赛事服务费以平台计算为准，乙方有权向平台索取详细收费标准）；
+4.3、您承诺指派专人负责赛事执行监督，确保赛事全程公平、公正、公开；
+4.4、您承诺指派专人负责赛事收鱼，通过平台进行收鱼，赛事成绩以收鱼重量为基准进行计量；
+4.5、为保证积分赛成绩真实性和可追溯性，您应在赛事结束后，拍摄本场积分赛前三名选手于赛事背景布前的照片，并将照片的清晰原图发送赛事主办单位处；
+4.6、您负责积分赛过程中的报名、放鱼、收鱼等相关事宜，如因上述过程中产生争议，赛事主办单位与平台不负相关责任；
+4.7、您对赛事报名用户应严格筛查，参赛用户须全是具有完全行为能力人，并在赛前自行办理个人意外事故保险事宜；
+4.9 您应关注比赛当日的天气情况，如遇自然灾害、恶劣天气等不可抗拒因素，须终止赛事，确保参赛用户安全。
+5、平台的权利义务
+5.1 平台应向您提供本合同约定的技术服务及其他相关服务。
+5.2 为更好的推荐您的赛事活动服务，以提升您的知名度/ 订单量，钓鱼排行榜APP可通过适当的方式和渠道做相关宣传介绍，并进行相关推荐/ 推广。您对上述行为予以认可，并授权钓鱼排行榜APP/ 钓鱼排行榜APP关联方/钓鱼排行榜APP合作方就您及其相关钓场的名称、LOGO 、图片、文字、鱼坑、用户优惠等信息进行使用。
+5.3 钓鱼排行榜APP有权对您拟在平台发布的内容、信息进行形式审核，必要时钓鱼排行榜APP有权依据法律法规、政策规定及平台规则拒绝发布( 如您拟发布涉嫌黄、赌、毒及其他违法或者违反公序良俗的信息) 。
+5.4 如用户就您的服务向钓鱼排行榜APP投诉，钓鱼排行榜APP经核实后，有权要求您配合解决该投诉，在该投诉未解决之前平台钓鱼排行榜APP/ 钓鱼排行榜APP关联方/ 钓鱼排行榜APP合作方有权拒绝向您支付涉及投诉的代收净额，待投诉解决后再行支付。
+5.5 钓鱼排行榜APP有权升级、更新商家中心系统，如有变更，钓鱼排行榜APP将通过前述系统以公告形式作出通知。
+6、各方关系：
+您应管理好赛事活动期间的安全事宜，在赛事期间您、赛事主办单位和钓鱼排行榜APP三方均不是其他两方的代理人，不是其他两方的雇员和合伙人，也不是其他两方的委托代表。您、赛事主办单位和钓鱼排行榜APP三方均无权以其他两方的名义签订协议、承担责任或负担费用和任何义务。
+7、违约责任：
+您、赛事主办单位和钓鱼排行榜APP三双方本着长期合作，合作共赢的精神。如遇问题意见不同时，三方应友好协商解决。如不能协商解决和伤及各方利益时可诉讼法律解决。本协议受北京地方法律管辖。
+8、保密义务
+除另有约定外，本协议任何一方均应对其获得的其他两方之业务、经营、财务状况和其他保密资料予以严格保密，不得以任何形式向任何第四方披露。否则，因此给其他方造成任何损失的，违约方应承担因此给守约方造成的全部损失。保密义务在合同有效期间及终止后始终有效，不因本合同其他条款整体或部分无效、被撤销而失效。
+9、合同终止和解除
+本协议期限届满或本协议约定的其他终止情形发生时，本协议终止。除协议另有约定外，协议履行过程中，一方经书面通知其他两方且经三方协商一致后，可解除本合同。本协议终止或解除后：
+9.1 钓鱼排行榜APP有权删除平台上已发布的您信息，且有权拒绝提供相关信息；
+9.2 本协议终止前您已与用户达成的尚未履行完毕的订单，您应按照本协议、信息、及订单、钓鱼排行榜APP规则等的约定继续履行相应义务；
+9.3 您同意钓鱼排行榜APP保存您资质信息、服务信息、交易记录等相关资料。
+10、免责条款
+因战争、自然灾害、政府行为、互联网系统故障、互联网通讯提供商故障等不可抗力因素或其他第四方原因导致钓鱼排行榜APP不能履行本协议项下义务，钓鱼排行榜APP无须承担责任。
+11、法律适用及争议解决条款
+11.1 本协议的成立、有效性、解释、履行、签署、修订和终止以及争议的解决均应适用中华人民共和国法律。
+11.2 因本协议引起的或与本协议有关的任何争议，三方应协商解决。协商不成的，任何一方均可将争议提交至原告所在地法院。
+12、附则
+12.1 与本协议有关的全部通知，三方可选择采用书面、邮件或商家中心操作任一种方式变更及确认。
+12.2 本协议正文不得涂改修订，如有未尽事宜，应另行签订书面补充合同。任何形式的口头协议均属无效。
+12.3 本协议由您确认后，于您的赛事活动信息首次发布之日起生效，有效期1 年。
+12.4 协议到期后，在保留合同条款及相应约定情形下，经钓鱼排行榜APP同意有效期自动顺延，每次顺延期为1 年。
+</mutableString>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.045064382260000001" green="0.14641737939999999" blue="0.26265791059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Cky-Mf-A9r" secondAttribute="trailing" id="3IM-sh-BKh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Cky-Mf-A9r" secondAttribute="bottom" id="NER-8w-8gg"/>
+                <constraint firstItem="Cky-Mf-A9r" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="44" id="aSR-xV-PMm"/>
+                <constraint firstItem="Cky-Mf-A9r" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="xBq-t5-GOp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="133"/>
+        </view>
+    </objects>
+</document>
